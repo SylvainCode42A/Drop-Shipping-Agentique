@@ -2,7 +2,7 @@
 type: conventions
 title: Conventions — Drop shipping agentique
 status: validé
-last-verified: 2026-10-22
+last-verified: 2026-10-29
 tags: [dropshipping, conventions]
 ---
 # Conventions — Drop shipping agentique
@@ -134,3 +134,20 @@ Résumé en 5 lignes au plus → une question à la fois → montrer la note com
 → écrire et passer `status: validé`. N'inventer aucune intention ; ne rien écrire sans ok.
 Ordre de construction : `_conventions` → OVR → SYN et NICHE (au fil des recherches) → MOD → CMP → FLOW
 → mémoire des agents → decisions / todo → A VERIFIER → canvas.
+
+## 9. Travail à deux (git)
+Le dossier est un dépôt git partagé entre Antoine et Sylvain
+(`git@github.com:SylvainCode42A/Drop-Shipping-Agentique.git`). `main` est la version commune ;
+on n'y écrit jamais directement.
+- **Début de session** : `git switch main`, puis `git pull`.
+- **Avant de travailler** : une branche par session, `git switch -c <prénom>/<sujet>`.
+- **Fin de session** : `git add -A`, `git commit -m "<ce qui a changé>"`, puis `git fetch`
+  et `git merge origin/main`. Les conflits se règlent ici, en local, dans Obsidian.
+- **Publier** : `git push -u origin <prénom>/<sujet>`, ouvrir la pull request sur GitHub et la merger
+  soi-même, sans relecture.
+- **Après le merge** : `git switch main`, `git pull`, puis `git branch -d <prénom>/<sujet>`.
+
+Notes centrales (OVR, SYN, `A VERIFIER`, `_conventions`) : faire un pull juste avant de les modifier,
+et prévenir l'autre si on les modifie longtemps.
+Décisions : avant de créer une note NN, vérifier le dernier numéro sur `main` à jour.
+Le chat ne lance pas git : il rappelle ce cycle et résout les conflits dans les notes.
