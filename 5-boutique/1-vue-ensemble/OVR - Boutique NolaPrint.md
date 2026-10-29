@@ -76,7 +76,7 @@ Flux : [[FLOW - De la personnalisation à la commande]] · [[FLOW - Rétractatio
 
 ## État au 29/10/2026
 - Maquette validée visuellement (version 15 publiée). Nom : NolaPrint. Logo : renne au bonnet de Noël.
-- Rien n'est sur Shopify. Les illustrations SVG sont à remplacer par les photos des échantillons.
+- Maquette affichée en page d'accueil Shopify via un layout alternatif, rien d'achetable ([[MOD - Thème Shopify]]). Les illustrations SVG sont à remplacer par les photos des échantillons.
 - Zones à compléter : identité du vendeur, SIREN, médiateur, fabricant GPSR, délais réels, pays du partenaire.
 
 ## Cas limites

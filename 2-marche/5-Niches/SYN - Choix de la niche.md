@@ -55,11 +55,18 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Le puzzle n'a pas été étudié ⚠️.
 
 ### La concurrence
+<<<<<<< 2-marche/5-Niches/SYN - Choix de la niche.md
+- Quinze acteurs relevés. Faiblesses communes : retards en haute saison, erreurs de prénom, impression inégale, casse, service client, ton répétitif ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
+- Les leaders ont des milliers d'avis et expédient en 24 h (CadoMaestro, Cadeaux.com, Henriette and Co). Un nouvel entrant doit payer de la publicité dès le départ ([[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]).
+- La bibliothèque publicitaire Meta n'a pas pu être consultée ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
+- Sur le mug famille à prénoms : Cadeau Plus est le plus visible (environ 300 000 visites en septembre 2026 selon Semrush) et probablement en impression à la demande ; CadoMaestro a la meilleure qualité de service (2 % d'avis à 1 étoile) ; Monsieur TSHIRT vend un mug famille illustré à 26,91-29,90 €. Les petites boutiques du même concept (Koala Bleu, La Chouette Mauve) ont leur propre atelier ([[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]).
+=======
 - Quinze acteurs relevés le 25/10. Faiblesses communes : retards en haute saison, erreurs de prénom, impression inégale, casse, service client, ton répétitif ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
 - Trois acteurs reviennent dans toutes les études produit et fixent l'attente client. Monsieur TShirt (Bordeaux, 51 000 avis, livraison 24 h, retours 100 jours, même design décliné sur 18 supports ; Cadeaux.com partage sa ville et ses paliers de remise). Ourson Câlin (Aube, prix bas, « Family Portrait »). Henriette and Co (Ain, 5 000 avis Loox, port offert dès 55 €, sous-traitance POD probable via merchOne). S'y ajoutent Famille de Dingue (avatars, affiche dès 41 €), Cadeau Plus (avatars, Trustpilot 4,4 sur 5 456 avis) et une boutique Etsy bi-devise à 11 000 avis sur le line art ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
 - Faiblesses observées dans les avis : « inscriptions peu visibles » (Cadeaux.com, 19/10/2026), casse au transport, texte coupé ou trop compact, décalage entre mockup et produit, garniture de coussin absente, taille unique des tabliers ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
 - Monsieur TShirt ne cite aucun mug parmi ses best-sellers de la fête des grands-mères 2026 (vase gravé, t-shirt brodé, porte-clés) ([[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]).
 - La bibliothèque publicitaire Meta n'a pu être consultée dans aucune recherche ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
+>>>>>>> /tmp/antoine.md
 
 ### Les risques transversaux
 - Juridique : pas de droit de rétractation pour un bien nettement personnalisé (art. L221-28), GPSR applicable, contact alimentaire, photos d'enfants soumises au RGPD, loi Evin pour le vin, droit de douane de 3 € par catégorie sur les produits hors UE depuis le 01/07/2026. Détail dans [[SYN - Juridique]].
@@ -115,5 +122,9 @@ Décisions attendues :
 - [[RCH - Comportement d'achat des cadeaux personnalisés (25-10-2026)]]
 - [[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]
 - [[RCH - Calendrier des occasions de cadeaux en France et dans l'UE (25-10-2026)]]
+<<<<<<< 2-marche/5-Niches/SYN - Choix de la niche.md
+- [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]
+=======
 - [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]
 - [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] et les treize études produit qu'elle cite
+>>>>>>> /tmp/antoine.md
