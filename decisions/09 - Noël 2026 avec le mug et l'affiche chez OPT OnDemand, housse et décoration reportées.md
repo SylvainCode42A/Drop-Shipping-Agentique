@@ -89,6 +89,7 @@ l'emballage et le papier.
 - La décision 05 est précisée, pas modifiée : partenaire figé OPT OnDemand, sous réserve des
   échantillons.
 - Pour mars 2027 : housse de coussin et sticker en candidats ; décoration de sapin pour Noël 2027.
+- 29/10/2026 : précisée par [[10 - Lancement avec le mug, l'affiche et la boule de Noël, trois offres groupées]] (boule de Noël avancée à Noël 2026 sous condition, offres groupées), en attente de validation par Antoine.
 
 ## Concerne
 [[SYN - Choix de la niche]] · [[SYN - Fournisseurs]] · [[SYN - Système]] · [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]] · [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] · notes TODO Noël à venir.
