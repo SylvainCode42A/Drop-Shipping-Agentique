@@ -1,6 +1,6 @@
 ---
 type: decision
-title: 07 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre
+title: 08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre
 status: validé
 date: 2026-10-29
 implemented: non
@@ -9,7 +9,7 @@ decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panie
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, decision]
 ---
-# 07 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre
+# 08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre
 
 ## Contexte
 Neuvième décision attendue par [[OVR - Drop shipping agentique]] (numérotée 9 dans la liste du 29/10,

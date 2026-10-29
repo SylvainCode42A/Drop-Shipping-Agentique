@@ -14,7 +14,7 @@ Ce fichier est autonome : il reprend ce qui sert ici et dit ce qui diffère.
 ## 1. Périmètre
 Une boutique Shopify de produits personnalisés en impression à la demande, gérée par des agents IA :
 le marché (modèle économique, fournisseurs, juridique, acquisition, niches), le système (agents,
-données, flux) et la mémoire lue par les agents en production.
+données, flux), la mémoire lue par les agents en production, et la vitrine (`5-boutique/`).
 Hors périmètre : le code lui-même (il vit dans le dépôt), les données de vente (elles vivent en base).
 
 Ce dossier a **deux lecteurs** :
@@ -39,6 +39,11 @@ Ce dossier a **deux lecteurs** :
 │   ├── 3-donnees/                   CMP - <objet> : un par objet du schéma de données
 │   ├── 4-flux/                      FLOW - <parcours> : un par parcours de bout en bout
 │   └── recherches/                  RCH - <sujet> : recherches techniques
+├── 5-boutique/                      la vitrine NolaPrint (maquette HTML, puis thème Shopify)
+│   ├── 1-vue-ensemble/              OVR - Boutique NolaPrint
+│   ├── 2-modules/                   MOD - <page ou bloc> : un par groupe de pages
+│   ├── 3-composants/                CMP - <objet> : un par structure de données du code
+│   └── 4-flux/                      FLOW - <parcours client> : un par parcours de bout en bout
 ├── 4-memoire-agents/                LU PAR LES AGENTS EN PRODUCTION
 │   ├── regles/                      REGLE - <sujet>
 │   ├── lecons/                      LECON - <apprentissage>
@@ -90,6 +95,8 @@ Un `todo` ajoute `priority:`, `decision:` et `created:`.
   (rempli à la revue). Une recherche ne décide rien ; une décision la cite.
 - **MOD / CMP / FLOW** : `## Rôle` · `## Intention` · `## Diagramme` (Mermaid) · `## Entrées et sorties`
   · `## Cas limites` · `## Notes liées`. Un FLOW numérote ses étapes et dit qui agit à chaque étape.
+  Dans `5-boutique/`, chaque MOD ajoute un tableau `Symbole | Rôle | Appelé par | Appelle`, avec les
+  numéros de ligne du fichier cité dans `path:` (comme TAP).
 - **Décision** : `## Contexte` · `## Décision` · `## Alternatives écartées` · `## Conséquences` · `## Concerne`.
 - **Todo** : `## Pourquoi` · `## Ce qu'il faut faire` · `## Comment prouver` · `## État` (journal daté).
 

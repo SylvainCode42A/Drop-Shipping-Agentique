@@ -69,11 +69,11 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 
 | Point à vérifier | Moyen | Source | Priorité | Résultat |
 |---|---|---|---|---|
-| Commande externe Printify avec un fichier d'impression propre à la commande (`blueprint_id`, `print_provider_id`, `variant_id`, `print_areas` avec image, sans produit créé au préalable) ; repli Printful si échec | connecté, test | [[07 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 (avant le 05/11) | |
-| Absence de double commande après découplage de la synchro Shopify-Printify (le script commande, pas la synchro) | test | [[07 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 | |
+| Commande externe Printify avec un fichier d'impression propre à la commande (`blueprint_id`, `print_provider_id`, `variant_id`, `print_areas` avec image, sans produit créé au préalable) ; repli Printful si échec | connecté, test | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 (avant le 05/11) | |
+| Absence de double commande après découplage de la synchro Shopify-Printify (le script commande, pas la synchro) | test | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 | |
 | La boutique appartient-elle à l'organisation Shopify d'Antoine (client credentials grant) ? | connecté | [[SYN - Système]] | P1 | |
-| Police et OCR du rendu interne sur é, è, ê, ë, ï, ç, œ et prénoms composés ; limite de 15 caractères et réduction automatique | test | [[07 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 | |
-| ~~Personnalisation à la commande : application tierce ou fichier généré par le système~~ | — | [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | — | tranché le 29/10/2026 : génération interne, décision 07 |
+| Police et OCR du rendu interne sur é, è, ê, ë, ï, ç, œ et prénoms composés ; limite de 15 caractères et réduction automatique | test | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] | P1 | |
+| ~~Personnalisation à la commande : application tierce ou fichier généré par le système~~ | — | [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | — | tranché le 29/10/2026 : génération interne, décision 08 |
 | La soumission automatique Printify fonctionne-t-elle pour des commandes Shopify personnalisées par une application tierce ? Approbation manuelle obligatoire ou non | connecté, test | [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | P1 | |
 | Règle « 100 commandes gratuites » de Teeinblue : mensuelle ou unique ; plan gratuit Customily existe-t-il encore ? | lecture | [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | P2 | |
 | Import en masse de gabarits (CSV, JSON, PSD) dans une application de personnalisation | lecture, test | [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | P2 | |
