@@ -61,7 +61,9 @@ Chacune fait l'objet d'une note NN dans `decisions/`.
 8. ~~La personnalisation à la commande~~ : prise, [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]. Génération interne dès Noël, test de la commande externe Printify avant le 05/11, repli Printful.
 
 Décisions attendues, dans l'ordre proposé :
-9. Les produits d'élargissement après le mug, et l'ordre. Le relevé connecté du 29/10 est disponible : affiche (OPT OnDemand et Posterflow), tote (Textildruck Europa), coussin et tablier polyester (MWW On Demand, site DE), sous-verre céramique unitaire (WOYC) ; aucun torchon, gobelet abordable, bougie, planche ou boîte en UE ([[SYN - Choix de la niche]], [[SYN - Fournisseurs]]).
+9. ~~Les produits d'élargissement après le mug, et l'ordre~~ : prise, [[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]. Mug 441 et affiche 443 chez OPT OnDemand, duo et lot mug + affiche à 44,90 € ; partenaire mug figé OPT sous réserve d'échantillons ; housse et décoration reportées à 2027 ; commande de test chez OPT avant le 05/11.
+
+Décisions attendues, dans l'ordre proposé :
 10. La politique de lots et de port : duo, remises par paliers, seuil de port offert, port facturé ou inclus ([[SYN - Choix de la niche]], [[SYN - Modèle économique]]).
 11. Le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes ; gabarits de prénoms par support ([[SYN - Choix de la niche]], [[SYN - Système]]).
 12. La conservation des métadonnées IPTC et C2PA dans la chaîne de publication ([[SYN - Juridique]], [[SYN - Système]]).
@@ -82,11 +84,11 @@ Décisions attendues, dans l'ordre proposé :
 | Ce qui n'est pas sûr, avec priorité et moyen de vérification | [[A VERIFIER - Points à valider, vérifier, tester]] |
 
 ## Prochaines étapes
-- Avant le 05/11/2026 : test de la commande externe Printify avec fichier propre à la commande (décision 08).
+- Avant le 05/11/2026 : commande de test chez OPT OnDemand par l'API, mug 441 + affiche A4 + affiche A3, fichier rendu par le système (décisions 08 et 09) ; échantillons housse MWW et décoration Harrier dans la foulée.
 - Points P1 du registre, avant le 15/11/2026 : choix du partenaire mug entre OPT OnDemand et Textildruck Europa par échantillons, site expéditeur des imprimeurs multi-sites, identifiant de variante par l'API publique, prix Gelato et Printful en euros, zone d'impression exacte, TVA sur les factures (expert-comptable), dates limites Noël 2026, CGV et bouton de rétractation, personne GPSR, contact alimentaire du mug, organisation Shopify, police et OCR sur les accents, conditions des modèles d'images, volumes Google.
 - Noël 2026 en test manuel : ouvrir la boutique, commander des échantillons, 8 à 12 mugs en ligne au plus tard le 15/11/2026 (notes TODO à créer).
 - Fiches TODO ouvertes par Sylvain : corriger la maquette, choisir l'app de personnalisation, choisir les apps de rétractation et de consentement. La fiche sur l'app de personnalisation est à relire avec la décision 08.
 - Reprendre les quatre RCH du 28/10 de Sylvain dans [[SYN - Juridique]] et [[SYN - Modèle économique]].
-- Décisions 9 à 13, une par une, selon le protocole de [[_conventions]].
+- Décisions 10 à 13, une par une, selon le protocole de [[_conventions]].
 - Dans `3-systeme/` : la note FLOW de la personnalisation à la commande, puis les notes MOD, CMP et FLOW, à partir du schéma de données esquissé le 25/10/2026 et des formats par support de [[SYN - Système]], pour le test de mars 2027.
 - Recherche restante : le puzzle, non étudié. Les deux RCH planche du 29/10 ont été fusionnées ; la note « gravée ou imprimée » n'est plus qu'une redirection, supprimable.
