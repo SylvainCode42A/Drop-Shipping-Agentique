@@ -55,13 +55,13 @@ Chacune fait l'objet d'une note NN dans `decisions/`.
 2. ~~Le produit, le prix et le panier cible~~ : prise, [[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]. À relire : les recherches du 28/10 montrent que l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent au même prix ; c'est un pari à tester à Noël, pas une preuve.
 3. ~~Le niveau de validation humaine au lancement et les actions toujours bloquées~~ : prise, [[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]].
 4. ~~Le premier test : Noël 2026 ou Fête des grands-mères 2027, avec son budget~~ : prise, [[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]].
-5. ~~Le fournisseur principal et le schéma de TVA qui en découle~~ : prise, [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]. À relire : le partenaire Printify UE du mug 11 oz n'est pas visible sur le catalogue public ; la décision tient si la vérification connectée le trouve, sinon Gelato ou Printful passent en principal.
+5. ~~Le fournisseur principal et le schéma de TVA qui en découle~~ : prise, [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]. Confirmée par le relevé connecté du 29/10 : aucun partenaire en France, mais OPT OnDemand (Tchéquie, 5,88 $) et Textildruck Europa (Allemagne, 5,91 $) font le mug 11 oz ; le partenaire figé est à choisir entre les deux après échantillons ([[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]).
 6. ~~L'orchestration et le modèle d'images~~ : prise, [[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]].
 7. ~~Le rôle de la maquette de la boutique~~ : prise, [[07 - La maquette est le cahier des charges du thème Shopify]].
 8. ~~La personnalisation à la commande~~ : prise, [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]. Génération interne dès Noël, test de la commande externe Printify avant le 05/11, repli Printful.
 
 Décisions attendues, dans l'ordre proposé :
-9. Les produits d'élargissement après le mug, et l'ordre, après la vérification Printify connectée ([[SYN - Choix de la niche]], [[SYN - Fournisseurs]]).
+9. Les produits d'élargissement après le mug, et l'ordre. Le relevé connecté du 29/10 est disponible : affiche (OPT OnDemand et Posterflow), tote (Textildruck Europa), coussin et tablier polyester (MWW On Demand, site DE), sous-verre céramique unitaire (WOYC) ; aucun torchon, gobelet abordable, bougie, planche ou boîte en UE ([[SYN - Choix de la niche]], [[SYN - Fournisseurs]]).
 10. La politique de lots et de port : duo, remises par paliers, seuil de port offert, port facturé ou inclus ([[SYN - Choix de la niche]], [[SYN - Modèle économique]]).
 11. Le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes ; gabarits de prénoms par support ([[SYN - Choix de la niche]], [[SYN - Système]]).
 12. La conservation des métadonnées IPTC et C2PA dans la chaîne de publication ([[SYN - Juridique]], [[SYN - Système]]).
@@ -83,7 +83,7 @@ Décisions attendues, dans l'ordre proposé :
 
 ## Prochaines étapes
 - Avant le 05/11/2026 : test de la commande externe Printify avec fichier propre à la commande (décision 08).
-- Points P1 du registre, avant le 15/11/2026 : vérification Printify UE connectée, prix Gelato et Printful en euros, échantillons rendus par le système, zone d'impression exacte, TVA sur les factures, dates limites Noël, CGV et bouton de rétractation, personne GPSR, contact alimentaire du mug, organisation Shopify, police et OCR sur les accents, conditions des modèles d'images, volumes Google.
+- Points P1 du registre, avant le 15/11/2026 : choix du partenaire mug entre OPT OnDemand et Textildruck Europa par échantillons, site expéditeur des imprimeurs multi-sites, identifiant de variante par l'API publique, prix Gelato et Printful en euros, zone d'impression exacte, TVA sur les factures (expert-comptable), dates limites Noël 2026, CGV et bouton de rétractation, personne GPSR, contact alimentaire du mug, organisation Shopify, police et OCR sur les accents, conditions des modèles d'images, volumes Google.
 - Noël 2026 en test manuel : ouvrir la boutique, commander des échantillons, 8 à 12 mugs en ligne au plus tard le 15/11/2026 (notes TODO à créer).
 - Fiches TODO ouvertes par Sylvain : corriger la maquette, choisir l'app de personnalisation, choisir les apps de rétractation et de consentement. La fiche sur l'app de personnalisation est à relire avec la décision 08.
 - Reprendre les quatre RCH du 28/10 de Sylvain dans [[SYN - Juridique]] et [[SYN - Modèle économique]].
