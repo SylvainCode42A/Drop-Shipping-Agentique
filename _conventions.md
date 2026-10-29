@@ -43,7 +43,8 @@ Ce dossier a **deux lecteurs** :
 │   ├── 1-vue-ensemble/              OVR - Boutique NolaPrint
 │   ├── 2-modules/                   MOD - <page ou bloc> : un par groupe de pages
 │   ├── 3-composants/                CMP - <objet> : un par structure de données du code
-│   └── 4-flux/                      FLOW - <parcours client> : un par parcours de bout en bout
+│   ├── 4-flux/                      FLOW - <parcours client> : un par parcours de bout en bout
+│   └── 5-integration-shopify/        MOD - Thème Shopify + FLOW - Déployer la maquette dans Shopify
 ├── 4-memoire-agents/                LU PAR LES AGENTS EN PRODUCTION
 │   ├── regles/                      REGLE - <sujet>
 │   ├── lecons/                      LECON - <apprentissage>

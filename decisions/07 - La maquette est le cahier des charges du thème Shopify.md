@@ -41,6 +41,7 @@ reconstruit à partir d'elle.
 - Les notes MOD, CMP et FLOW de `5-boutique/` décrivent la maquette ; chacune dira ce que devient son
   bloc dans le thème.
 - À inscrire dans A VERIFIER : app de personnalisation, solution Shopify pour le bouton de rétractation.
+- 29/10/2026 : vitrine intermédiaire déployée telle quelle via un layout alternatif ([[MOD - Thème Shopify]]) ; ce n'est pas l'alternative headless écartée, car Shopify sert la page et le futur thème reste à faire.
 
 ## Concerne
 [[OVR - Boutique NolaPrint]] · [[SYN - Juridique]] · [[SYN - Système]] · notes MOD de `5-boutique/` à venir.
