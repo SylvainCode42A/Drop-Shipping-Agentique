@@ -1,7 +1,7 @@
 ---
 type: todo
 title: TODO - Stock maison, bloquer Printify quand le produit est déjà chez nous
-status: à faire
+status: en cours
 priority: basse
 decision: "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
 created: 2026-10-30
@@ -24,11 +24,11 @@ du Code de la consommation, à faire relire par un juriste), les retours sans d�
 Les défauts sont réimprimés gratuitement par Printify sur réclamation avec photos (délai ⚠️ à vérifier).
 
 ## Ce qu'il faut faire
-1. **Tableau du stock maison** (Google Sheet) : produit, design (`_design`, ex. `d01`), texte (`Texte`),
+1. ✅ **Tableau du stock maison** (Google Sheet) : produit, design (`_design`, ex. `d01`), texte (`Texte`),
    forme (variante bois), état, date d'entrée.
-2. **Printify ne reçoit rien sans accord** : soit l'app Printify en approbation manuelle des commandes,
-   soit le bot crée lui-même les commandes par l'API Printify (création puis envoi en production)
-   ⚠️ réglages et endpoints à vérifier dans la doc Printify.
+2. ✅ **Printify ne reçoit rien sans accord** : approbation manuelle des commandes activée dans l'app
+   Printify dès maintenant ; plus tard, le bot créera lui-même les commandes par l'API Printify
+   (création puis envoi en production) ⚠️ endpoints à vérifier dans la doc Printify.
 3. **Bot** (petit service Python, webhook Shopify `orders/create`) :
    - correspondance trouvée → ne transmet pas à Printify, envoie un e-mail (commande, contenu exact,
      adresse du client), retire l'objet du tableau ;
@@ -45,3 +45,5 @@ Les défauts sont réimprimés gratuitement par Printify sur réclamation avec p
 
 ## État
 - 2026-10-30 : créée. À faire quand le volume de commandes le justifie (après le lien Printify).
+- 2026-10-30 : étape 1 faite (Google Sheet créé avec les six colonnes prévues). Étape 2 faite :
+  approbation manuelle activée dans Printify ; l'API Printify est retenue pour le bot (étape 3).
