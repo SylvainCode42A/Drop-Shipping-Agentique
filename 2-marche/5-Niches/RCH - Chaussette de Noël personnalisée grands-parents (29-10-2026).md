@@ -3,7 +3,7 @@ type: research
 title: RCH - Chaussette de Noël personnalisée grands-parents (29-10-2026)
 status: validé
 date: 2026-10-29
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 sources:
   - Catalogue Printify connecté (compte d'Antoine), filtre Europe, API interne product-catalog-service lue par le navigateur, 29/10/2026 (blueprints 380, 734, 850, 1629, 1638, 1640 ; tables de port par pays)

@@ -15,7 +15,7 @@ sources:
   - https://help.printify.com/hc/en-us/articles/41063013169297
   - https://help.printify.com/hc/en-us/articles/28903711308177-What-is-product-personalization-on-Printify
 related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, research, noel, catalogue]
 ---

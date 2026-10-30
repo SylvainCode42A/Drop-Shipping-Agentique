@@ -6,7 +6,7 @@ path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 symbol: PRODUCTS, bySlug
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Illustrations]]", "[[CMP - Panier]]", "[[SYN - Choix de la niche]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, boutique, component]
 ---
@@ -23,7 +23,7 @@ Toutes les pages le lisent ; rien ne l'écrit.
 - **Chaque produit est personnalisé par un texte du client** : c'est la condition de l'exclusion de
   rétractation ([[SYN - Juridique]]).
 - **Prix de maquette** : le mug et le Duo suivent la décision 02 ; les autres prix sont estimés, à recalculer
-  sur les coûts réels Printify ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+  sur les coûts réels Printify ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]).
 
 ## Diagramme
 ```mermaid

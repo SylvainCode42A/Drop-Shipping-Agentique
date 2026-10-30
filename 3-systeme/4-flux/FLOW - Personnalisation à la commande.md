@@ -3,7 +3,7 @@ type: flow
 title: FLOW - Personnalisation à la commande
 status: validé
 related: ["[[SYN - Système]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]", "[[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]]", "[[FLOW - De la personnalisation à la commande]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, flow, personnalisation]
 ---
@@ -206,7 +206,7 @@ un remboursement, une réimpression ni un geste commercial
   Le remboursement lui-même est une action toujours bloquée pour un agent ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
 - **Deux articles personnalisés dans une commande** (duo). Le flux tourne par ligne : un PNG, une
   validation et une ligne Printify par article, sous le même identifiant de commande
-  ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+  ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]).
 
 ## Version manuelle pour Noël 2026
 Noël 2026 est un test manuel réduit, 8 à 12 mugs en ligne avant le 15/11/2026

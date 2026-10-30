@@ -5,7 +5,7 @@ status: validé
 date: 2026-10-25
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
 last-verified: 2026-10-25
 tags: [dropshipping, fournisseurs, juridique, decision]
 ---
@@ -28,7 +28,7 @@ Aucun prix, délai ni taux de casse réel n'a été mesuré.
   de la passerelle ; un agent ne peut pas en changer.
 - **Fournisseur second : Gelato**, pour comparer sur les échantillons de Noël et servir de repli si le
   partenaire Printify défaille en haute saison. Un modèle « mug famille illustrée » y est préparé.
-- **Échantillons** chez les deux avant le 15/11/2026 : un mug avec prénoms accentués, un duo.
+- **Échantillons** chez les deux avant le 15/11/2026 : un mug avec prénoms accentués.
   Mesurés : rendu des prénoms, casse, délai réel, emballage.
 - **TVA : franchise en base au départ**, micro-entreprise, comme le recommande le rapport juridique.
   Le cas d'un partenaire qui expédie depuis un autre pays de l'UE est soumis à un expert-comptable avant

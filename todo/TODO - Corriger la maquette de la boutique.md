@@ -7,7 +7,7 @@ decision: "[[07 - La maquette est le cahier des charges du thème Shopify]]"
 created: 2026-10-29
 related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Accueil]]", "[[MOD - Habillage]]", "[[MOD - Panier et commande]]", "[[MOD - Pages légales et rétractation]]", "[[CMP - Panier]]"]
 decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+last-verified: 2026-10-30
 tags: [dropshipping, boutique, todo]
 ---
 # TODO - Corriger la maquette de la boutique
@@ -24,13 +24,18 @@ Dans `Claude outputs/nolaprint-sans-apercu-en-direct.html`, sans toucher au rend
    rétractation) ; clés `mc_cart` et `mc_consent` → `np_cart` et `np_consent` ([[MOD - Habillage]], [[CMP - Panier]]).
 2. **FAQ de l'accueil** : supprimer le lien vide `<a href="#faq"></a>` l.976 ; « Foire au questions » →
    « Foire aux questions » ([[MOD - Accueil]]).
-3. **Dates et prix en dur** : tirer « 10 décembre » du bandeau de `NOEL_DEADLINE`, et « 44,90 € » du prix
-   du Duo dans `PRODUCTS` ; dans `coDone`, une date limite par pays (France 10/12, BE-LU-DE 04/12)
+3. **Dates en dur** : tirer « 10 décembre » du bandeau de `NOEL_DEADLINE` ; dans `coDone`, une date limite par pays (France 10/12, BE-LU-DE 04/12)
    ([[MOD - Habillage]], [[MOD - Panier et commande]]).
 4. **CSS inutile** : retirer `.live-label`, `.live-dot`, `.tag-perso`, `.news*`, `.perso*`, `.steps*`, `.cover-sprig`.
 5. **Panier et commande** : plafond de 20 sur le « + » du tiroir ; fusionner deux lignes identiques
    (même produit, même personnalisation) ; garder la case « cadeau » dans `coData` ; ne pas remettre
    `coData` à zéro quand on change une quantité pendant la commande ([[MOD - Panier et commande]]).
+6. **Retirer le Duo** (aucune offre décidée, 30/10/2026) : le produit `duo-mamie-papi` de `PRODUCTS`, la
+   section Duo de l'accueil (l.967) et son lien `#p-duo-mamie-papi`, l'illustration `ART.duo`, l'incitation
+   « ajouter le Duo » du panier ; puis retirer le Duo des notes [[MOD - Accueil]], [[MOD - Habillage]],
+   [[CMP - Produit]], [[CMP - Panier]], [[CMP - Illustrations]], [[OVR - Boutique NolaPrint]],
+   [[FLOW - De la personnalisation à la commande]], [[FLOW - Routage par ancre]],
+   [[FLOW - Importer les produits par CSV]].
 
 ## Comment prouver
 - Recherche dans le fichier : 0 occurrence de « Mésange », `MC-`, `mc_`, `#faq"></a>`.
@@ -43,3 +48,4 @@ Dans `Claude outputs/nolaprint-sans-apercu-en-direct.html`, sans toucher au rend
 
 ## État
 - 2026-10-29 : créée à la fin du niveau `5-boutique/`.
+- 2026-10-30 : ajout du retrait du Duo (point 6), les offres ne sont plus décidées.

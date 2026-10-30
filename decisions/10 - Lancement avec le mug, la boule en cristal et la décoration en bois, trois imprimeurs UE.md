@@ -5,11 +5,14 @@ status: draft
 date: 2026-10-30
 implemented: non
 related: ["[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Chaussette de Noël personnalisée grands-parents (29-10-2026)]]", "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]", "[[FLOW - Personnalisation à la commande]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, fournisseurs, boutique, decision, noel]
 ---
 # 10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE
+
+> **Mis à jour le 30/10/2026** : les prix et la livraison sont remplacés par [[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]] ; les offres
+> sont retirées, aucune n'est décidée (étude dans [[RCH - Sélection du catalogue de lancement (30-10-2026)]]) ; l'image envoyée par la cliente est acceptée en mode page blanche ([[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]).
 
 ## Contexte
 La décision 09 retient le mug et l'affiche chez OPT OnDemand pour Noël 2026, reporte la décoration
@@ -50,21 +53,6 @@ Sur la fiche bois, la forme et l'illustration sont deux options de variante : 6 
 illustrations, soit environ 60 variantes, avec un aperçu par combinaison. Le mug et la boule ont une
 seule option « Illustration » (environ 10 variantes).
 
-**Offres** (marges estimées, TVA Printify ×1,2, frais de paiement 0,25 € + 1,5 %, port payé par la boutique) :
-
-| Offre | Contenu | Prix séparé | Prix | Marge estimée | Colis | Mécanique Shopify |
-|---|---|---|---|---|---|---|
-| Duo Mamie & Papi | 2 mugs, texte et illustration au choix pour chacun | 49,80 € | 44,90 € | ≈ 22 € | 1 | remise automatique -4,90 € dès 2 mugs |
-| Trio de la famille | 3 mugs | 74,70 € | 59,90 € | ≈ 28,50 € | 1 | remise automatique -14,80 € dès 3 mugs |
-| Le Noël de Mamie | mug + boule + décoration en bois | 72,70 € | 69,90 € | ≈ 19,30 € | 3 | Shopify Bundles ou code NOELMAMIE |
-| Déco du sapin | boule + décoration en bois | 47,80 € | 44,90 € | ≈ 8,30 € | 2 | Shopify Bundles ou code |
-
-Livraison offerte dès 49 €, sinon 4,90 € (un mug seul passe alors d'environ 10,50 € à environ 15,40 € de marge).
-En publicité : le Duo et le Trio, seuls paniers au-dessus du CPA maximum de 20 € en un colis
-(décision 02). Les remises sont créées après la publication des produits depuis Printify.
-Le Duo et le Trio supposent un mug ajouté au panier par personnalisation ; la compatibilité de
-Shopify Bundles avec la personnalisation Printify est à tester.
-
 **Règle d'approvisionnement.** Par défaut, un imprimeur qui expédie depuis l'UE (« Local Europe
 providers » dans Printify). Un imprimeur hors UE n'est accepté que s'il laisse au moins 5 € de marge
 après douane au prix du marché, sans frais pour la cliente à la livraison, avec une livraison avant
@@ -98,7 +86,7 @@ que Printify accepte un design différent par variante et l'aperçu correspondan
 - La boule ne laisse une marge qu'à partir d'environ 25 € à cause de son port (environ 3,40 € à
   24,90 €, 6,40 € à 27,90 €, estimé) ; Printify Premium ajoute environ 1,50 € par boule.
 - Fiche décoration en bois : mention « décoration, pas un jouet » (Printify la donne pour adultes) et
-  variations du grain du bois. Fiche Noël de Mamie : trois colis séparés.
+  variations du grain du bois.
 - À vérifier dans le Product Creator et sur l'échantillon : design différent par variante, nombre de
   variantes accepté (environ 60), zone d'impression du bois (recto seul ou recto-verso), rendu du blanc
   sur bois, hauteur minimale du texte (environ 3-4 mm), longueur maximale du texte libre par forme.
@@ -106,7 +94,6 @@ que Printify accepte un design différent par variante et l'aperçu correspondan
   duo, lot mug + affiche) par les trois produits publiés depuis Printify ; adapter la fiche produit du
   thème (le champ texte libre remplace les champs appellation et prénoms) ; mettre à jour
   [[MOD - Thème Shopify]].
-- Publicité : mettre en avant le Duo et le Trio (CPA maximum 20 €, décision 02).
 - À inscrire dans A VERIFIER : port réel du mug Textildruck, frais de port de plusieurs boules,
   rendu des accents sur verre et sur bois.
 - Validation d'Antoine attendue avant de passer en `validé`.

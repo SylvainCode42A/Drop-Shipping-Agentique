@@ -28,7 +28,7 @@ sources:
 
 ## Contexte posé
 Question posée dans le chat le 29/10/2026, reformulée : lister les boutiques qui peuvent concurrencer
-le mug famille illustrée à prénoms ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]),
+le mug famille illustrée à prénoms ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]),
 de la plus visible à la moins visible, avec leur qualité, et repérer celles qui font du drop ou de
 l'impression à la demande.
 Méthode : recherche Google « mug mamie personnalisé prénoms petits-enfants », lecture des fiches

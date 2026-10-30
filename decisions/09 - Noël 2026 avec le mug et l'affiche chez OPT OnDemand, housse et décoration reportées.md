@@ -5,7 +5,7 @@ status: validé
 date: 2026-10-29
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Système]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Validation de l'affiche grands-parents en produit compagnon du mug (29-10-2026)]]", "[[RCH - Validation du tote bag compagnon du mug (29-10-2026)]]", "[[RCH - Validation de la housse de coussin grands-parents (29-10-2026)]]", "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, niches, fournisseurs, decision, noel]
 ---
@@ -20,8 +20,7 @@ mesurés ([[RCH - Synthèse comparative des produits d'élargissement (29-10-202
 Ce que les chiffres disent, en franchise de TVA, port offert, prix Printify du 29/10 convertis à
 0,897 € :
 - l'affiche A4 ou A3 chez OPT OnDemand (Tchéquie, 6,50 et 7,09 $, port 6,09 $) laisse 12 à 14 €
-  à 24,90 €, avec le même imprimeur que le mug 441 ; le lot mug + affiche à 44,90 € laisse 21 €
-  si Printify facture deux ports pleins, 26 € si le tarif « article suivant » s'applique
+  à 24,90 €, avec le même imprimeur que le mug 441
   ([[RCH - Validation de l'affiche grands-parents en produit compagnon du mug (29-10-2026)]]) ;
 - le tote W801 chez Textildruck Europa n'existe qu'en noir, rouge et marine, en portrait, au
   lavage main ; 4 € de marge sans Premium, 8 € avec, à 24,90 € ; il impose une version fond
@@ -44,8 +43,8 @@ développeurs ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères
 
 - Mug 11 oz, blueprint 441 « Ceramic Mug (EU) », OPT OnDemand, 24,90 €.
 - Affiche A4 et A3 portrait, blueprint 443, OPT OnDemand, papier mat, 24,90 € en A4 et 29,90 € en A3.
-- Offres groupées : duo de mugs à 44,90 € (décision 02) et lot mug + affiche A4 à 44,90 €.
-  Un lot mug + affiche A3 à 49,90 € est possible dès que le port du lot est mesuré.
+- Offres groupées : retirées le 30/10/2026, aucune n'est décidée (étude dans
+  [[RCH - Validation de l'affiche grands-parents en produit compagnon du mug (29-10-2026)]]).
 - Un même design sert les deux supports : bandeau pour le mug, fichier maître A3 portrait de
   3 510 × 4 950 px réduit pour l'A4.
 
@@ -68,8 +67,8 @@ de commande externe (décision 08), mesure le port réel du lot et le nombre de 
 l'emballage et le papier.
 
 ## Alternatives écartées
-- **Mug seul plus duo** : le plus simple, mais sans produit qui montre l'illustration en grand
-  et sans lot au-dessus du duo ; l'affiche coûte une composition portrait, pas une chaîne de rendu.
+- **Mug seul** : le plus simple, mais sans produit qui montre l'illustration en grand ;
+  l'affiche coûte une composition portrait, pas une chaîne de rendu.
 - **Mug chez Textildruck plus tote** : marge faible sans Premium, trois coloris foncés, version
   fond foncé de chaque illustration, lavage main, et perte du colis commun avec l'affiche.
 - **Trois produits ou plus pour Noël (housse, décoration)** : chaque ajout apporte un imprimeur,
@@ -78,8 +77,7 @@ l'emballage et le papier.
   et imprimeur distinct du mug ; à reprendre pour les grands formats.
 
 ## Conséquences
-- La boutique de Noël a deux fiches produit (mug, affiche avec variante A4 et A3), deux offres
-  groupées, 8 à 12 designs.
+- La boutique de Noël a deux fiches produit (mug, affiche avec variante A4 et A3), 8 à 12 designs.
 - Le créateur produit chaque design en deux compositions : bandeau 2,4:1 et portrait série A,
   en calques, avec les gabarits de prénoms 1-2, 3-4, 5-6, 7-8 pour chaque composition.
 - Le système de rendu (décision 08) couvre deux zones d'impression : 2475 × 1155 px (mug, à

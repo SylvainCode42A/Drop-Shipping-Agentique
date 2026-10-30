@@ -4,8 +4,8 @@ title: 04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour
 status: validé
 date: 2026-10-25
 implemented: non
-related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Acquisition]]", "[[SYN - Choix de la niche]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
+related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Acquisition]]", "[[SYN - Choix de la niche]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
 last-verified: 2026-10-25
 tags: [dropshipping, acquisition, decision]
 ---
@@ -22,13 +22,13 @@ contre 3 500 à 4 000 € sur dix semaines ([[RCH - Canaux d'acquisition (22-10-
 
 ## Décision
 **Noël 2026 : test manuel réduit, sans système d'agents.**
-- 8 à 12 mugs « famille illustrée » et le duo, créés à la main avec les outils d'images, validés un par un.
+- 8 à 12 mugs « famille illustrée », créés à la main avec les outils d'images, validés un par un.
 - Boutique Shopify ouverte, fiches Google gratuites, publication sur Etsy en parallèle.
 - Meta à 20 € par jour sur trois semaines environ, à partir de la mi-novembre, une seule campagne.
 - Produits en ligne au plus tard le 15/11/2026, commandes closes le 10/12/2026 (estimé, à caler sur
   le délai réel du fournisseur).
 - Budget : **800 € au plus**, hors coût des produits vendus, accepté comme perdu.
-- Ce qu'on mesure : CPA réel, part de duos, taux de casse, délai réel fournisseur, erreurs de prénom,
+- Ce qu'on mesure : CPA réel, taux de casse, délai réel fournisseur, erreurs de prénom,
   questions des clients (corpus du futur agent de service client, décision 03).
 
 **Fête des grands-mères, 07/03/2027 : premier vrai test du système.**
@@ -36,7 +36,7 @@ contre 3 500 à 4 000 € sur dix semaines ([[RCH - Canaux d'acquisition (22-10-
 - Budget : **plafond de 2 500 €**, fixé maintenant pour borner l'agent publicitaire, révisé en janvier
   avec les chiffres de Noël. Le plan à 3 500-4 000 € sur dix semaines reste la référence si Noël
   montre un CPA tenable.
-- Réussite : au moins 30 ventes sur l'angle principal avec un CPA sous 20 € ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+- Réussite : au moins 30 ventes sur l'angle principal avec un CPA sous 20 € ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]).
 
 ## Alternatives écartées
 - **Noël seul, tout miser dessus** : CPM au plus haut, pas le temps d'apprendre Meta ni d'atteindre

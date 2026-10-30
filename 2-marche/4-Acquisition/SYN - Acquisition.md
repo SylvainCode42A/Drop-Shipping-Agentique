@@ -60,7 +60,7 @@ tags: [dropshipping, acquisition, synthese]
 
 ## Ce qui est décidé
 - Premier test : Noël 2026 en manuel réduit (8 à 12 mugs, Shopify, Etsy, Meta 20 € par jour, 800 € au plus), puis Fête des grands-mères 2027 comme premier test du système, plafond 2 500 € révisé en janvier ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]).
-- Panier cible 45 € et CPA maximum 20 € ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]). Budget publicitaire toujours bloqué pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
+- Panier cible 45 € et CPA maximum 20 € ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Budget publicitaire toujours bloqué pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
 
 Décisions attendues :
 - les seuils d'élimination et de validation d'un produit, communs avec [[SYN - Système]].

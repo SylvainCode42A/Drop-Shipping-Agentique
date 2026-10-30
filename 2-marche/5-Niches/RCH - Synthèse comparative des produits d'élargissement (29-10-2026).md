@@ -3,7 +3,7 @@ type: research
 title: RCH - Synthèse comparative des produits d'élargissement (29-10-2026)
 status: validé
 date: 2026-10-29
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[NICHE - Grands-parents]]", "[[OVR - Drop shipping agentique]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[NICHE - Grands-parents]]", "[[OVR - Drop shipping agentique]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 sources:
   - "[[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]"

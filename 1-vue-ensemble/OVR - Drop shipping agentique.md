@@ -3,7 +3,7 @@ type: overview
 title: OVR - Drop shipping agentique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[SYN - Système]]", "[[OVR - Boutique NolaPrint]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, overview]
 ---
@@ -52,7 +52,7 @@ Le workflow du créateur, discuté le 28/10/2026, a trois phases : calibration (
 ## Décisions
 Chacune fait l'objet d'une note NN dans `decisions/`.
 1. ~~L'angle principal et l'angle secondaire~~ : prise, [[01 - Grands-parents en principal, retraite par métier en secondaire]].
-2. ~~Le produit, le prix et le panier cible~~ : prise, [[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]. À relire : les recherches du 28/10 montrent que l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent au même prix ; c'est un pari à tester à Noël, pas une preuve.
+2. ~~Le produit, le prix et le panier cible~~ : prise, [[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]. À relire : les recherches du 28/10 montrent que l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent au même prix ; c'est un pari à tester à Noël, pas une preuve.
 3. ~~Le niveau de validation humaine au lancement et les actions toujours bloquées~~ : prise, [[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]].
 4. ~~Le premier test : Noël 2026 ou Fête des grands-mères 2027, avec son budget~~ : prise, [[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]].
 5. ~~Le fournisseur principal et le schéma de TVA qui en découle~~ : prise, [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]. Confirmée par le relevé connecté du 29/10 : aucun partenaire en France, mais OPT OnDemand (Tchéquie, 5,88 $) et Textildruck Europa (Allemagne, 5,91 $) font le mug 11 oz ; le partenaire figé est à choisir entre les deux après échantillons ([[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]).
@@ -61,7 +61,7 @@ Chacune fait l'objet d'une note NN dans `decisions/`.
 8. ~~La personnalisation à la commande~~ : prise, [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]. Génération interne dès Noël, test de la commande externe Printify avant le 05/11, repli Printful.
 
 Décisions attendues, dans l'ordre proposé :
-9. ~~Les produits d'élargissement après le mug, et l'ordre~~ : prise, [[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]. Mug 441 et affiche 443 chez OPT OnDemand, duo et lot mug + affiche à 44,90 € ; partenaire mug figé OPT sous réserve d'échantillons ; housse et décoration reportées à 2027 ; commande de test chez OPT avant le 05/11.
+9. ~~Les produits d'élargissement après le mug, et l'ordre~~ : prise, [[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]. Mug 441 et affiche 443 chez OPT OnDemand ; partenaire mug figé OPT sous réserve d'échantillons ; housse et décoration reportées à 2027 ; commande de test chez OPT avant le 05/11.
 
 Décisions attendues, dans l'ordre proposé :
 10. La politique de lots et de port : duo, remises par paliers, seuil de port offert, port facturé ou inclus ([[SYN - Choix de la niche]], [[SYN - Modèle économique]]).

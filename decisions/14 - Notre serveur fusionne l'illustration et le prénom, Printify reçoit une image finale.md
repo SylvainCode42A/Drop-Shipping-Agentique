@@ -1,15 +1,15 @@
 ---
 type: decision
-title: 08 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale
+title: 14 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale
 status: draft
 date: 2026-10-29
 implemented: non
 related: ["[[FLOW - De la commande personnalisée à Printify]]", "[[SYN - Fournisseurs]]", "[[SYN - Système]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, fournisseurs, decision]
 ---
-# 08 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale
+# 14 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale
 
 ## Contexte
 Le client ne choisit pas l'image : nous publions une sélection d'illustrations, une par produit.

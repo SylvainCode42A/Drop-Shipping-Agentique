@@ -5,7 +5,7 @@ language: HTML, CSS, JavaScript (sans dépendance)
 path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 status: draft
 related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[SYN - Choix de la niche]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, boutique, overview]
 ---
@@ -69,7 +69,7 @@ Flux : [[FLOW - De la personnalisation à la commande]] · [[FLOW - Rétractatio
 ## Invariants
 - Tout article porte un texte saisi par le client : c'est ce qui fonde l'exclusion du droit de rétractation (art. L221-28 3°) affichée sur la fiche et au paiement ([[SYN - Juridique]]).
 - L'ajout au panier est bloqué tant que la case « J'ai vérifié l'orthographe » n'est pas cochée ; la case se décoche à chaque modification ([[SYN - Choix de la niche]] : erreur de prénom = mug perdu et avis négatif).
-- Les prix viennent de `PRODUCTS` : mug 24,90 €, duo 44,90 € ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]). Livraison 4,90 € en France, offerte dès 49 €, 6,90 € vers BE, LU, DE (estimé).
+- Les prix viennent de `PRODUCTS` : mug 24,90 €, duo 44,90 € ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Livraison 4,90 € en France, offerte dès 49 €, 6,90 € vers BE, LU, DE (estimé).
 - Les avis sont des exemples étiquetés « Exemple » : aucun faux avis présenté comme réel.
 - Les zones `.todo` (jaune) signalent ce qui est à compléter avant la mise en ligne ; la puce « mode maquette » les masque pour une capture.
 - Version ordinateur figée : les ajustements téléphone vivent seulement dans les `@media` de la ligne 426.

@@ -2,7 +2,7 @@
 type: research
 title: RCH - Tablier personnalisé grands-parents (28-10-2026)
 status: validé
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Torchon personnalisé grands-parents (28-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Torchon personnalisé grands-parents (28-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 date: 2026-10-28
 sources:

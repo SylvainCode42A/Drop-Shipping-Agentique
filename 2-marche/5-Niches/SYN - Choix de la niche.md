@@ -3,7 +3,7 @@ type: synthese
 title: SYN - Choix de la niche
 status: validé
 related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, synthese]
 ---
@@ -91,8 +91,8 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Manque commun à toutes les recherches : aucun volume de recherche Google n'a pu être mesuré.
 
 ## Ce qui est décidé
-- Audience : parents et grands-parents en principal, couple en secondaire, amies et fratrie en test, animaux et travail reportés. Offre en deux modes : nos designs à phrase et prénoms, ou la page blanche avec l'image de la cliente ([[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]], [[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]).
-- Mug famille illustrée seul à 24,90 €, duo « Mamie et Papi » à 44,90 €, panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
+- Audience : parents et grands-parents en principal, couple en secondaire, amies et fratrie en test, animaux et travail reportés. Offre en deux modes : nos designs à phrase et prénoms, ou la page blanche avec l'image de la cliente ([[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]], qui remplace [[01 - Grands-parents en principal, retraite par métier en secondaire]]).
+- Mug famille illustrée seul à 24,90 € (prix remplacés par la décision 12), panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement. Aucune offre décidée ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
 - Premier test : Noël 2026 en manuel réduit, puis Fête des grands-mères 2027 avec le système ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]). Validation humaine : [[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]].
 
 Décisions attendues :

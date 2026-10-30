@@ -6,7 +6,7 @@ path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 symbol: cart, store, saveCart, subtotal, count
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Panier et commande]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Produit]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, boutique, component]
 ---

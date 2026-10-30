@@ -6,7 +6,7 @@ priority: basse
 decision: "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
 created: 2026-10-30
 related: ["[[TODO - Choisir les apps de rétractation et de consentement]]", "[[TODO - Choisir l'app de personnalisation Shopify et Printify]]", "[[SYN - Juridique]]", "[[RCH - Retours et remboursements (28-10-2026)]]"]
-decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[13 - Offres de lancement, duo de mugs et deux lots mélangés]]"]
+decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, boutique, printify, automatisation, todo]
 ---

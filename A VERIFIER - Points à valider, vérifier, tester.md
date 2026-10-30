@@ -4,7 +4,7 @@ title: A VERIFIER - Points à valider, vérifier, tester
 status: validé
 related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Acquisition]]"]
 decisions: []
-last-verified: 2026-10-29
+last-verified: 2026-10-30
 tags: [dropshipping, registre, a-verifier]
 ---
 # A VERIFIER - Points à valider, vérifier, tester
@@ -60,6 +60,9 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 |---|---|---|---|---|
 | Schéma de TVA selon le pays d'expédition réel de l'imprimeur ; la franchise tient-elle si l'imprimeur expédie depuis l'Allemagne ou la Lettonie ? | expert | [[SYN - Juridique]], [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]] | P2 (avant janvier 2027) | |
 | Frontière catalogue ou personnalisé pour la rétractation, et rédaction des CGV | expert (avocat) | [[SYN - Juridique]] | P1 | |
+| Textes de L221-28 3°, L221-5 (information sur l'absence de rétractation) et L221-23 à lire sur Légifrance ; l'image envoyée par la cliente vaut-elle « spécification du consommateur » ? | lecture, expert (avocat) | [[RCH - Retours, rétractation et abus (30-10-2026)]] | P1 | |
+| Shopify rend-il les frais de paiement lors d'un remboursement ? | lecture, connecté | [[RCH - Retours, rétractation et abus (30-10-2026)]] | P2 | |
+| Professionnel acheteur : seuil « moins de 5 » ou « 5 au plus » salariés, et application à la vente à distance (L221-3) ; abus du droit de rétractation et refus des commandes suivantes en droit français (sources belges seulement) | lecture, expert | [[RCH - Retours, rétractation et abus (30-10-2026)]] | P3 | |
 | Solution Shopify pour le bouton « Renoncer au contrat ici » obligatoire depuis le 19/06/2026 | lecture, test | [[RCH - Cadre juridique (22-10-2026)]] | P1 | |
 | Personne responsable GPSR pour chaque produit : l'imprimeur UE ou la boutique ? Documentation fournie par Printify, Gelato, Printful | lecture, connecté | [[SYN - Juridique]], [[RCH - Affiche personnalisée grands-parents (28-10-2026)]] | P1 | |
 | Déclaration de conformité contact alimentaire (CE 1935/2004) du mug retenu, puis du gobelet et de la planche | lecture, connecté | [[RCH - Gobelet isotherme grands-parents (28-10-2026)]], [[RCH - Planche à découper et planche apéro grands-parents (29-10-2026)]] | P1 pour le mug | |
@@ -108,7 +111,7 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 |---|---|---|---|---|
 | Volumes Google Keyword Planner et courbes Google Trends France pour « mug mamie personnalisé », « cadeau mamie prénoms petits-enfants », « mug fête des grands-mères », « affiche mamie », « plaid mamie » ; jamais obtenus par aucune recherche | manuel | [[SYN - Choix de la niche]] | P1 | |
 | Bibliothèque publicitaire Meta : publicités actives de Cadeau Plus, Henriette and Co, Famille de Dingue, Monsieur TShirt, Cadeaux.com, CadoMaestro | manuel | [[SYN - Choix de la niche]] | P2 | |
-| Une illustration fixe sans réglage des personnages convertit-elle à 24,90 € face aux avatars réglables au même prix ? | test (Noël 2026) | [[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]], [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]] | P1 | |
+| Une illustration fixe sans réglage des personnages convertit-elle à 24,90 € face aux avatars réglables au même prix ? | test (Noël 2026) | [[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]], [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]] | P1 | |
 | Sites non audités sur plusieurs produits : Famille de Dingue, Jusqu'à la lune, Ma Petite Fabrique, CadoMaestro, Cadeau Plus ; Amazon.fr et Etsy FR en détail pour la planche, la boîte, la bougie | manuel | [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] | P3 | |
 | Lot tablier + torchon d'Ourson Câlin, et « Family Portrait » sur sous-verres (présence à confirmer) | manuel | [[RCH - Torchon personnalisé grands-parents (28-10-2026)]], [[RCH - Sous-verres personnalisés pour grands-parents (28-10-2026)]] | P3 | |
 | Lien entre Cadeaux.com et Monsieur TShirt (même ville, mêmes paliers de remise) | manuel | [[RCH - Bougie personnalisée grands-parents (29-10-2026)]] | P3 | |

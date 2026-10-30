@@ -5,11 +5,15 @@ status: validé
 date: 2026-10-25
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]"]
+decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]"]
 last-verified: 2026-10-25
 tags: [dropshipping, niches, decision]
 ---
 # 01 - Grands-parents en principal, retraite par métier en secondaire
+
+> **Remplacée le 30/10/2026** par [[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]] : l'audience principale devient les parents et
+> grands-parents (maman, papa, mamie, papy), le couple en secondaire ; la retraite par métier est reportée.
+> Cette note est gardée telle qu'elle a été validée, pour l'historique.
 
 ## Contexte
 Première décision attendue par [[OVR - Drop shipping agentique]]. Les dix recherches du 25/10/2026

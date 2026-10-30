@@ -4,8 +4,8 @@ title: 12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux
 status: draft
 date: 2026-10-30
 implemented: non
-related: ["[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Modèle économique]]", "[[SYN - Juridique]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[13 - Offres de lancement, duo de mugs et deux lots mélangés]]"]
+related: ["[[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]", "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Modèle économique]]", "[[SYN - Juridique]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, modele-economique, prix, decision]
 ---
@@ -45,14 +45,15 @@ d'approvisionnement de la décision 10.
 ## Décision
 **Prix au niveau de Cadeau Plus, livraison payante, aucun faux prix barré.**
 
-| Produit                                 | Cadeau Plus | Prix NolaPrint | Marge estimée (livraison 4,90 € payée par le client) |
-| --------------------------------------- | ----------- | -------------- | ---------------------------------------------------- |
-| Mug                                     | 18,45 €     | **17,90 €**    | ≈ 8,60 €                                             |
-| Boule de Noël en verre                  | 19,95 €     | **19,90 €**    | ≈ 3,40 €                                             |
-| Décoration en bois (6 formes)           | 12,95 €     | **17,90 €**    | ≈ 2,40 €                                             |
-| Duo 2 mugs (un colis, voir décision 13) | —           | **32,90 €**    | ≈ 15 €                                               |
+| Produit | Cadeau Plus | Prix NolaPrint | Marge estimée (livraison 4,90 € payée par le client) | Après cotisations (12,3 %) |
+|---|---|---|---|---|
+| Mug | 18,45 € | **17,90 €** | ≈ 8,60 € | ≈ 5,80 € |
+| Boule de Noël en verre | 19,95 € | **19,90 €** | ≈ 3,40 € | ≈ 0,30 € |
+| Décoration en bois (6 formes) | 12,95 € | **17,90 €** | ≈ 7,30 € | ≈ 4,50 € |
 
-Marges estimées avec frais de paiement de 0,25 € + 1,5 %.
+Marges estimées avec frais de paiement de 0,25 € + 1,5 %, avant publicité ; cotisations sociales de
+12,3 % ajoutées le 30/10 ([[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]). Le bois est à 17,90 €, au-dessus de Cadeau Plus
+(12,95 €) : à 12,90 € il ne laissait qu'environ 0,20 € après cotisations.
 
 - **Livraison** : 4,90 €, offerte dès 60 € (au lieu de 49 €, pour garder la marge des paniers moyens).
 - **Création libre** (décision 11) : même prix que les designs.
@@ -64,7 +65,7 @@ Marges estimées avec frais de paiement de 0,25 € + 1,5 %.
 - **Argument de différenciation** : même prix que les leaders, plus l'aperçu en direct, la fabrication en
   Europe, la boule en vrai verre cristal et des « prix justes, sans faux prix barrés ».
 
-- **Offres** (Duo de mugs et deux lots mélangés) : voir [[13 - Offres de lancement, duo de mugs et deux lots mélangés]].
+- **Offres** : aucune décidée. Les offres étudiées le 30/10 sont dans [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]] (partie 6).
 
 ## Alternatives écartées
 - **Garder les prix de la décision 10** : 6 à 8 € plus chers que Cadeau Plus, sans avis clients pour le justifier.
@@ -73,15 +74,16 @@ Marges estimées avec frais de paiement de 0,25 € + 1,5 %.
 - **Livraison offerte dès 49 €** : la marge d'un panier à 50 € disparaît presque entièrement.
 
 ## Conséquences
-- Remplace les prix de la décision 10 et le prix cible de la décision 02 (mug 24,90 €, duo 44,90 €).
-- Un article seul ne couvre pas un coût publicitaire d'environ 20 € par commande (décision 02) : la publicité
-  pousse le Duo, le 2e article et les paniers à plusieurs objets.
-- Le bois sert surtout à compléter un panier (≈ 2,40 € de marge seul).
+- Remplace les prix de la décision 10 et le prix cible de la décision 02 (mug 24,90 €).
+- Un article seul ne couvre pas un coût publicitaire d'environ 20 € par commande (décision 02) : les
+  offres qui font monter le panier restent à décider.
+- La boule (≈ 0,30 € seule après cotisations) sert seulement à compléter un panier ; le bois laisse
+  ≈ 4,50 €.
 - Piste à étudier : une boule acrylique ou céramique chez un imprimeur UE pour concurrencer les 12,95-13,95 €.
-- Shopify : changer les prix des 3 produits, créer les offres de la décision 13, régler la
+- Shopify : changer les prix des 3 produits, régler la
   livraison (4,90 €, offerte dès 60 €) ; mettre à jour les mentions de livraison du thème et des pages.
 - À inscrire dans A VERIFIER : port réel du mug et du 2e mug (commande test), délai de livraison comparé.
 - Validation d'Antoine attendue avant de passer en `validé`.
 
 ## Concerne
-[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]] · [[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]] · [[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]] · [[SYN - Modèle économique]] · [[SYN - Juridique]]
+[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]] · [[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]] · [[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]] · [[SYN - Modèle économique]] · [[SYN - Juridique]]

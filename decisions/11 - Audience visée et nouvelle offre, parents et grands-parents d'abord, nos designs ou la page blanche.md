@@ -5,7 +5,7 @@ status: draft
 date: 2026-10-30
 implemented: non
 related: ["[[SYN - Choix de la niche]]", "[[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]", "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Juridique]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, boutique, decision]
 ---
@@ -68,8 +68,8 @@ père, ses beaux-parents, les grands-parents de ses enfants, son conjoint).
 La page blanche s'ajoute aux designs, elle ne les remplace pas. Elle lève, pour ce mode seulement,
 l'exclusion de l'image envoyée par la cliente prévue par la décision 10.
 
-**Prix** : les prix de la décision 10 (mug 24,90 €, boule 27,90 €, bois 19,90 €) s'appliquent aux
-designs ; le prix de la page blanche reste à fixer. ⚠️ à décider
+**Prix** : ceux de la décision 12 (mug 17,90 €, boule 19,90 €, bois 17,90 €), les mêmes pour les
+designs et la page blanche ([[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
 
 ## Alternatives écartées
 - **Garder les grands-parents seuls (décision 01)** : 18 % de l'offre et 28 % des meilleures ventes
@@ -84,8 +84,8 @@ designs ; le prix de la page blanche reste à fixer. ⚠️ à décider
   photo ou le visage (« Tel père tel fils », « Je suis l'aînée ») ; ce mode capte cette demande.
 
 ## Conséquences
-- **Remplace l'angle de la décision 01** (grands-parents et retraite) ; le contenu de la note 01 est
-  à réécrire selon cette décision. Précise la décision 10 : image cliente acceptée en page blanche.
+- **Remplace l'angle de la décision 01** (grands-parents et retraite) ; la note 01 est gardée telle
+  qu'elle a été validée et porte la mention « Remplacée par la décision 11 ». Précise la décision 10 : image cliente acceptée en page blanche.
 - **Designs** : environ 10 designs à phrase, chacun décliné pour maman, papa, mamie, papy et
   couple, en plus des illustrations de la décision 10. Règles du créateur à adapter.
 - **Printify** : un calque image téléversée par la cliente et un calque texte par produit page
@@ -101,14 +101,14 @@ designs ; le prix de la page blanche reste à fixer. ⚠️ à décider
   durée de conservation, transmission à Printify) ([[SYN - Juridique]]). ⚠️ à vérifier
 - **Boutique** : deux entrées par produit (« Nos designs » et « Page blanche ») ; collections par
   destinataire (Maman, Papa, Mamie, Papy, Couple) ; mettre à jour [[MOD - Thème Shopify]].
-- **Offres (décision 10)** : le Duo devient « Maman & Papa » ou « Mamie & Papy ».
+- **Offres** : aucune décidée pour l'instant.
 - **Calendrier** : le lancement du système (décision 04) peut viser la Saint-Valentin ou la fête des
   mères 2027 en plus de la fête des grands-mères.
-- **Publicité** : pousser les designs et les offres groupées ; la page blanche en complément, pas
+- **Publicité** : pousser les designs ; la page blanche en complément, pas
   en tête des publicités (comparaison de prix avec les mugs photo).
 - À inscrire dans A VERIFIER : calques image Printify, boule transparente, contrôle des images
-  clientes, prix de la page blanche.
+  clientes.
 - Validation d'Antoine attendue avant de passer en `validé`.
 
 ## Concerne
-[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]] · [[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]] · [[SYN - Choix de la niche]] · [[SYN - Juridique]] · [[MOD - Thème Shopify]]
+[[01 - Grands-parents en principal, retraite par métier en secondaire]] · [[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]] · [[SYN - Choix de la niche]] · [[SYN - Juridique]] · [[MOD - Thème Shopify]]

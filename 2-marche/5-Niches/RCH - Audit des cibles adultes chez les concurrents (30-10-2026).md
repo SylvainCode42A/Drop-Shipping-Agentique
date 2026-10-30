@@ -23,7 +23,7 @@ sources:
   - "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]"
   - "Second relevé du 30/10/2026 (cadeauplus.com, monsieurtshirt.com, cadomaestro.com), chiffres repris de la décision 11"
 related: ["[[SYN - Choix de la niche]]", "[[NICHE - Grands-parents]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
+decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, concurrence, research]
 ---
@@ -120,7 +120,7 @@ Sur les 35 premiers mugs : mamie et maman 7, papa et papy 6, famille 4, animaux 
 
 ### 7. Ce que l'audit suggère (non décidé)
 - **Acheteuse** : inchangée, une femme adulte qui gère les cadeaux de la famille
-  ([[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]).
+  ([[01 - Grands-parents en principal, retraite par métier en secondaire]]).
 - **Destinataires à cibler** : 1) les parents et grands-parents (papa, papy, maman, mamie), une
   seule offre avec appellation libre ; 2) le couple (Saint-Valentin, anniversaires, « depuis
   AAAA ») ; 3) la fratrie et la famille, surtout à Noël.

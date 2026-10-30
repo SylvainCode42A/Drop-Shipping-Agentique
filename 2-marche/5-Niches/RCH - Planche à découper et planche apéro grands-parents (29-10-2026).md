@@ -3,7 +3,7 @@ type: research
 title: RCH - Planche à découper et planche apéro grands-parents (29-10-2026)
 status: validé
 date: 2026-10-29
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[NICHE - Grands-parents]]", "[[RCH - Sous-verres personnalisés pour grands-parents (28-10-2026)]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[NICHE - Grands-parents]]", "[[RCH - Sous-verres personnalisés pour grands-parents (28-10-2026)]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 sources:
   - "Monsieur TSHIRT, planches apéro : https://www.monsieurtshirt.com/planche-apero"
