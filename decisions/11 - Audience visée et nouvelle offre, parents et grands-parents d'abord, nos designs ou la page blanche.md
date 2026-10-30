@@ -4,7 +4,7 @@ title: 11 - Audience visée et nouvelle offre, parents et grands-parents d'abord
 status: draft
 date: 2026-10-30
 implemented: non
-related: ["[[SYN - Choix de la niche]]", "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Juridique]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]", "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Juridique]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, boutique, decision]

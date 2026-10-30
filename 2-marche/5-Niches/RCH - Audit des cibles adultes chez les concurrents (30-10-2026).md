@@ -21,8 +21,9 @@ sources:
   - "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]"
   - "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]"
   - "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]"
+  - "Second relevé du 30/10/2026 (cadeauplus.com, monsieurtshirt.com, cadomaestro.com), chiffres repris de la décision 11"
 related: ["[[SYN - Choix de la niche]]", "[[NICHE - Grands-parents]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]"]
+decisions: ["[[01 - Les adultes de la famille en principal, le couple en secondaire, designs à phrase et prénoms]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, concurrence, research]
 ---
@@ -41,7 +42,8 @@ croisement avec les RCH du 25 et du 29/10.
 Chez les deux concurrents relevés, l'argent se fait sur les figures de la famille, papa, papy, maman,
 mamie, achetées par leurs enfants adultes ; le couple et la fratrie viennent ensuite, les amis, les
 animaux et les collègues loin derrière ; les grands-parents restent le premier destinataire des
-meilleures ventes de Cadeau Plus.
+meilleures ventes de Cadeau Plus tous produits confondus ; sur les mugs seuls, papa et maman passent
+devant (17 contre 14 sur 50).
 
 ## Résultats
 
@@ -129,6 +131,23 @@ Sur les 35 premiers mugs : mamie et maman 7, papa et papy 6, famille 4, animaux 
 - **Effet d'une phrase à appellation libre** : un design « La bande à … » sert papa, papy, maman,
   mamie, tonton ; peu de designs couvrent beaucoup de destinataires.
 
+### 8. Second relevé : les mugs seuls
+- **3 744 mugs Cadeau Plus classés par destinataire d'après le titre** (un mug peut compter deux
+  fois) : parents 41 %, grands-parents 18 %, animaux 18 %, travail (collègue, métier, retraite) 9 %,
+  couple 9 %, amies 6 %, fratrie 4 %.
+- **50 mugs les plus vendus** : maman ou papa 17, mamie ou papy 14, design commun maman/mamie ou
+  papa/papi 6, travail 5, amies et fratrie 4, couple 3, famille 1. Soit 37 sur 50 (74 %) pour les
+  parents et grands-parents.
+- **Produits par collection** : papa 3 960, maman 3 635, mamie 2 352, papy 2 225, couple 2 057,
+  chats 1 789, chiens 1 687, meilleure amie 1 054, collègue 304 ; par occasion : Noël 5 331, fête
+  des grands-pères 4 649, fête des mères 3 464, Saint-Valentin 1 716, fête des pères 1 104.
+- **Meilleures ventes de Noël** : premier Noël de bébé, famille bonhomme de neige, couple
+  « vieillir ensemble », décorations commémoratives, chaussettes « Chut, je lis ».
+- **Monsieur TSHIRT, 35 premiers mugs** : 30 famille (papa, maman, mamie, papy), 1 couple, 1 potes,
+  2 animaux.
+- **CadoMaestro** : généraliste, menu « Pour qui » par lien (papa, mari, frère, papy, ami…), couple,
+  âge et métier.
+
 ## Chiffres
 
 ### Sourcés
@@ -155,5 +174,18 @@ Sur les 35 premiers mugs : mamie et maman 7, papa et papy 6, famille 4, animaux 
 - Deux concurrents seulement relevés en détail ; aucun volume de recherche Google mesuré.
 - La bibliothèque publicitaire Meta n'est toujours pas consultée ⚠️ à vérifier.
 
+Contradictions non tranchées :
+- Nombre de produits par collection entre les deux relevés : papa 3 820 / 3 960, maman 3 470 / 3 635,
+  papy 2 070 / 2 225, couple 1 494 / 2 057, meilleure amie 794 / 1 054, collègue 222 / 304,
+  Noël 4 431 / 5 331. Probablement deux lectures avec des filtres différents ⚠️ à vérifier.
+- Grands-parents : 21 à 25 sur 50 parmi tous les produits (partie 3), contre 14 sur 50 parmi les mugs
+  seuls (partie 8) ; ce ne sont pas les mêmes listes.
+- Monsieur TSHIRT : 30 mugs famille sur 35 (partie 8), contre 17 (partie 6).
+
 ## Retenu / écarté
-(à remplir à la revue)
+Revue du 30/10/2026 ([[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]) :
+- **Retenu** : parents et grands-parents en principal ; couple en secondaire ; amies et fratrie en
+  test ; acheteuse inchangée ; phrases qui nomment le lien, déclinées par rôle.
+- **Reporté** : chiens et chats, travail et retraite. **Écarté** : humour sexuel.
+- **À l'inverse de la partie 7** : la photo du client revient avec la « page blanche » de la décision
+  11, pour capter les meilleures ventes photo (« Tel père tel fils », « Je suis l'aînée »).
