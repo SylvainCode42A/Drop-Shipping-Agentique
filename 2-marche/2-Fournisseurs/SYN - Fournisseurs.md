@@ -3,7 +3,7 @@ type: synthese
 title: SYN - Fournisseurs
 status: validé
 related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Juridique]]", "[[SYN - Modèle économique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
+decisions: ["[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, fournisseurs, synthese]
 ---
@@ -96,11 +96,11 @@ Treize études produit ont cherché un imprimeur dans l'UE chez Printify, Gelato
 - La recherche fournisseurs du 25/10 est orientée textile ; le mug y est peu chiffré.
 
 ## Ce qui est décidé
-- Printify en principal avec un partenaire UE figé pour le mug, Gelato en second et en repli, échantillons avant le 15/11/2026, franchise de TVA au départ ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]). Précisée par la décision 09 : le partenaire figé est OPT OnDemand (Tchéquie), mug 441 et affiche 443, sous réserve des échantillons ; Textildruck Europa en repli ([[09 - Noël 2026 avec le mug et l'affiche chez OPT OnDemand, housse et décoration reportées]]).
+- Printify en principal avec un partenaire UE figé pour le mug, Gelato en second et en repli, échantillons avant le 15/11/2026, franchise de TVA au départ ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]). Précisée par l'ancienne décision 09 (OPT, supprimée) : le partenaire figé est OPT OnDemand (Tchéquie), mug 441 et affiche 443, sous réserve des échantillons ; Textildruck Europa en repli ; précisée depuis par [[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]].
 
 Décisions attendues :
-- ~~le partenaire Printify figé~~ : OPT OnDemand, décision 09, à confirmer par échantillons ;
-- ~~le fournisseur de complément pour les produits suivants~~ : l'affiche chez OPT pour Noël ; housse MWW et décoration Harrier reportées (décision 09) ;
+- ~~le partenaire Printify figé~~ : OPT OnDemand, ancienne décision 09 (OPT, supprimée), à confirmer par échantillons ;
+- ~~le fournisseur de complément pour les produits suivants~~ : l'affiche chez OPT pour Noël ; housse MWW et décoration Harrier reportées (ancienne décision 09, OPT, supprimée) ;
 - ~~l'application de personnalisation, ou la génération du fichier par le système~~ : prise, génération interne ([[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]) ;
 - la politique de lots et de port.
 

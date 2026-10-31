@@ -6,8 +6,8 @@ path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 symbol: LEGAL, renderRetract, bindRetract
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[SYN - Juridique]]", "[[RCH - Retours et remboursements (28-10-2026)]]", "[[RCH - TVA (28-10-2026)]]", "[[FLOW - Rétractation en ligne]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, boutique, juridique, module]
 ---
 # MOD - Pages légales et rétractation
@@ -61,10 +61,13 @@ flowchart LR
 ## Ce que les CGV fixent
 | Article | Contenu |
 |---|---|
-| 2 | le client est responsable de l'orthographe ; contenus illicites ou protégés refusés |
-| 6 | fabrication 2-5 jours ouvrés + transport 3-5 en France (estimé) ; livraison au plus tard à 30 jours |
-| 7 | pas de rétractation pour un article personnalisé (L221-28 3°) ; sinon 14 jours, frais de retour à la charge du client |
-| 8 | casse ou défaut refait sans frais ; garantie légale de conformité de 2 ans ⚠️ encadré du décret 2022-946 à reprendre mot pour mot |
+| 2 | trois façons de commander (illustration sans texte, avec texte, page blanche) ; orthographe et droits sur les images à la charge du client |
+| 3 | options par article (+ 1 € texte, + 2 € page blanche) ; lots de 3 au prix de leur fiche, options non remisées ; livraison par commande |
+| 4 | quantités pour usage personnel, refus des commandes anormales ⚠️ avocat |
+| 6 | mug et bois 5-10 jours ouvrés, boule 10-30 jours ouvrés (Printify, 31/10) ; colis séparés possibles |
+| 7 | exclus : texte ou page blanche (L221-28 3°) ; illustration sans texte : 14 jours, fonction en ligne avec « Confirmer la rétractation » et accusé horodaté, frais de renvoi à la charge du client ; article de lot remboursé au prix du lot ÷ 3 ⚠️ avocat |
+| 8 | casse ou défaut : photo + n° de commande, refait sans renvoi, idéalement sous 30 jours ; garantie légale de 2 ans ⚠️ encadré de l'annexe D211-2 à copier mot pour mot |
+| 12 | droits sur les textes et images fournis, accord des personnes représentées |
 | 10 | médiateur de la consommation ⚠️ à choisir |
 
 ## Dans le thème Shopify

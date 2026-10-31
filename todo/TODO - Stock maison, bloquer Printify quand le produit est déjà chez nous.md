@@ -1,13 +1,13 @@
 ---
 type: todo
 title: TODO - Stock maison, bloquer Printify quand le produit est déjà chez nous
-status: à faire
+status: en cours
 priority: basse
-decision: "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
+decision: "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
 created: 2026-10-30
 related: ["[[TODO - Choisir les apps de rétractation et de consentement]]", "[[TODO - Choisir l'app de personnalisation Shopify et Printify]]", "[[SYN - Juridique]]", "[[RCH - Retours et remboursements (28-10-2026)]]"]
-decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[13 - Offres de lancement, duo de mugs et deux lots mélangés]]"]
-last-verified: 2026-10-30
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, boutique, printify, automatisation, todo]
 ---
 # TODO - Stock maison, bloquer Printify quand le produit est déjà chez nous
@@ -21,14 +21,18 @@ Limite : la correspondance doit être exacte (produit, design, texte, forme), do
 presque jamais avec des prénoms ; utile surtout pour les textes génériques (« Maman », « Papy »,
 « Joyeux Noël »). Si les CGV excluent la rétractation pour les produits personnalisés (art. L221-28 3°
 du Code de la consommation, à faire relire par un juriste), les retours sans défaut seront rares.
-Les défauts sont réimprimés gratuitement par Printify sur réclamation avec photos (délai ⚠️ à vérifier).
+Les défauts sont réimprimés gratuitement par Printify sur réclamation avec photos, dans les 30 jours
+après la livraison, sans retour du produit ([[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]]) :
+un produit défectueux n'entre donc pas dans le stock maison.
 
 ## Ce qu'il faut faire
-1. **Tableau du stock maison** (Google Sheet) : produit, design (`_design`, ex. `d01`), texte (`Texte`),
+1. ✅ **Tableau du stock maison** (Google Sheet) : produit, design (`_design`, ex. `d01`), texte (`Texte`),
    forme (variante bois), état, date d'entrée.
-2. **Printify ne reçoit rien sans accord** : soit l'app Printify en approbation manuelle des commandes,
-   soit le bot crée lui-même les commandes par l'API Printify (création puis envoi en production)
-   ⚠️ réglages et endpoints à vérifier dans la doc Printify.
+2. ✅ **Printify ne reçoit rien sans accord** : approbation manuelle des commandes activée dans l'app
+   Printify dès maintenant ; plus tard, le bot créera lui-même les commandes par l'API Printify
+   (création puis envoi en production) : `POST /shops/{shop_id}/orders.json` puis
+   `POST /shops/{shop_id}/orders/{order_id}/send_to_production.json` (spécification lue le 31/10,
+   copie api-evangelist ⚠️ à recouper sur developers.printify.com).
 3. **Bot** (petit service Python, webhook Shopify `orders/create`) :
    - correspondance trouvée → ne transmet pas à Printify, envoie un e-mail (commande, contenu exact,
      adresse du client), retire l'objet du tableau ;
@@ -45,3 +49,7 @@ Les défauts sont réimprimés gratuitement par Printify sur réclamation avec p
 
 ## État
 - 2026-10-30 : créée. À faire quand le volume de commandes le justifie (après le lien Printify).
+- 2026-10-30 : étape 1 faite (Google Sheet créé avec les six colonnes prévues). Étape 2 faite :
+  approbation manuelle activée dans Printify ; l'API Printify est retenue pour le bot (étape 3).
+- 2026-10-31 : délai de réclamation Printify connu (30 jours) ; endpoints de création et d'envoi en
+  production trouvés. « Printify Choice » décoché dans Order settings (routage désactivé). Étapes 3 à 5 restantes.

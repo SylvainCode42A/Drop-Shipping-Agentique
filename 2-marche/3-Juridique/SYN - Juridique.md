@@ -3,8 +3,8 @@ type: synthese
 title: SYN - Juridique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
-last-verified: 2026-10-29
+decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+last-verified: 2026-10-30
 tags: [dropshipping, juridique, synthese]
 ---
 # SYN - Juridique
@@ -48,6 +48,10 @@ Ce n'est pas un avis juridique ni fiscal : les points marqués « à valider » 
 - 14 jours pour toute vente à distance, remboursement sous 14 jours frais de livraison inclus. Délai prolongé de 12 mois si l'information manque (art. L221-18, L221-20) ([[RCH - Cadre juridique (22-10-2026)]]).
 - L'exception « nettement personnalisé » (art. L221-28 3°) s'applique si le client ajoute un prénom, un texte, une date ou une photo, dès la conclusion du contrat (CJUE Möbel Kraft). Elle ne s'applique pas à un design de catalogue, ni au choix d'une taille ou d'une couleur. Aucun arrêt ne tranche le cas exact du print-on-demand ([[RCH - Cadre juridique (22-10-2026)]], cohérent avec [[SYN - Modèle économique]]).
 - Les concurrents vont au-delà de la loi : Monsieur TShirt offre 100 jours de retour et des échanges gratuits, YourSurprise « refait gratuitement ». Cela fixe l'attente client, la garantie de conformité de 2 ans restant due même sur un produit personnalisé ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
+- Avec le texte facultatif, un de nos designs commandé sans texte reste un produit de catalogue et ouvre la rétractation ; avec un texte ou l'image de la cliente, plus de rétractation. Interprétation stricte de l'exception : des options courantes ne suffisent pas (Cass. civ. 1re, 17/01/2018, n° 17-10.255) ([[RCH - Retours, rétractation et abus (30-10-2026)]]).
+- Un retour remboursé, produit perdu, coûte ≈ 14,20 € (mug), 21,40 € (boule), 15,50 € (bois), estimé ; ≈ 0 € si le produit est revendu ([[RCH - Retours, rétractation et abus (30-10-2026)]]).
+- Le client ne paie les frais directs de renvoi que s'il en a été informé (art. L221-23) ; formulaire type modifié par le décret n° 2026-3, en vigueur le 19/06/2026 ([[RCH - Retours, rétractation et abus (30-10-2026)]]).
+- Commandes massives d'un concurrent : un professionnel n'a en principe pas de droit de rétractation ; désorganisation au sens de la concurrence déloyale (art. 1240 C. civ.) ; refus de vente autorisé pour une demande anormale (art. L121-11) ; protection principale : limite de quantité et relecture des commandes avant Printify ([[RCH - Retours, rétractation et abus (30-10-2026)]]).
 - Depuis le 19/06/2026, un bouton « Renoncer au contrat ici » avec accusé de réception est obligatoire. Sur Shopify, il faut une application ou un développement dédié ([[RCH - Cadre juridique (22-10-2026)]]).
 - Livraison sous 30 jours si aucune date n'est indiquée ([[RCH - Cadre juridique (22-10-2026)]]).
 
@@ -86,10 +90,13 @@ Dix garde-fous détaillés dans la recherche, à transformer en notes REGLE : so
 
 ## Ce qui est décidé
 - Validation humaine nominative de chaque design et fiche avant publication au lancement ; textes juridiques, remboursements et designs signalés PI toujours bloqués pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
-- Franchise de TVA et micro-entreprise au départ ; le cas d'un partenaire expédiant depuis un autre pays de l'UE est soumis à un expert-comptable avant janvier 2027 ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+- Franchise de TVA et micro-entreprise au départ ; le cas d'un partenaire expédiant depuis un autre pays de l'UE est soumis à un expert-comptable avant janvier 2027 ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 - Nano Banana Pro et Ideogram derrière une interface interne ([[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]). Les conditions commerciales relevées le 29/10 sont compatibles avec cette décision ; les points ouverts sont la propriété des sorties chez Google, la clause d'attribution Ideogram et la conservation des marqueurs IA.
 
+- Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain ([[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]).
+
 Décisions attendues :
+- produit renvoyé revendu en « seconde chance » ou jeté ;
 - la confirmation du schéma de TVA par l'expert-comptable ;
 - la politique de contenus interdits, base de la REGLE des agents ;
 - le dépôt ou non du nom de la boutique comme marque ;
@@ -112,4 +119,5 @@ Décisions attendues :
 ## Recherches
 - [[RCH - Cadre juridique (22-10-2026)]]
 - [[RCH - Images IA, modèles et plateformes (29-10-2026)]]
+- [[RCH - Retours, rétractation et abus (30-10-2026)]]
 - Points juridiques remontés par les études produit : [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]

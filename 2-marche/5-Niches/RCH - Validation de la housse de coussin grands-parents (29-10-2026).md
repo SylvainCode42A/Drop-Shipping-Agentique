@@ -4,7 +4,7 @@ title: RCH - Validation de la housse de coussin grands-parents (29-10-2026)
 status: validé
 date: 2026-10-29
 related: ["[[RCH - Coussin grands-parents (28-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[SYN - Fournisseurs]]", "[[NICHE - Grands-parents]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
+decisions: ["[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
 sources:
   - Catalogue Printify connecté (compte d'Antoine), API interne product-catalog-service et designer-api, éditeur 229/10, 29/10/2026
   - api.printful.com/products (catalogue public v1), 29/10/2026

@@ -5,7 +5,7 @@ status: validé
 date: 2026-10-29
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Système]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, decision]
 ---
@@ -16,7 +16,7 @@ Neuvième décision attendue par [[OVR - Drop shipping agentique]] (numérotée 
 prise en premier parce qu'elle ne dépend d'aucune vérification et conditionne le workflow du créateur).
 Le produit est une illustration fixe choisie dans un catalogue ; la cliente saisit de 1 à 8 prénoms
 de petits-enfants à la commande ; quelqu'un doit produire le fichier d'impression final et l'envoyer
-au fournisseur ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+au fournisseur ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
 Le marché attend un aperçu avant paiement, un rappel sur les accents et un texte lisible ; l'erreur de
 prénom est la première cause de mécontentement ([[SYN - Choix de la niche]]).
 Deux voies documentées ([[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]], [[SYN - Système]]) :
@@ -43,7 +43,7 @@ Flux retenu :
 4. Contrôle : vérifications déterministes, OCR du texte rendu, puis validation humaine de chaque fichier
    avant envoi au lancement, comme pour les designs ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
 5. Commande chez Printify par l'API, avec le PNG final dans la zone d'impression et le partenaire UE
-   figé ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+   figé ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 
 Aperçu client : pour Noël, un mockup statique et le rappel d'orthographe ; un aperçu rendu côté serveur
 (même gabarit, même police que le fichier final) est construit après Noël. Un aperçu JavaScript dans le

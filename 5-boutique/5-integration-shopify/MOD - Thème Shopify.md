@@ -2,86 +2,147 @@
 type: module
 title: MOD - Thème Shopify
 language: Liquid, JSON, CSS, JavaScript
-path: thème Shopify de 04qh0j-2k.myshopify.com (dérivé de Horizon) — source : Claude outputs/maquette-mesange-noel.html
+path: ~/Documents/nolaprint-theme — thème 209933369689 (publié) de 04qh0j-2k.myshopify.com, dérivé de Horizon
 status: draft
-related: ["[[OVR - Boutique NolaPrint]]", "[[FLOW - Déployer la maquette dans Shopify]]", "[[MOD - Panier et commande]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+related: ["[[OVR - Boutique NolaPrint]]", "[[FLOW - Déployer la maquette dans Shopify]]", "[[FLOW - Importer les produits par CSV]]", "[[MOD - Panier et commande]]", "[[MOD - Cookies et consentement]]"]
+decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
+last-verified: 2026-10-30
 tags: [dropshipping, boutique, shopify, module]
 ---
 # MOD - Thème Shopify
 
 ## Rôle
-Affiche la maquette NolaPrint comme page d'accueil de la boutique Shopify, au pixel près, sans passer
-par l'habillage Horizon. Rendu validé visuellement le 29/10/2026 (ordinateur et téléphone).
-Rien n'est achetable : le panier, la commande et les cookies restent ceux de la maquette.
+Le thème NolaPrint de la boutique, refondu le 30/10/2026 pour l'offre de la décision 01 :
+3 objets (mug, boule de Noël en verre, décoration en bois), 10 designs où la cliente remplace
+« Votre prénom », un mode « Ma création » avec envoi d'image, et l'aperçu en direct sur la photo
+de l'objet. Les produits sont de vrais produits Shopify (importés par CSV, voir
+[[FLOW - Importer les produits par CSV]]) : l'ajout au panier passe par le formulaire produit Shopify.
 
 ## Intention
-Une étape de vitrine avant le thème reconstruit prévu par [[07 - La maquette est le cahier des charges du thème Shopify]] :
-voir la boutique en vrai sur Shopify, sur un domaine Shopify, sans produit ni paiement.
-Le moyen : un **layout alternatif**. `templates/index.json` désigne `layout: mesange` au lieu de
-`theme.liquid`, donc la page d'accueil ne charge ni l'en-tête, ni le pied, ni les styles de Horizon.
-Les autres adresses (`/cart`, `/products/…`, `/pages/…`) gardent le design Horizon.
+- **Une seule liste de designs** (`np-designs.liquid`) sert l'accueil, la fiche produit et le JSON lu
+  par `np.js` : ajouter un design = une ligne par tableau + ses images.
+- **Le thème reconnaît un objet par son tag** (`np-mug`, `np-verre`, `np-bois`), pas par son handle :
+  un produit sans ces tags reçoit une fiche simple.
+- **Ce que la cliente voit est ce qui part à l'impression** : texte posé dans la zone imprimable mesurée
+  sur chaque photo, image cadrée dans la même zone, case « j'ai vérifié l'aperçu » obligatoire.
+- L'ancienne vitrine (layout `mesange` + `mesange.js`, 11 produits en dur) est sauvegardée dans
+  `_sauvegarde-avant-refonte-2026-10-30.zip` à la racine du thème.
 
 ## Diagramme
 ```mermaid
 flowchart TD
-    V[Visiteur : /] --> IDX["templates/index.json<br/>layout: mesange"]
-    IDX --> LAY["layout/mesange.liquid"]
-    LAY -->|"stylesheet_tag l.10"| CSS["assets/mesange.css"]
-    LAY -->|"content_for_layout l.14"| SEC["sections/mesange.liquid<br/>coquille HTML"]
-    LAY -->|"script defer l.15"| JS["assets/mesange.js"]
-    JS -->|"route() l.660"| APP["#app : pages rendues par ancre"]
-    JS -.->|"store l.8"| LS[("localStorage : mc_cart, mc_consent")]
+    P[Produit Shopify<br/>tag np-mug / np-verre / np-bois] --> T["np-type.liquid<br/>→ mug | verre | bois"]
+    T --> PDP["sections/np-main-product.liquid"]
+    D["np-designs.liquid<br/>10 designs"] -->|swatches l.80| PDP
+    D -->|json l.169| JSON[["script data-np-data"]]
+    S["np-bois-shapes.liquid<br/>6 formes"] -->|json l.169, bois seul| JSON
+    JSON --> JS["assets/np.js · initPdp() l.108"]
+    JS -->|mode design| OV["SVG np-name-overlay<br/>texte sur la photo"]
+    JS -->|mode libre| CV["canvas : image + texte<br/>composePrint() l.163"]
+    JS -->|changement de forme| AS["applyShape() l.274<br/>photo, texte, vignettes"]
+    PDP -->|form 'product'| CART[/cart/add : properties/]
 ```
 
-## Les 5 fichiers
-| Fichier | Lignes | Contenu | Origine dans la maquette |
-|---|---|---|---|
-| `layout/mesange.liquid` | 17 | `<head>`, polices Google, `content_for_header`, `content_for_layout`, appel du JS | l.1-10, réécrit en Liquid |
-| `sections/mesange.liquid` | 114 | bandeau, en-tête, `<main id="app">`, pied, tiroir panier, bannière cookies, puce maquette, `{% schema %}` | l.490-599 |
-| `templates/index.json` | 5 | `layout: mesange`, une section `main` de type `mesange` | — (remplace l'index Horizon) |
-| `assets/mesange.css` | 475 | tous les styles | l.12-486 |
-| `assets/mesange.js` | 752 | données, illustrations, pages, routeur, cookies, flocons | l.601-1352 |
+## Les objets
+| Objet | Tag | Handle | Variantes | Imprimeur (GPSR) |
+|---|---|---|---|---|
+| Mug | `np-mug` | `mug-personnalise` | aucune | Textildruck Europa, Allemagne |
+| Boule de Noël en verre | `np-verre` | `boule-de-noel-verre-personnalisee` | aucune | Chill, Pays-Bas |
+| Décoration en bois | `np-bois` | `decoration-bois-personnalisee` | option « Forme » : Cœur, Sapin, Étoile, Cloche, Chaussette de Noël, Ovale | WOYC, Italie |
 
+## Les 10 designs
+| Id | Nom | Pour | Texte à remplacer | Police |
+|---|---|---|---|---|
+| d01 | Maman d'amour | Maman | Votre prénom | Dancing Script |
+| d02 | Super Papa | Papa | Votre prénom | Fredoka |
+| d03 | Mamie chérie | Mamie | Votre prénom | Playfair |
+| d04 | Le meilleur Papy | Papy | Votre prénom | Playfair |
+| d05 | Toi & moi | Couple | Vos prénoms | Dancing Script |
+| d06 | Notre famille | Famille | Vos prénoms | Caveat |
+| d07 | Joyeux Noël | Noël | Votre prénom | Dancing Script |
+| d08 | Mon premier Noël | Bébé et parents | Votre prénom | Playfair |
+| d09 | Meilleures amies | Amies | Vos prénoms | Caveat |
+| d10 | Frères & sœurs | Frères et sœurs | Vos prénoms | Fredoka |
+
+Images par design et par objet, dans `assets/` : `np-<objet>-<id>-s.jpg` (carte de l'accueil, avec
+« Votre prénom »), `-t.jpg` (vignette), `-nu.jpg` (fiche, sans texte), plus `np-<objet>-vierge*.jpg`
+pour « Ma création ». Bois : `np-bois-<forme>-<id>-nu|t.jpg` par forme (le cœur utilise `np-bois-<id>-*`).
+
+## Fiche produit : deux modes
+1. **Un de nos designs** : vignettes des 10 designs, champ « Votre texte » (24 caractères par défaut,
+   réglage `text_max`) qui remplace « Votre prénom » sur la photo. Propriétés envoyées au panier :
+   `Personnalisation = Design NolaPrint`, `Design`, `_design` (id), `Texte`.
+2. **Ma création** : image JPG ou PNG, 15 Mo au plus. Le code contrôle la définition (alerte sous 800 px,
+   « correcte » de 800 à 1499, « parfaite » à partir de 1500), puis on choisit le texte (facultatif), la
+   police (Classique, Manuscrite, Moderne, Ronde) et la couleur (Noir, Blanc, Rouge, Doré, Bleu marine).
+   Propriétés : `Personnalisation = Création libre`, `Votre image` (fichier), `Texte`, `Police`,
+   `Couleur du texte`, `_Droits sur l'image = oui` (case obligatoire).
+
+Commun aux deux : case `_Aperçu vérifié` obligatoire ; liens directs `?design=d03`, `?mode=libre`, `?texte=Léa`.
+
+## Les 6 formes en bois
+Chaque forme a sa photo (vierge et avec chaque design) et sa zone d'impression, mesurée sur les maquettes
+dans un repère de 1000 × 1000 (`np-bois-shapes.liquid` l.23-28). Au changement de forme, `applyShape()`
+change la photo, redessine le tracé du texte, déplace la zone d'impression de « Ma création », remplace
+les vignettes des designs et met à jour le prix et la mention « Forme : … ».
+
+| Forme | Texte (x, y) | Échelle | Zone d'impression (cx, cy, taille) |
+|---|---|---|---|
+| Cœur | 495, 673.5 | 0.3946 | 495, 541.2, 473.6 |
+| Sapin | 495, 766.6 | 0.3363 | 495, 653.9, 403.6 |
+| Étoile | 498, 683.3 | 0.3729 | 498, 558.4, 447.5 |
+| Cloche | 500, 767.7 | 0.3756 | 500, 641.9, 450.7 |
+| Chaussette | 591.5, 701.4 | 0.2949 | 591.5, 602.6, 353.9 |
+| Ovale | 493, 674.3 | 0.4874 | 493, 511.1, 584.9 |
+
+La clé de forme est déduite du nom de variante (`np-main-product.liquid` l.131) : minuscules, sans
+accent, premier mot (« Chaussette de Noël » → `chaussette`).
+
+## Symboles
 | Symbole | Rôle | Appelé par | Appelle |
 |---|---|---|---|
-| `content_for_header` (layout l.11) | scripts Shopify obligatoires (analytics, barre d'aperçu) | Shopify | — |
-| `content_for_layout` (layout l.14) | insère la section `mesange` | Shopify | `sections/mesange.liquid` |
-| `{% schema %}` (section l.112) | déclare la section « Mésange maquette » | `index.json` | — |
-| `store` (JS l.8) | lecture et écriture `localStorage` | panier, cookies | — |
-| `ART` (JS l.55) | illustrations SVG des produits | `card`, fiche produit, panier | — |
-| `PRODUCTS` (JS l.159) | catalogue en dur, 11 produits | toutes les pages | — |
-| `renderCart` (JS l.233) | tiroir panier | ajout, `+`/`−` | `store` |
-| `renderHome` (JS l.307) | page d'accueil | `route` | `card`, `ART` |
-| `route` (JS l.660) | routeur par ancre | `hashchange`, démarrage l.726 | pages, `bindPage` |
-| `bindPage` (JS l.675) | filtres, démo, formulaires | `route` | — |
-| `@media (max-width: 460px)` (CSS l.111) | bandeau de réassurance en 2 colonnes sur téléphone | — | — |
+| `np-type.liquid` l.7-13 | tag → `mug`, `verre`, `bois` | fiche produit l.5, `np-product-card` l.8 | — |
+| `np-designs.liquid` l.13-20 | les 10 designs (ids, noms, cibles, polices, couleurs, tailles) | accueil, fiche | — |
+| `np-designs.liquid` mode `gallery` l.23 | cartes de l'accueil | `np-galerie` l.54 | — |
+| `np-designs.liquid` mode `swatches` l.36 | vignettes de la fiche | fiche l.80 | — |
+| `np-designs.liquid` mode `json` l.47 | données pour `np.js` | fiche l.169 | — |
+| `np-bois-shapes.liquid` l.7-44 | 6 formes : photos, vignettes, zones | fiche l.169 | — |
+| `np-name-overlay.liquid` l.13-56 | SVG du texte (courbé sur le mug, droit sur boule et bois) | fiche l.39 | — |
+| `np-shape-icon.liquid` | silhouette de chaque forme | fiche l.133 | — |
+| `np-main-product.liquid` l.66-75 | onglets « Un de nos designs » / « Ma création » | — | — |
+| `np-main-product.liquid` l.91-124 | panneau « Ma création » | — | — |
+| `np-main-product.liquid` l.126-137 | choix de la forme (bois) | — | `np-shape-icon` |
+| `np-main-product.liquid` l.172 | les 3 handles pour « Sur nos autres objets » | — | `np-product-card` |
+| `GEO` (np.js l.101) | zones d'impression par objet | `initPdp` | — |
+| `initPdp` (np.js l.108) | aperçu en direct de la fiche | `init` l.320 | toutes les fonctions ci-dessous |
+| `drawDesignText` (np.js l.146) | texte sur le design | saisie, `selectDesign` | `setOverlay` |
+| `selectDesign` (np.js l.152) | change de design | vignettes, `?design=` | `drawDesignText` |
+| `composePrint` / `drawLibre` (np.js l.163 / l.205) | image + texte de « Ma création » | `setMode`, saisie | — |
+| `setMode` (np.js l.227) | bascule de mode, active / désactive les champs | onglets, `?mode=` | — |
+| `readFile` (np.js l.239) | contrôle de l'image : format, poids, définition | `change` du fichier | `drawLibre` |
+| `applyShape` (np.js l.274) | adapte l'aperçu à la forme choisie | radios de forme | `drawDesignText`, `drawLibre` |
+
+## Accueil
+`templates/index.json` : `np-hero` → `np-trust` → `np-modes` (les deux modes, « Créer le mien » →
+`?mode=libre`) → `np-galerie` (les 10 designs × 3 objets, filtre par destinataire, carte « Création
+libre ») → `np-catalogue` → `np-demo` → `np-faq`.
 
 ## Entrées et sorties
-- Entrée : une visite sur `/`. Aucune donnée Shopify lue (ni produit, ni panier, ni client).
-- Sortie : la maquette rendue. Le panier et le choix de cookies restent dans le navigateur.
+- Entrée : un produit tagué `np-*` et son variant ; les paramètres d'URL `design`, `mode`, `texte`.
+- Sortie : une ligne de panier Shopify avec les propriétés ci-dessus. L'image envoyée est un fichier
+  joint à la ligne de commande ; la fusion design + prénom pour Printify est faite côté serveur
+  ([[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]).
 
 ## Cas limites
-- Fichiers JS et CSS en `assets/*.js` et `*.css`, pas en `.liquid` : Shopify n'interprète pas leur contenu.
-  La maquette ne contient ni `{{` ni `{%`, donc la section se colle sans échappement.
-- Avertissements Theme Check sur les polices Google (layout l.7-9) : recommandation de performance, non bloquante.
-- Boutique protégée par mot de passe : le visiteur voit d'abord `password.liquid` de Horizon.
-- Un clic sur un lien Shopify natif (`/cart`) ferait apparaître Horizon ; la maquette n'en contient aucun.
-- Bannière cookies maison seulement : non conforme tant que l'API Customer Privacy n'est pas branchée ([[MOD - Cookies et consentement]]).
-
-## Écart avec la maquette
-- CSS l.111 : `1fr` → `repeat(2, minmax(0,1fr))`, modifié dans le thème le 29/10/2026.
-  ⚠️ à reporter dans la maquette (règle de [[07 - La maquette est le cahier des charges du thème Shopify]] : la maquette d'abord).
-- ⚠️ à vérifier : la maquette déployée est `maquette-mesange-noel.html` (avec aperçu en direct), alors que
-  [[OVR - Boutique NolaPrint]] cite `nolaprint-sans-apercu-en-direct.html`.
-
-## Pour rendre la boutique achetable
-1. Créer les produits dans l'admin et ajouter leur `variant` à `PRODUCTS`.
-2. À l'ajout au panier, appeler `/cart/add.js` avec les prénoms en `properties`.
-3. « Passer commande » → `/checkout` ; retirer la commande simulée.
-4. Remplacer la bannière cookies par celle de Shopify.
-Ces étapes sont la transition vers le thème reconstruit de la décision 07, pas une fin en soi.
+- Produit sans tag `np-*` : fiche simple (photo, variantes, ajout au panier), sans designs.
+- Variante de bois dont le premier mot ne correspond à aucune clé de `np-bois-shapes` : l'aperçu garde
+  la forme précédente.
+- `index.json` désigne encore `layout: mesange`, mais `layout/mesange.liquid` est identique à
+  `theme.liquid` (vérifié le 30/10) : pas d'effet visible. ⚠️ à vérifier : repasser `index.json` sur `theme`, puis supprimer `mesange.liquid` et `mesange.css`.
+- Prix dans Shopify : 24,90 / 27,90 / 19,90 € (import du 30/10), pas encore ceux de la décision 09
+  (17,90 / 19,90 / 17,90 €). ⚠️ à vérifier
+- Couleurs du rendu indicatives (mention sous l'aperçu).
+- Avertissements Theme Check sur les polices Google (`theme.liquid` l.5-7) : non bloquants.
 
 ## Notes liées
-[[OVR - Boutique NolaPrint]] · [[FLOW - Déployer la maquette dans Shopify]] · [[MOD - Panier et commande]] · [[RCH - API Shopify pour la boutique agentique (22-10-2026)]]
+[[OVR - Boutique NolaPrint]] · [[FLOW - Déployer la maquette dans Shopify]] · [[FLOW - Importer les produits par CSV]] · [[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]

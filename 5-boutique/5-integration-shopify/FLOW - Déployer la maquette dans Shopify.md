@@ -2,52 +2,60 @@
 type: flow
 title: FLOW - Déployer la maquette dans Shopify
 status: draft
-related: ["[[MOD - Thème Shopify]]", "[[OVR - Boutique NolaPrint]]"]
+related: ["[[MOD - Thème Shopify]]", "[[FLOW - Importer les produits par CSV]]", "[[OVR - Boutique NolaPrint]]"]
 decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+last-verified: 2026-10-30
 tags: [dropshipping, boutique, shopify, flow]
 ---
 # FLOW - Déployer la maquette dans Shopify
 
 ## Rôle
-Les étapes pour passer du fichier HTML de la maquette à la page d'accueil Shopify, et pour redéployer après une modification.
+Envoyer le thème local `~/Documents/nolaprint-theme` sur la boutique avec Shopify CLI, en une commande.
+Depuis la refonte du 30/10/2026, cette commande remplace le copier-coller dans l'éditeur de code
+(ancienne méthode : la sauvegarde `_sauvegarde-avant-refonte-2026-10-30.zip`).
 
 ## Intention
-Rejouable sans réfléchir : chaque mise à jour de la maquette repasse par ces étapes.
+Le thème est modifié en fichiers sur le Mac, puis poussé tel quel : rien n'est retapé dans l'admin.
+Rejouable à chaque modification.
 
 ## Diagramme
 ```mermaid
 flowchart LR
-    A[maquette .html] -->|1. découper| B[5 fichiers]
-    B -->|2. dupliquer le thème| C[thème copie]
-    C -->|3. créer et coller| D[fichiers dans l'éditeur]
-    D -->|4. enregistrer dans l'ordre| E[aperçu]
-    E -->|5. vérifier| F{OK ?}
-    F -->|oui| G[6. publier]
-    F -->|non| D
+    A[fichiers modifiés<br/>~/Documents/nolaprint-theme] -->|1. sauvegarde| B[zip daté]
+    B -->|2. push| C{erreur Liquid ?}
+    C -->|oui| A
+    C -->|non| D[thème 209933369689<br/>publié]
+    D -->|3. vérifier| E{OK ?}
+    E -->|non| A
 ```
 
 ## Étapes
-1. **Découper la maquette** (Claude) : `<style>` → `mesange.css`, `<script>` → `mesange.js`,
-   le corps sans le script → `sections/mesange.liquid` + `{% schema %}`. Le layout et `index.json` sont fixes.
-2. **Dupliquer le thème** (Mateo) : Boutique en ligne → Thèmes → ⋯ → Dupliquer, puis « Modifier le code » sur la copie.
-3. **Créer les fichiers** (Mateo) : clic droit sur le dossier → New file, coller le contenu.
-   `templates/index.json` existe déjà : tout effacer (y compris le commentaire `/* … */` de Horizon), puis coller.
-4. **Enregistrer dans l'ordre** (Mateo) : `mesange.css` → `mesange.js` → section → layout → `index.json` en dernier,
-   parce que `index.json` référence la section et le layout. Un onglet barré = fichier pas encore enregistré.
-5. **Vérifier** (Mateo) : Thèmes → ⋯ → Aperçu, sur ordinateur et téléphone.
-6. **Publier** (Mateo) : bouton Publier sur la copie.
-
-Pour une mise à jour : modifier la maquette, puis refaire l'étape 1 et recoller seulement les fichiers changés (souvent CSS ou JS).
+1. **Sauvegarder**  : avant une grosse modification, zipper les fichiers touchés à la racine,
+   avec la date dans le nom (`_sauvegarde-avant-<sujet>-AAAA-MM-JJ.zip`). Le dossier n'est pas un dépôt git.
+2. **Pousser** (Mateo) :
+   ```
+   cd ~/Documents/nolaprint-theme
+   shopify theme push --store 04qh0j-2k.myshopify.com --theme 209933369689 --allow-live
+   ```
+   `--allow-live` est obligatoire parce que le thème 209933369689 est le thème publié.
+3. **Vérifier** (Mateo) : l'accueil, puis une fiche de chaque objet, sur ordinateur et sur téléphone.
+   Sur le bois, changer de forme et contrôler que l'aperçu suit.
 
 ## Entrées et sorties
-- Entrée : `Claude outputs/maquette-mesange-noel.html`.
-- Sortie : la page d'accueil Shopify affiche la maquette.
+- Entrée : les dossiers de thème (`assets`, `blocks`, `config`, `layout`, `locales`, `sections`,
+  `snippets`, `templates`).
+- Sortie : le thème publié de 04qh0j-2k.myshopify.com mis à jour.
+- Hors thème, à la racine et non envoyés : `_imports-shopify/` (CSV), les `_sauvegarde-*.zip`,
+  `Claude outputs/`, `AGENTS.md`. ⚠️ à vérifier : aucun `.shopifyignore` ne le garantit.
 
 ## Cas limites
-- Code collé deux fois dans `index.json` : JSON invalide, l'éditeur affiche des erreurs (vu le 29/10/2026).
-- Enregistrer `index.json` avant la section ou le layout : Shopify refuse, la section n'existe pas encore.
-- Le « 3 » jaune sur le layout = avertissements Theme Check (polices distantes), pas des erreurs.
+- **Erreur Liquid au push (30/10/2026)** : des accolades `{…}` oubliées dans une balise Liquid,
+  donc une balise mal fermée. Shopify refuse le fichier ; corriger, puis pousser à nouveau.
+- **Push direct sur le thème en ligne** : chaque push est vu tout de suite par les visiteurs. Pour
+  tester sans risque, pousser sur un thème non publié (sans `--allow-live`) et le prévisualiser.
+- Un CSV ou un autre fichier non reconnu dans `assets/` serait envoyé avec le thème : les CSV vont
+  dans `_imports-shopify/`.
+- Avertissements Theme Check sur les polices Google : non bloquants.
 
 ## Notes liées
-[[MOD - Thème Shopify]] · [[OVR - Boutique NolaPrint]]
+[[MOD - Thème Shopify]] · [[FLOW - Importer les produits par CSV]] · [[OVR - Boutique NolaPrint]]

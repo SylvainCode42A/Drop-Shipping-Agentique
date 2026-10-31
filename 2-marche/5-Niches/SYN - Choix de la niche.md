@@ -3,13 +3,13 @@ type: synthese
 title: SYN - Choix de la niche
 status: validé
 related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
-last-verified: 2026-10-29
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, niches, synthese]
 ---
 # SYN - Choix de la niche
 
-État des connaissances sur la niche de lancement, à partir des dix recherches du 25/10/2026 et des quatorze études produit des 28 et 29/10/2026.
+État des connaissances sur la niche de lancement, à partir des dix recherches du 25/10/2026, des quatorze études produit des 28 et 29/10/2026 et de l'audit des cibles adultes du 30/10/2026.
 Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : une décision cite cette note.
 
 ## Ce qu'on sait
@@ -21,6 +21,12 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Retraite : environ 718 000 départs en 2024, demande étalée sur l'année, achat urgent lié à la date du pot. Le segment « retraite + métier » est peu exploité ([[RCH - Départ en retraite, mugs et assiettes personnalisés (25-10-2026)]]).
 - Anniversaires d'âge : saturé par Amazon (Mugffins) et Etsy. Sous-angles libres : millésime élégant en français, assiette souvenir, ensembles assortis ([[RCH - Mugs et assiettes pour les anniversaires de 40, 50, 60 et 70 ans (25-10-2026)]], [[RCH - Mugs et assiettes pour les anniversaires de 40, 50, 60 et 70 ans, second rapport (25-10-2026)]]).
 - Passions : jardinage, chiens et chats, pêche en tête. Pétanque saturée et Obut protégé. Vin (loi Evin) et chasse (refus Meta) à reporter. Chaque visuel de passion demande un contrôle humain à cause des marques ([[RCH - Passions des plus de 40 ans pour mugs et assiettes personnalisés (25-10-2026)]]).
+
+### Les destinataires adultes
+- Chez Cadeau Plus et Monsieur TSHIRT, l'argent se fait sur papa, maman, mamie et papy, achetés par leurs enfants adultes ; le couple et la fratrie viennent ensuite, les amis, les animaux et les collègues loin derrière ([[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
+- Mugs Cadeau Plus classés par destinataire (3 744) : parents 41 %, grands-parents 18 %, animaux 18 %, travail 9 %, couple 9 %, amies 6 %, fratrie 4 %. Sur les 50 mugs les plus vendus, 37 visent les parents et grands-parents (papa ou maman 17, mamie ou papy 14). Tous produits confondus, les grands-parents restent en tête (21 à 25 sur 50) ([[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
+- Forme commune des meilleures ventes : une phrase qui nomme le lien (« La bande à », « Le meilleur », « Ensemble depuis »), les prénoms et des avatars ; 3 visuels sur 19 utilisent la photo du client ([[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
+- Occasions par nombre de produits chez Cadeau Plus : Noël 5 331, fête des grands-pères 4 649, fête des mères 3 464, Saint-Valentin 1 716, fête des pères 1 104. Les deux relevés du 30/10 donnent des chiffres différents ; l'écart est listé dans la RCH ([[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
 
 ### Ce que vend réellement le segment grands-parents
 - Sur tous les supports (mug, affiche, tote, coussin, sous-verres, tablier, torchon, plaid, bougie, planche), les designs qui se vendent en volume sont simples : texte « Mamie d'amour » ou « Mamie et ses petits cœurs », un cœur, une fleur ou un petit motif par petit-enfant, mains en trait fin. Sur Etsy, ils se vendent 6 à 20 € avec remise permanente ; sur les sites français, 11 à 40 € selon le support ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]], [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]).
@@ -55,18 +61,13 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Le puzzle n'a pas été étudié ⚠️.
 
 ### La concurrence
-<<<<<<< 2-marche/5-Niches/SYN - Choix de la niche.md
-- Quinze acteurs relevés. Faiblesses communes : retards en haute saison, erreurs de prénom, impression inégale, casse, service client, ton répétitif ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
-- Les leaders ont des milliers d'avis et expédient en 24 h (CadoMaestro, Cadeaux.com, Henriette and Co). Un nouvel entrant doit payer de la publicité dès le départ ([[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]).
-- La bibliothèque publicitaire Meta n'a pas pu être consultée ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
-- Sur le mug famille à prénoms : Cadeau Plus est le plus visible (environ 300 000 visites en septembre 2026 selon Semrush) et probablement en impression à la demande ; CadoMaestro a la meilleure qualité de service (2 % d'avis à 1 étoile) ; Monsieur TSHIRT vend un mug famille illustré à 26,91-29,90 €. Les petites boutiques du même concept (Koala Bleu, La Chouette Mauve) ont leur propre atelier ([[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]).
-=======
 - Quinze acteurs relevés le 25/10. Faiblesses communes : retards en haute saison, erreurs de prénom, impression inégale, casse, service client, ton répétitif ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
+- Les leaders ont des milliers d'avis et expédient en 24 h (CadoMaestro, Cadeaux.com, Henriette and Co). Un nouvel entrant doit payer de la publicité dès le départ ([[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]).
 - Trois acteurs reviennent dans toutes les études produit et fixent l'attente client. Monsieur TShirt (Bordeaux, 51 000 avis, livraison 24 h, retours 100 jours, même design décliné sur 18 supports ; Cadeaux.com partage sa ville et ses paliers de remise). Ourson Câlin (Aube, prix bas, « Family Portrait »). Henriette and Co (Ain, 5 000 avis Loox, port offert dès 55 €, sous-traitance POD probable via merchOne). S'y ajoutent Famille de Dingue (avatars, affiche dès 41 €), Cadeau Plus (avatars, Trustpilot 4,4 sur 5 456 avis) et une boutique Etsy bi-devise à 11 000 avis sur le line art ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
+- Sur le mug famille à prénoms : Cadeau Plus est le plus visible (environ 300 000 visites en septembre 2026 selon Semrush) et probablement en impression à la demande ; CadoMaestro a la meilleure qualité de service (2 % d'avis à 1 étoile) ; Monsieur TSHIRT vend un mug famille illustré à 26,91-29,90 €. Les petites boutiques du même concept (Koala Bleu, La Chouette Mauve) ont leur propre atelier ([[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]).
 - Faiblesses observées dans les avis : « inscriptions peu visibles » (Cadeaux.com, 19/10/2026), casse au transport, texte coupé ou trop compact, décalage entre mockup et produit, garniture de coussin absente, taille unique des tabliers ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
 - Monsieur TShirt ne cite aucun mug parmi ses best-sellers de la fête des grands-mères 2026 (vase gravé, t-shirt brodé, porte-clés) ([[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]).
 - La bibliothèque publicitaire Meta n'a pu être consultée dans aucune recherche ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
->>>>>>> /tmp/antoine.md
 
 ### Les risques transversaux
 - Juridique : pas de droit de rétractation pour un bien nettement personnalisé (art. L221-28), GPSR applicable, contact alimentaire, photos d'enfants soumises au RGPD, loi Evin pour le vin, droit de douane de 3 € par catégorie sur les produits hors UE depuis le 01/07/2026. Détail dans [[SYN - Juridique]].
@@ -90,22 +91,23 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Manque commun à toutes les recherches : aucun volume de recherche Google n'a pu être mesuré.
 
 ## Ce qui est décidé
-- Angle principal grands-parents (offre « famille illustrée » à 22-30 €), angle secondaire retraite par métier. Passions gardées en réserve, anniversaires d'âge écartés ([[01 - Grands-parents en principal, retraite par métier en secondaire]]).
-- Mug famille illustrée seul à 24,90 €, duo « Mamie et Papi » à 44,90 €, panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
+- Audience : parents et grands-parents en principal, couple en secondaire, amies et fratrie en test, animaux et travail reportés. Offre en deux modes : nos designs à phrase et prénoms, ou la page blanche avec l'image de la cliente ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]], d'après [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]] et [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]). Elle remplace l'angle du 25/10/2026 (grands-parents en principal, retraite par métier en secondaire).
+- Lancement avec le mug, la boule en verre et la décoration en bois (prix dans la décision 09), panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement. Aucune offre décidée ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
 - Premier test : Noël 2026 en manuel réduit, puis Fête des grands-mères 2027 avec le système ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]). Validation humaine : [[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]].
 
 Décisions attendues :
 - les produits d'élargissement après le mug, à partir du tableau comparatif, une fois le catalogue Printify UE vérifié ;
 - la politique de lots et de port (remises par paliers, seuil de port offert, duo) ;
-- le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes.
+- le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes ; précisé par la décision 01 : designs à phrase qui nomment le lien, déclinés par rôle.
 
 ## Questions ouvertes
 - Volumes de recherche et courbes Google Trends par angle et par produit (Keyword Planner, Google Trends France) : jamais obtenus.
 - Prix, délais et taux de casse réels d'un mug fabriqué en Europe chez Printify et Gelato, mesurés avec des échantillons.
 - Une illustration fixe convertit-elle à 24,90 € face aux avatars réglables au même prix ? Seul un test de vente répond.
-- Qui achète réellement un mug « Mamie » : parents, grands-parents, futurs parents. Demande « Papi » comparée à « Mamie ».
+- Qui achète réellement un mug « Mamie » : parents, grands-parents, futurs parents. Demande « Papi » comparée à « Mamie » (indice : mamie 2 352 produits contre papy 2 225 chez Cadeau Plus, [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
+- Collections Mamie et Chats de Cadeau Plus non lues dans le premier relevé, et écart entre les deux relevés du 30/10.
 - Nombre de publicités Meta actives par concurrent (bibliothèque publicitaire, relevé manuel).
-- Options de ciblage Meta réellement disponibles pour les grands-parents et les futurs retraités.
+- Options de ciblage Meta réellement disponibles pour les parents, les grands-parents et les couples.
 - Slogans et termes à vérifier à l'INPI et à l'EUIPO.
 - Premier pays de l'UE à ouvrir et déclinaisons (Oma, Nonna, Abuela, Bonne-maman) : rien de collecté hors France.
 - Sites non audités sur plusieurs produits : Famille de Dingue, Jusqu'à la lune, Ma Petite Fabrique, CadoMaestro, Cadeau Plus.
@@ -122,9 +124,7 @@ Décisions attendues :
 - [[RCH - Comportement d'achat des cadeaux personnalisés (25-10-2026)]]
 - [[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]
 - [[RCH - Calendrier des occasions de cadeaux en France et dans l'UE (25-10-2026)]]
-<<<<<<< 2-marche/5-Niches/SYN - Choix de la niche.md
-- [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]
-=======
 - [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]
 - [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] et les treize études produit qu'elle cite
->>>>>>> /tmp/antoine.md
+- [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]
+- [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]

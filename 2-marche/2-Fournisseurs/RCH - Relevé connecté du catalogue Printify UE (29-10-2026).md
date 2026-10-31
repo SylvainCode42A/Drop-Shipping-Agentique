@@ -2,7 +2,7 @@
 type: research
 title: RCH - Relevé connecté du catalogue Printify UE (29-10-2026)
 status: validé
-related: ["[[SYN - Fournisseurs]]", "[[RCH - Vérification Printify UE du mug et vue d'ensemble des produits (28-10-2026)]]", "[[RCH - Fournisseurs print-on-demand et API (25-10-2026)]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Fournisseurs]]", "[[RCH - Vérification Printify UE du mug et vue d'ensemble des produits (28-10-2026)]]", "[[RCH - Fournisseurs print-on-demand et API (25-10-2026)]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 date: 2026-10-29
 sources:

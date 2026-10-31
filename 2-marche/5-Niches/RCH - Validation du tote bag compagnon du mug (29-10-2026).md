@@ -3,7 +3,7 @@ type: research
 title: RCH - Validation du tote bag compagnon du mug (29-10-2026)
 status: validé
 related: ["[[RCH - Textile personnalisé grands-parents, tote bag en priorité (28-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
 date: 2026-10-29
 sources:
   - Catalogue et éditeur Printify connectés (compte d'Antoine), blueprint 731 chez Textildruck Europa (éditeur /app/editor/731/26) et blueprint 1930 chez Printful (éditeur /app/editor/1930/410), onglets « Provider info », 29/10/2026 après-midi

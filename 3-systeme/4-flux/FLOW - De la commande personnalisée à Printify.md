@@ -3,7 +3,7 @@ type: flow
 title: FLOW - De la commande personnalisée à Printify
 status: draft
 related: ["[[SYN - Système]]", "[[SYN - Fournisseurs]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[08 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale]]"]
+decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, flow]
 ---
@@ -72,5 +72,5 @@ Noël 2026 : les étapes 3 à 7 sont faites à la main dans Printify
   personnalisé exclu de la rétractation ([[SYN - Juridique]]).
 
 ## Notes liées
-[[08 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale]] ·
+[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]] ·
 [[SYN - Système]] · [[SYN - Fournisseurs]] · [[07 - La maquette est le cahier des charges du thème Shopify]]

@@ -43,7 +43,7 @@ sources:
   - "VATAI, droit de 3 € : https://www.vatai.com/blog/eu-3-euro-customs-duty-small-parcels-2026"
   - "EUverify, de minimis : https://euverify.com/resource/eu-de-minimis-e150-customs-exemption/"
   - "Nova Chrome UK, blancs sublimation : https://www.novachrome.co.uk/product-category/sublimation-blanks/home-office/sublimation-home/sublimation-coasters/"
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 last-verified: 2026-10-28
 tags: [dropshipping, niches, fournisseurs]

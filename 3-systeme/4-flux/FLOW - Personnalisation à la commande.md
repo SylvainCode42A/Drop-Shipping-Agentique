@@ -3,7 +3,7 @@ type: flow
 title: FLOW - Personnalisation à la commande
 status: validé
 related: ["[[SYN - Système]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]", "[[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]]", "[[FLOW - De la personnalisation à la commande]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, systeme, flow, personnalisation]
 ---
@@ -107,7 +107,7 @@ redimensionne pas d'un support à l'autre, il se recompose ([[SYN - Système]]).
 | N° | Qui agit | Ce qui se passe | Justification |
 |---|---|---|---|
 | 7 | Module de rendu | place les prénoms sur l'illustration en calques (fond, famille, zone réservée aux prénoms), avec la police testée sur les accents, à la taille et à la position du gabarit ; réduit la taille si un prénom dépasse la zone | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] |
-| 8 | Module de rendu | exporte un PNG sRGB à 300 DPI, à la taille de la zone d'impression de l'imprimeur retenu, et le stocke chez soi | [[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]], [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]] |
+| 8 | Module de rendu | exporte un PNG sRGB à 300 DPI, à la taille de la zone d'impression de l'imprimeur retenu, et le stocke chez soi | [[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]], [[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]] |
 
 La taille de la zone est une donnée de configuration par imprimeur. Pour le mug, les sources donnent
 2475 × 1155, 2480 × 1146, 2700 × 1120 ou 2625 × 1050 px ⚠️ ; seul le gabarit de l'imprimeur retenu fait foi
@@ -129,7 +129,7 @@ Printify impose de son côté une relecture humaine de tout contenu IA ([[SYN - 
 | N° | Qui agit | Ce qui se passe | Justification |
 |---|---|---|---|
 | 12 | Passerelle Printify | téléverse le PNG final par `POST /uploads/images.json`, par URL ou en base64, et garde l'identifiant d'image renvoyé | API Printify (developers.printify.com, lu le 29/10/2026) |
-| 13 | Passerelle Printify | crée une commande externe avec `blueprint_id`, `print_provider_id` du partenaire UE figé, `variant_id` et `print_areas` portant l'image, sans produit créé au préalable ; adresse de la cliente reprise de la commande Shopify ; `external_id` égal à l'identifiant de commande Shopify ; la commande est créée en statut on-hold, pas en production | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]], [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]], API Printify |
+| 13 | Passerelle Printify | crée une commande externe avec `blueprint_id`, `print_provider_id` du partenaire UE figé, `variant_id` et `print_areas` portant l'image, sans produit créé au préalable ; adresse de la cliente reprise de la commande Shopify ; `external_id` égal à l'identifiant de commande Shopify ; la commande est créée en statut on-hold, pas en production | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]], [[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]], API Printify |
 | 13 bis | Passerelle Printify | appelle `send_to_production` sur la commande ; sans cet appel, rien ne part chez l'imprimeur, à condition que le réglage d'approbation de la boutique Printify soit Manual | API Printify ; aide Printify, réglages d'approbation (lu le 29/10/2026) |
 | 14 | Système | inscrit l'identifiant Printify, la date de création et la date de passage en production au journal | [[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]] |
 
@@ -147,7 +147,7 @@ même sans `send_to_production` (source communautaire ⚠️ à confirmer le 5 n
 donc le réglage Manual.
 
 Le partenaire figé et son pays d'expédition sont une donnée de configuration ; un agent ne peut pas
-en changer ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+en changer ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 La passerelle a une file d'attente par endpoint et respecte 600 requêtes par minute ([[SYN - Fournisseurs]]).
 Le produit Shopify n'est pas relié à Printify en synchronisation automatique ; seul le script commande
 ([[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]).
@@ -156,7 +156,7 @@ Le produit Shopify n'est pas relié à Printify en synchronisation automatique ;
 ([[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]).
 - Ce qui change : la passerelle fournisseur (étapes 12 à 14, et le passage en production propre à Printify), la configuration de la zone d'impression,
   l'atelier (Lettonie ou Espagne) et le port, chaque mug étant facturé comme un premier article
-  ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]], [[SYN - Fournisseurs]]).
+  ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]], [[SYN - Fournisseurs]]).
 - Ce qui ne change pas : la fiche produit, les propriétés de ligne, les gabarits, le rendu, le contrôle,
   la validation humaine et le journal (étapes 1 à 11).
 - Une application tierce n'est pas le repli ([[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]).
@@ -206,7 +206,7 @@ un remboursement, une réimpression ni un geste commercial
   Le remboursement lui-même est une action toujours bloquée pour un agent ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
 - **Deux articles personnalisés dans une commande** (duo). Le flux tourne par ligne : un PNG, une
   validation et une ligne Printify par article, sous le même identifiant de commande
-  ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+  ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
 
 ## Version manuelle pour Noël 2026
 Noël 2026 est un test manuel réduit, 8 à 12 mugs en ligne avant le 15/11/2026

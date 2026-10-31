@@ -6,7 +6,7 @@ path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 symbol: renderCart, renderCheckout, coShipping, coPayment, coDone
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[CMP - Panier]]", "[[MOD - Catalogue et fiche produit]]", "[[FLOW - De la personnalisation à la commande]]", "[[SYN - Juridique]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, boutique, module]
 ---
@@ -18,10 +18,10 @@ Le tiroir panier (ouvert depuis l'en-tête ou après un ajout) et la commande en
 
 ## Intention
 - **Monter le panier vers 45 €.** La barre « Plus que X € pour la livraison offerte » pousse vers le
-  seuil de 49 €, et le Duo à 44,90 € en approche ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+  seuil de 49 €, et le Duo à 44,90 € en approche ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
 - **Conformité au moment de payer** : bouton « Commander avec obligation de paiement », acceptation des
   CGV, rappel de l'exclusion de rétractation, mention TVA non applicable art. 293 B ([[SYN - Juridique]],
-  [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+  [[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 - **Deuxième contrôle de l'orthographe** avant de payer : une case de plus, sur tous les prénoms de la commande.
 - **Montrer les délais après le paiement**, et non avant : ils ont été retirés de la page d'accueil à ta demande.
 - **Aucune vraie carte** : la carte de test 4242 est en lecture seule.

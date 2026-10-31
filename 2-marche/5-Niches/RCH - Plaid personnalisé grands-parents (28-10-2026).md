@@ -2,7 +2,7 @@
 type: research
 title: RCH - Plaid personnalisé grands-parents (28-10-2026)
 status: validé
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 date: 2026-10-28
 sources:

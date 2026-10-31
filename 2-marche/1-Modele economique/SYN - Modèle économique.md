@@ -3,14 +3,14 @@ type: synthese
 title: SYN - Modèle économique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]"]
-last-verified: 2026-10-25
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+last-verified: 2026-10-30
 tags: [dropshipping, modele-economique, synthese]
 ---
 # SYN - Modèle économique
 
 État des connaissances sur l'économie d'une boutique d'impression à la demande en France et dans l'UE.
-Une seule recherche à ce jour. Chaque point renvoie à sa source. Rien n'est décidé ici.
+Trois recherches : 22/10, 28/10 et 30/10/2026. Chaque point renvoie à sa source. Rien n'est décidé ici.
 
 ## Ce qu'on sait
 
@@ -25,6 +25,18 @@ Une seule recherche à ce jour. Chaque point renvoie à sa source. Rien n'est d�
 - Le CPM de novembre peut doubler par rapport à septembre ([[RCH - Modèle économique du print-on-demand (22-10-2026)]]).
 - Seuil de rentabilité publicitaire estimé : un panier de 50 à 60 € avec un coût d'achat bas. Deux t-shirts à 59,80 € donnent +8,45 € avec un CPA de 12 €, et −7,55 € avec un CPA de 28 € ([[RCH - Modèle économique du print-on-demand (22-10-2026)]]).
 - Panier moyen d'une boutique POD sans vente groupée : 30 à 45 € (estimé). Aucun benchmark public ne porte sur les produits personnalisés en France ([[RCH - Modèle économique du print-on-demand (22-10-2026)]]).
+
+### Le prix de vente et le coût de la pub
+- Sur une commande à 40 € en franchise de TVA, avec un produit livré à 15 € (estimé), il reste 18,88 € pour payer la pub et la marge, après frais de paiement (≈ 3 %) et cotisations sociales (12,3 %). Point mort à un ROAS de x2,1, soit 18,90 € de pub par vente ([[RCH - Marge et prix de vente (28-10-2026)]]).
+- Règle de prudence : vendre au moins 3 fois le coût livré (produit + livraison) ; 2 fois laisse trop peu pour la pub, sauf produit d'appel en lot ou client qui revient sans pub ([[RCH - Marge et prix de vente (28-10-2026)]]).
+- Leviers : baisser le coût de la pub par vente, augmenter le panier (la pub est payée une fois par commande), faire revenir les clients, réduire le coût produit ([[RCH - Marge et prix de vente (28-10-2026)]]).
+
+### Les prix du marché et nos coûts
+- Cadeau Plus vend le mug 18,45 € (barré 30,95 €), la boule en verre 19,95 € (barré 29,95 €) et l'ornement en bois 12,95 € (barré 22,95 €) ; livraison 4,95 €, offerte dès 70 € ; prix barrés permanents (mesuré le 30/10, [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
+- Coûts livrés chez Printify, TVA non récupérable comprise : mug ≈ 13,60 €, boule en verre ≈ 20,80 € (port 11,82 €), bois ≈ 14,90 €, 2e mug dans le même colis ≈ 8,30 € ; port du mug ⚠️ à vérifier ([[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
+- Aux prix alignés sur Cadeau Plus, avec la livraison de 4,90 € payée par le client et 12,3 % de cotisations : mug ≈ 5,80 €, boule ≈ 0,30 €, bois ≈ 0,20 € (≈ 4,50 € au prix retenu de 17,90 €), Duo de mugs ≈ 10,40 €, mug + boule ≈ −0,35 €, 2 mugs + bois ≈ 4,15 €, avant publicité (estimé, [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
+- Prix barrés : le prix de référence d'une réduction est le prix le plus bas pratiqué dans les 30 jours précédents (art. L112-1-1, directive Omnibus) ; un prix barré jamais pratiqué peut être une pratique commerciale trompeuse ⚠️ à faire relire ([[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
+- Lots et livraison offerte chez les concurrents : aucun lot chez Cadeau Plus ; livraison offerte dès 70 € (Cadeau Plus), 59 € (CadoMaestro), 39 € (Koala Bleu) ; -30 % dès 5 mugs (Monsieur TSHIRT) ; aucun lot mug + décoration observé ([[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
 
 ### Les retours et la responsabilité
 - Le fournisseur paie seulement ses erreurs (défaut d'impression, produit abîmé, mauvais article), signalées sous 30 jours avec photo. Le vendeur paie tout le reste : changement d'avis, mauvaise adresse, rétractation ([[RCH - Modèle économique du print-on-demand (22-10-2026)]]).
@@ -51,12 +63,17 @@ Une seule recherche à ce jour. Chaque point renvoie à sa source. Rien n'est d�
 - CPM Meta France : 3,40 € (Talyco, une agence) à environ 9 € (Le Décodeur Marketing).
 - CPM TikTok : 4,08 $ ou 13,26 $ selon deux publications Triple Whale.
 - Prix Printful du t-shirt et du mug selon les sites tiers ; mug entre 5,95 et 6,50 $.
+- Frais de paiement : ≈ 3 % (28/10) contre 1,5 % + 0,25 € (22/10 et 30/10).
+- Cotisations sociales de 12,3 % : comptées le 28/10 et le 30/10, absentes des marges calculées au départ pour la décision 09 et les offres étudiées.
+- Règle des 3 fois le coût livré (28/10) contre les prix alignés du 30/10 : 1,3 fois pour le mug, sous le coût livré pour la boule (hors livraison payée par le client) ; 1,2 fois pour le bois à 17,90 €.
 
 ## Ce qui est décidé
-- Mug famille illustrée seul à 24,90 € TTC, duo à 44,90 €, panier cible 45 €, CPA maximum 20 € pour tout agent publicitaire, révisable après le premier test ([[02 - Mug famille illustrée à 24,90 €, duo à 44,90 €, panier cible 45 €]]).
+- Lancement avec le mug, la boule en verre et la décoration en bois ; panier cible 45 €, CPA maximum 20 € pour tout agent publicitaire, révisable après le premier test ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]). Prix dans la décision 09.
+- Franchise de TVA au départ ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
+- Prix alignés sur Cadeau Plus : mug 17,90 €, boule en verre 19,90 €, bois 17,90 € (au-dessus de Cadeau Plus, 12,95 €) ; livraison 4,90 €, offerte dès 60 € ; aucun faux prix barré ([[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
 
 Décisions attendues :
-- le statut fiscal de départ (franchise de TVA ou non) ;
+- les offres (lots, remises, prix) : aucune n'est décidée ; les offres étudiées sont dans [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]] (partie 6) et [[RCH - Sélection du catalogue de lancement (30-10-2026)]] ;
 - le plafond de dépense imposé à tout agent publicitaire ;
 - la politique de retour, rédigée pour la France.
 
@@ -71,3 +88,5 @@ Décisions attendues :
 
 ## Recherches
 - [[RCH - Modèle économique du print-on-demand (22-10-2026)]]
+- [[RCH - Marge et prix de vente (28-10-2026)]]
+- [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]
