@@ -4,7 +4,7 @@ title: RCH - Gobelet isotherme grands-parents (28-10-2026)
 status: validé
 date: 2026-10-28
 related: ["[[SYN - Choix de la niche]]", "[[RCH - Mugs et assiettes personnalisés pour grands-parents (25-10-2026)]]", "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
 sources:
   - Etsy FR et US, pages marché et listings, 28/10/2026
   - Cadeaux.com via Cherchons.com, 28/10/2026

@@ -3,7 +3,7 @@ type: research
 title: RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)
 status: validé
 date: 2026-10-29
-related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[NICHE - Grands-parents]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[NICHE - Grands-parents]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 sources:
   - Catalogue Printify connecté (compte d'Antoine), filtre « Europe », catégorie Ornaments et API interne product-catalog-service (blueprints, print-providers, shipping, size-guide), éditeur, 29/10/2026

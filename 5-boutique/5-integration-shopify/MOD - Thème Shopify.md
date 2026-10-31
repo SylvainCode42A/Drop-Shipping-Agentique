@@ -5,14 +5,14 @@ language: Liquid, JSON, CSS, JavaScript
 path: ~/Documents/nolaprint-theme — thème 209933369689 (publié) de 04qh0j-2k.myshopify.com, dérivé de Horizon
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[FLOW - Déployer la maquette dans Shopify]]", "[[FLOW - Importer les produits par CSV]]", "[[MOD - Panier et commande]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
+decisions: ["[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, boutique, shopify, module]
 ---
 # MOD - Thème Shopify
 
 ## Rôle
-Le thème NolaPrint de la boutique, refondu le 30/10/2026 pour l'offre de la décision 11 :
+Le thème NolaPrint de la boutique, refondu le 30/10/2026 pour l'offre de la décision 01 :
 3 objets (mug, boule de Noël en verre, décoration en bois), 10 designs où la cliente remplace
 « Votre prénom », un mode « Ma création » avec envoi d'image, et l'aperçu en direct sur la photo
 de l'objet. Les produits sont de vrais produits Shopify (importés par CSV, voir
@@ -131,7 +131,7 @@ libre ») → `np-catalogue` → `np-demo` → `np-faq`.
 - Entrée : un produit tagué `np-*` et son variant ; les paramètres d'URL `design`, `mode`, `texte`.
 - Sortie : une ligne de panier Shopify avec les propriétés ci-dessus. L'image envoyée est un fichier
   joint à la ligne de commande ; la fusion design + prénom pour Printify est faite côté serveur
-  ([[14 - Notre serveur fusionne l'illustration et le prénom, Printify reçoit une image finale]]).
+  ([[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]).
 
 ## Cas limites
 - Produit sans tag `np-*` : fiche simple (photo, variantes, ajout au panier), sans designs.
@@ -139,10 +139,10 @@ libre ») → `np-catalogue` → `np-demo` → `np-faq`.
   la forme précédente.
 - `index.json` désigne encore `layout: mesange`, mais `layout/mesange.liquid` est identique à
   `theme.liquid` (vérifié le 30/10) : pas d'effet visible. ⚠️ à vérifier : repasser `index.json` sur `theme`, puis supprimer `mesange.liquid` et `mesange.css`.
-- Prix dans Shopify : 24,90 / 27,90 / 19,90 € (import du 30/10), pas encore ceux de la décision 12
+- Prix dans Shopify : 24,90 / 27,90 / 19,90 € (import du 30/10), pas encore ceux de la décision 09
   (17,90 / 19,90 / 17,90 €). ⚠️ à vérifier
 - Couleurs du rendu indicatives (mention sous l'aperçu).
 - Avertissements Theme Check sur les polices Google (`theme.liquid` l.5-7) : non bloquants.
 
 ## Notes liées
-[[OVR - Boutique NolaPrint]] · [[FLOW - Déployer la maquette dans Shopify]] · [[FLOW - Importer les produits par CSV]] · [[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]
+[[OVR - Boutique NolaPrint]] · [[FLOW - Déployer la maquette dans Shopify]] · [[FLOW - Importer les produits par CSV]] · [[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]

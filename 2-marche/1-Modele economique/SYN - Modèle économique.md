@@ -3,7 +3,7 @@ type: synthese
 title: SYN - Modèle économique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, modele-economique, synthese]
 ---
@@ -64,13 +64,13 @@ Trois recherches : 22/10, 28/10 et 30/10/2026. Chaque point renvoie à sa source
 - CPM TikTok : 4,08 $ ou 13,26 $ selon deux publications Triple Whale.
 - Prix Printful du t-shirt et du mug selon les sites tiers ; mug entre 5,95 et 6,50 $.
 - Frais de paiement : ≈ 3 % (28/10) contre 1,5 % + 0,25 € (22/10 et 30/10).
-- Cotisations sociales de 12,3 % : comptées le 28/10 et le 30/10, absentes des marges calculées au départ pour la décision 12 et les offres étudiées.
+- Cotisations sociales de 12,3 % : comptées le 28/10 et le 30/10, absentes des marges calculées au départ pour la décision 09 et les offres étudiées.
 - Règle des 3 fois le coût livré (28/10) contre les prix alignés du 30/10 : 1,3 fois pour le mug, sous le coût livré pour la boule (hors livraison payée par le client) ; 1,2 fois pour le bois à 17,90 €.
 
 ## Ce qui est décidé
-- Mug famille illustrée seul à 24,90 € TTC, panier cible 45 €, CPA maximum 20 € pour tout agent publicitaire, révisable après le premier test ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Prix remplacés par la décision 12.
-- Franchise de TVA au départ ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
-- Prix alignés sur Cadeau Plus : mug 17,90 €, boule en verre 19,90 €, bois 17,90 € (au-dessus de Cadeau Plus, 12,95 €) ; livraison 4,90 €, offerte dès 60 € ; aucun faux prix barré ([[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
+- Lancement avec le mug, la boule en verre et la décoration en bois ; panier cible 45 €, CPA maximum 20 € pour tout agent publicitaire, révisable après le premier test ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]). Prix dans la décision 09.
+- Franchise de TVA au départ ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
+- Prix alignés sur Cadeau Plus : mug 17,90 €, boule en verre 19,90 €, bois 17,90 € (au-dessus de Cadeau Plus, 12,95 €) ; livraison 4,90 €, offerte dès 60 € ; aucun faux prix barré ([[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
 
 Décisions attendues :
 - les offres (lots, remises, prix) : aucune n'est décidée ; les offres étudiées sont dans [[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]] (partie 6) et [[RCH - Sélection du catalogue de lancement (30-10-2026)]] ;

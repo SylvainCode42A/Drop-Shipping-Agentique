@@ -3,7 +3,7 @@ type: synthese
 title: SYN - Juridique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, juridique, synthese]
 ---
@@ -90,10 +90,10 @@ Dix garde-fous détaillés dans la recherche, à transformer en notes REGLE : so
 
 ## Ce qui est décidé
 - Validation humaine nominative de chaque design et fiche avant publication au lancement ; textes juridiques, remboursements et designs signalés PI toujours bloqués pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
-- Franchise de TVA et micro-entreprise au départ ; le cas d'un partenaire expédiant depuis un autre pays de l'UE est soumis à un expert-comptable avant janvier 2027 ([[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+- Franchise de TVA et micro-entreprise au départ ; le cas d'un partenaire expédiant depuis un autre pays de l'UE est soumis à un expert-comptable avant janvier 2027 ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 - Nano Banana Pro et Ideogram derrière une interface interne ([[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]). Les conditions commerciales relevées le 29/10 sont compatibles avec cette décision ; les points ouverts sont la propriété des sorties chez Google, la clause d'attribution Ideogram et la conservation des marqueurs IA.
 
-- Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain ([[15 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]).
+- Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain ([[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]).
 
 Décisions attendues :
 - produit renvoyé revendu en « seconde chance » ou jeté ;

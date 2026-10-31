@@ -3,7 +3,7 @@ type: flow
 title: FLOW - Importer les produits par CSV
 status: draft
 related: ["[[MOD - Thème Shopify]]", "[[FLOW - Déployer la maquette dans Shopify]]", "[[CMP - Produit]]"]
-decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[10 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, boutique, shopify, flow]
 ---
@@ -12,7 +12,7 @@ tags: [dropshipping, boutique, shopify, flow]
 ## Rôle
 Créer ou mettre à jour les produits de la boutique en important un CSV au format Shopify dans l'admin,
 puis archiver ceux qui sortent du catalogue. Utilisé le 30/10/2026 pour passer des 5 produits
-« famille illustrée » aux 3 objets de la décision 11.
+« famille illustrée » aux 3 objets de la décision 01.
 
 ## Intention
 - Le thème reconnaît les objets par leur **tag** (`np-mug`, `np-verre`, `np-bois`) et leurs **handles** :
@@ -68,7 +68,7 @@ flowchart LR
 - Sortie : produits créés ou mis à jour dans 04qh0j-2k.myshopify.com ; anciens produits archivés.
 
 ## Cas limites
-- **Prix** : les prix importés (24,90 / 27,90 / 19,90 €) sont ceux d'avant la décision 12
+- **Prix** : les prix importés (24,90 / 27,90 / 19,90 €) sont ceux d'avant la décision 09
   (17,90 / 19,90 / 17,90 €), qui n'est pas encore appliquée dans Shopify. ⚠️ à vérifier
 - **Tag oublié ou mal écrit** : le produit s'affiche avec la fiche simple, sans designs ni aperçu.
 - **Handle changé** : la section « Sur nos autres objets » (`np-main-product.liquid` l.172) ne trouve

@@ -2,8 +2,8 @@
 type: research
 title: RCH - Retours, rétractation et abus (30-10-2026)
 status: draft
-related: ["[[SYN - Juridique]]", "[[RCH - Retours et remboursements (28-10-2026)]]", "[[RCH - Cadre juridique (22-10-2026)]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[MOD - Pages légales et rétractation]]"]
-decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[15 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"]
+related: ["[[SYN - Juridique]]", "[[RCH - Retours et remboursements (28-10-2026)]]", "[[RCH - Cadre juridique (22-10-2026)]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[MOD - Pages légales et rétractation]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"]
 date: 2026-10-30
 sources: ["https://french-business-law.com/french-legislation-art/article-l221-23-of-the-french-consumer-code", "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053303407", "https://soulierbunch.com/remboursement-du-consommateur-apres-exercice-de-son-droit-de-retractation-et-notion-de-bien-personnalise/?pdf=33802", "https://www.inc-conso.fr/content/refus-de-vente-ou-de-prestation-de-services-aux-consommateurs-vos-droits-et-recours", "https://www.legalstart.fr/fiches-pratiques/relations-commerciales/droit-retractation-entre-professionnels/", "https://soulierbunch.com/concurrence-deloyale-typologie-des-pratiques-interdites/?pdf=46895", "https://www.lexgo.be/fr/actualites-et-articles/14921-serial-returners-les-derives-de-la-protection-du-consommateur", "https://apps.shopify.com/categories/marketing-and-conversion-checkout-order-limits"]
 last-verified: 2026-10-30
@@ -75,8 +75,8 @@ Boutique : rembourse prix + livraison standard de l'aller (sous 14 jours)
 | Boule en verre | 24,80 € | 24,80 € | ≈ 20,80 € | ≈ 0,62 € | **≈ 21,40 €** | ≈ 0 € |
 | Décoration en bois | 22,80 € | 22,80 € | ≈ 14,90 € | ≈ 0,59 € | **≈ 15,50 €** | ≈ 0 € |
 
-Calcul : prix de la décision 12 + livraison 4,90 € ; coûts Printify de la décision 12 (TVA non
-récupérable incluse) ; frais de paiement 0,25 € + 1,5 % (décision 12), supposés non rendus par Shopify au
+Calcul : prix de la décision 09 + livraison 4,90 € ; coûts Printify de la décision 09 (TVA non
+récupérable incluse) ; frais de paiement 0,25 € + 1,5 % (décision 09), supposés non rendus par Shopify au
 remboursement ⚠️ à vérifier.
 - Si les CGV n'informent pas le client, la boutique paie aussi le renvoi : ≈ 6 à 8 € de plus par mug
   (estimé, [[RCH - Retours et remboursements (28-10-2026)]]).
@@ -130,7 +130,7 @@ remboursement ⚠️ à vérifier.
 - **Se protéger :**
   1. limiter la quantité par article et par commande (apps Shopify « order limits », ou limite native du
      panier) (source : Shopify App Store) ;
-  2. les commandes restent bloquées pour relecture avant envoi à Printify (décision 11) : une commande
+  2. les commandes restent bloquées pour relecture avant envoi à Printify (décision 01) : une commande
      anormale est annulée et remboursée avant fabrication, coût ≈ frais de paiement seulement ;
   3. CGV : quantités réservées à un usage personnel, ventes aux professionnels sur devis, refus des
      commandes anormales ⚠️ rédaction par un avocat ;
@@ -143,9 +143,9 @@ remboursement ⚠️ à vérifier.
 |---|---|---|
 | Option texte | 1 € | réponse de Sylvain du 30/10 |
 | Délai pour renvoyer après la rétractation | 14 jours | source : art. L221-23 (french-business-law.com) |
-| Coût d'un retour, mug perdu | ≈ 14,20 € | estimé (décision 12) |
-| Coût d'un retour, boule perdue | ≈ 21,40 € | estimé (décision 12) |
-| Coût d'un retour, bois perdu | ≈ 15,50 € | estimé (décision 12) |
+| Coût d'un retour, mug perdu | ≈ 14,20 € | estimé (décision 09) |
+| Coût d'un retour, boule perdue | ≈ 21,40 € | estimé (décision 09) |
+| Coût d'un retour, bois perdu | ≈ 15,50 € | estimé (décision 09) |
 | Renvoi d'un mug par La Poste | 6 à 8 € | estimé ([[RCH - Retours et remboursements (28-10-2026)]]) |
 | Amende pour refus de vente illégal | 1 500 € max (personne physique) | source : INC |
 | Seuil de salariés, professionnel acheteur | « moins de 5 » | source : Legalstart ⚠️ contradiction |

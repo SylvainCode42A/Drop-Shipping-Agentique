@@ -5,7 +5,7 @@ status: draft
 date: 2026-10-29
 implemented: non
 related: ["[[OVR - Boutique NolaPrint]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Système]]", "[[SYN - Juridique]]"]
-decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]"]
+decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
 last-verified: 2026-10-29
 tags: [dropshipping, boutique, decision]
 ---
@@ -17,7 +17,7 @@ visuellement le 29/10/2026 ([[OVR - Boutique NolaPrint]]). Elle simule tout dans
 routeur par ancre, panier `localStorage`, commande sans paiement, bannière cookies maison, aperçu SVG.
 La boutique réelle doit vendre via Shopify et transmettre les prénoms à Printify
 ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]],
-[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]).
+[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 
 ## Décision
 La maquette est le **cahier des charges** de la boutique. La vraie boutique est un **thème Shopify**

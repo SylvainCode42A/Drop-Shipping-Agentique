@@ -11,14 +11,14 @@ sources:
   - "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]"
   - "[[RCH - Marge et prix de vente (28-10-2026)]]"
 related: ["[[SYN - Modèle économique]]", "[[SYN - Juridique]]", "[[RCH - Marge et prix de vente (28-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+decisions: ["[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, modele-economique, prix, concurrence, research]
 ---
 # RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)
 
 ## Contexte posé
-Le 30/10/2026, Sylvain juge les prix de la décision 10 (mug 24,90 €, boule en verre 27,90 €, bois
+Le 30/10/2026, Sylvain juge les prix de la décision 02 (mug 24,90 €, boule en verre 27,90 €, bois
 19,90 €) trop élevés face au principal concurrent, Cadeau Plus, qui affiche ses mugs à 18,45 € « au
 lieu de 30,95 € » et ses boules de Noël à 13,95 € « au lieu de 23,95 € ». Questions : quels sont les
 prix réels de Cadeau Plus par produit ? que nous coûte chaque produit chez Printify ? faut-il copier
@@ -57,7 +57,7 @@ Prix relevés le 30/10 sur les captures Printify, × 1,2 car la TVA n'est pas r�
 | 2e mug dans le même colis | 5,14 € | ≈ 1,78 € ⚠️ à vérifier | ≈ 8,30 € |
 
 Le prix « from EUR 4.86 » de la boule en verre correspond à SwiftPOD (États-Unis), écarté par la règle
-d'approvisionnement de la décision 10.
+d'approvisionnement de la décision 02.
 
 ### 3. Marge à des prix alignés sur Cadeau Plus
 Hypothèses (estimé) : livraison de 4,90 € payée par le client ; frais de paiement 0,25 € + 1,5 % ;
@@ -130,13 +130,13 @@ restent à décider. Prix et marges dans le tableau 3.
 - Prix « le plus fréquent » sur 250 produits lus par collection, pas sur toute la collection.
 - Port du mug et du 2e mug non vérifiés par une commande test.
 - Frais de paiement : 0,25 € + 1,5 % ici, contre ≈ 3 % dans [[RCH - Marge et prix de vente (28-10-2026)]].
-- Les décisions 12 et 13 ont été écrites avec les marges avant cotisations.
+- La décision 09 et l'ancienne décision des offres (retirée) ont été écrites avec les marges avant cotisations.
 - Prix Printify relevés à une date, sans abonnement Premium.
 
 ## Retenu / écarté
 Revue du 30/10/2026 :
 - **Retenu** : prix alignés sur Cadeau Plus, sans faux prix barré ; livraison 4,90 €, offerte dès
-  60 € ([[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
+  60 € ([[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]).
 - **Offres** : Duo de mugs, mug + boule, 2 mugs + bois étudiés (partie 6) ; rien n'est retenu, les
   offres restent à décider.
 - **Retenu ensuite** : bois à 17,90 €, au-dessus de Cadeau Plus (≈ 7,30 € avant cotisations, ≈ 4,50 €

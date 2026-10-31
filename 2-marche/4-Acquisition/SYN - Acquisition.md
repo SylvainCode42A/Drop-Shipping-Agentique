@@ -3,8 +3,8 @@ type: synthese
 title: SYN - Acquisition
 status: validé
 related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Choix de la niche]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
-last-verified: 2026-10-25
+decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, acquisition, synthese]
 ---
 # SYN - Acquisition
@@ -60,7 +60,7 @@ tags: [dropshipping, acquisition, synthese]
 
 ## Ce qui est décidé
 - Premier test : Noël 2026 en manuel réduit (8 à 12 mugs, Shopify, Etsy, Meta 20 € par jour, 800 € au plus), puis Fête des grands-mères 2027 comme premier test du système, plafond 2 500 € révisé en janvier ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]).
-- Panier cible 45 € et CPA maximum 20 € ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Budget publicitaire toujours bloqué pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
+- Panier cible 45 € et CPA maximum 20 € ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]). Budget publicitaire toujours bloqué pour les agents ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
 
 Décisions attendues :
 - les seuils d'élimination et de validation d'un produit, communs avec [[SYN - Système]].
@@ -71,7 +71,7 @@ Décisions attendues :
 - Peut-on produire au moins 10 vidéos par mois pour TikTok ?
 - Conversions API Meta et visiteurs ayant refusé les cookies : aucune position officielle trouvée ⚠️ à vérifier.
 - Frais réglementaires Etsy pour la France après le 22/06/2026 ⚠️ à vérifier dans le compte vendeur.
-- Options de ciblage Meta réellement disponibles pour les grands-parents et les futurs retraités ([[SYN - Choix de la niche]]).
+- Options de ciblage Meta réellement disponibles pour les parents, les grands-parents et les couples ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]], [[SYN - Choix de la niche]]).
 - Nombre de publicités Meta actives par concurrent, relevé manuel dans la bibliothèque publicitaire ([[SYN - Choix de la niche]]).
 
 ## Recherches

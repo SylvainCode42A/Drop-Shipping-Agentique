@@ -4,8 +4,8 @@ title: 03 - Approbation unitaire au lancement, paliers d'autonomie, actions touj
 status: validé
 date: 2026-10-25
 implemented: non
-related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Système]]", "[[SYN - Juridique]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]"]
-decisions: ["[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Système]]", "[[SYN - Juridique]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
 last-verified: 2026-10-25
 tags: [dropshipping, systeme, juridique, decision]
 ---

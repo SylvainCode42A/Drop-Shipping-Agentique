@@ -6,8 +6,8 @@ path: Claude outputs/nolaprint-sans-apercu-en-direct.html
 symbol: renderHome
 status: draft
 related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Produit]]", "[[CMP - Illustrations]]", "[[FLOW - Routage par ancre]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, boutique, module]
 ---
 # MOD - Accueil
@@ -19,7 +19,7 @@ promesse jusqu'aux questions, et renvoie vers la fiche du mug ou du Duo.
 ## Intention
 - La page parle à l'acheteuse (une femme adulte qui gère les cadeaux de la famille), pas aux
   grands-parents ([[SYN - Choix de la niche]]). Le titre nomme le produit visible sur l'image, pour
-  reprendre le message de la publicité ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]).
+  reprendre le message de la publicité ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
 - La version ordinateur est figée ; seul le téléphone s'ajuste (trafic principal attendu sur mobile).
 - Les avis défilent sans pause au survol, et sont étiquetés « Exemple » tant qu'il n'y a pas de vrais avis.
 

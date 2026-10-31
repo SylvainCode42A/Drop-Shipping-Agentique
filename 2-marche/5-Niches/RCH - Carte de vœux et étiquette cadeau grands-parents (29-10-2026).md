@@ -2,7 +2,7 @@
 type: research
 title: RCH - Carte de vœux et étiquette cadeau grands-parents (29-10-2026)
 status: validé
-related: ["[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[NICHE - Grands-parents]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[NICHE - Grands-parents]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: []
 date: 2026-10-29
 sources:

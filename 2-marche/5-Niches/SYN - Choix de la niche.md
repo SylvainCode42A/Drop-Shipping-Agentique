@@ -3,8 +3,8 @@ type: synthese
 title: SYN - Choix de la niche
 status: validé
 related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
-last-verified: 2026-10-30
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
+last-verified: 2026-10-31
 tags: [dropshipping, niches, synthese]
 ---
 # SYN - Choix de la niche
@@ -91,14 +91,14 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Manque commun à toutes les recherches : aucun volume de recherche Google n'a pu être mesuré.
 
 ## Ce qui est décidé
-- Audience : parents et grands-parents en principal, couple en secondaire, amies et fratrie en test, animaux et travail reportés. Offre en deux modes : nos designs à phrase et prénoms, ou la page blanche avec l'image de la cliente ([[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]], qui remplace [[01 - Grands-parents en principal, retraite par métier en secondaire]]).
-- Mug famille illustrée seul à 24,90 € (prix remplacés par la décision 12), panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement. Aucune offre décidée ([[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
+- Audience : parents et grands-parents en principal, couple en secondaire, amies et fratrie en test, animaux et travail reportés. Offre en deux modes : nos designs à phrase et prénoms, ou la page blanche avec l'image de la cliente ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]], d'après [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]] et [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]). Elle remplace l'angle du 25/10/2026 (grands-parents en principal, retraite par métier en secondaire).
+- Lancement avec le mug, la boule en verre et la décoration en bois (prix dans la décision 09), panier cible 45 €, CPA maximum 20 €. Pas d'assiette au lancement. Aucune offre décidée ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]). Les études du 28/10 précisent le pari : le prix est tenu par le haut du marché, mais l'illustration fixe sans réglage des personnages n'a d'équivalent chez aucun concurrent ; c'est un test, pas une preuve.
 - Premier test : Noël 2026 en manuel réduit, puis Fête des grands-mères 2027 avec le système ([[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]). Validation humaine : [[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]].
 
 Décisions attendues :
 - les produits d'élargissement après le mug, à partir du tableau comparatif, une fois le catalogue Printify UE vérifié ;
 - la politique de lots et de port (remises par paliers, seuil de port offert, duo) ;
-- le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes ; précisé par la décision 11 : designs à phrase qui nomment le lien, déclinés par rôle.
+- le brief visuel de la « famille illustrée » : scène fixe, variantes par composition de famille, ou symboles à la place des personnes ; précisé par la décision 01 : designs à phrase qui nomment le lien, déclinés par rôle.
 
 ## Questions ouvertes
 - Volumes de recherche et courbes Google Trends par angle et par produit (Keyword Planner, Google Trends France) : jamais obtenus.
@@ -107,7 +107,7 @@ Décisions attendues :
 - Qui achète réellement un mug « Mamie » : parents, grands-parents, futurs parents. Demande « Papi » comparée à « Mamie » (indice : mamie 2 352 produits contre papy 2 225 chez Cadeau Plus, [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
 - Collections Mamie et Chats de Cadeau Plus non lues dans le premier relevé, et écart entre les deux relevés du 30/10.
 - Nombre de publicités Meta actives par concurrent (bibliothèque publicitaire, relevé manuel).
-- Options de ciblage Meta réellement disponibles pour les grands-parents et les futurs retraités.
+- Options de ciblage Meta réellement disponibles pour les parents, les grands-parents et les couples.
 - Slogans et termes à vérifier à l'INPI et à l'EUIPO.
 - Premier pays de l'UE à ouvrir et déclinaisons (Oma, Nonna, Abuela, Bonne-maman) : rien de collecté hors France.
 - Sites non audités sur plusieurs produits : Famille de Dingue, Jusqu'à la lune, Ma Petite Fabrique, CadoMaestro, Cadeau Plus.

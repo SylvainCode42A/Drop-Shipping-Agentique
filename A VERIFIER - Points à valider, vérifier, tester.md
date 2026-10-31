@@ -4,7 +4,7 @@ title: A VERIFIER - Points à valider, vérifier, tester
 status: validé
 related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Acquisition]]"]
 decisions: []
-last-verified: 2026-10-30
+last-verified: 2026-10-31
 tags: [dropshipping, registre, a-verifier]
 ---
 # A VERIFIER - Points à valider, vérifier, tester
@@ -29,7 +29,7 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Site qui expédie vers la France chez Harrier, WOYC, MWW On Demand, Printful et Jondo (plusieurs sites, non affiché) ; pour l'ornament 1676, l'API renvoie Harrier « United Kingdom » alors que le catalogue l'affiche en Europe (droit de 3 € et TVA à l'import si GB) | connecté, échantillon | [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]], [[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]] | P1 | |
 | Identifiant de variante du mug 441 (62327 lu dans l'API interne) à confirmer par l'API publique ; pixels, DPI et format de fichier par imprimeur ; option de routage UE de la boutique | connecté | [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]] | P1 | |
 | Prix du mug 11 oz en euros chez Gelato France et Printful Lettonie ; tarif du 2e mug ; port réel | connecté | [[RCH - Vérification Printify UE du mug et vue d'ensemble des produits (28-10-2026)]] | P1 | |
-| Échantillons de mug chez Printify UE et Gelato : qualité, délai réel, casse | échantillon | [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]] | P1 | |
+| Échantillons de mug chez Printify UE et Gelato : qualité, délai réel, casse | échantillon | [[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]] | P1 | |
 | Zone d'impression exacte du mug 11 oz chez l'imprimeur retenu (2475 × 1155, 2480 × 1146, 2700 × 1120 ou 2625 × 1050 px selon les sources) | connecté | [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]], [[RCH - Applications de personnalisation Shopify pour Printify et Gelato (29-10-2026)]] | P1 | |
 | Les factures Printify, Gelato et Printful portent-elles une TVA, et est-elle récupérable selon le statut ? Printify facture la TVA sur l'UE, récupérable « si assujetti », sans mention de la franchise en base | expert | [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]] | P1 | |
 | Dates limites Noël 2026 de Printify, Gelato et Printful pour la France ; non publiées au 22/10, référence 2025 : Posterflow 27/11, Harrier 02/12, OPT 05/12, Textildruck 09/12 | lecture | [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]], [[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]] | P1 | |
@@ -53,12 +53,15 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | ~~Planche, boîte alimentaire ou bougie chez un fournisseur UE relié à Shopify~~ | connecté | [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]] | — | tranché le 29/10/2026 : aucun imprimeur UE chez Printify pour bougies, planches, puzzles et boîtes métal |
 | Gelato accepte-t-il de relever le plafond de 5 000 appels par jour ? Printify a-t-il un environnement de test ? Date de l'API T-Pop | lecture | [[SYN - Fournisseurs]] | P3 | |
 | Notes Trustpilot et retours français actuels sur Printify, Gelato et Printful | manuel | [[SYN - Fournisseurs]] | P3 | |
+| Réimpression Printify après défaut ou casse : port refacturé ou non (« free reprints » selon Merchant Protection, non précisé par l'aide) ; formulaire « Submit issue » à voir sur une vraie commande (types de problème, champs) | connecté, échantillon | [[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]] | P1 | |
+| API Printify : aucun point d'accès pour signaler un problème ou demander une réimpression, d'après une copie de la spécification (api-evangelist) ; à recouper sur developers.printify.com | lecture | [[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]] | P2 | |
+| Printify Connect (Premium) : langue de l'e-mail et de la page vus par une cliente française | connecté | [[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]] | P3 | |
 
 ## Juridique et fiscal
 
 | Point à vérifier | Moyen | Source | Priorité | Résultat |
 |---|---|---|---|---|
-| Schéma de TVA selon le pays d'expédition réel de l'imprimeur ; la franchise tient-elle si l'imprimeur expédie depuis l'Allemagne ou la Lettonie ? | expert | [[SYN - Juridique]], [[05 - Printify en principal avec partenaire UE figé, Gelato en second, franchise de TVA au départ]] | P2 (avant janvier 2027) | |
+| Schéma de TVA selon le pays d'expédition réel de l'imprimeur ; la franchise tient-elle si l'imprimeur expédie depuis l'Allemagne ou la Lettonie ? | expert | [[SYN - Juridique]], [[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]] | P2 (avant janvier 2027) | |
 | Frontière catalogue ou personnalisé pour la rétractation, et rédaction des CGV | expert (avocat) | [[SYN - Juridique]] | P1 | |
 | Textes de L221-28 3°, L221-5 (information sur l'absence de rétractation) et L221-23 à lire sur Légifrance ; l'image envoyée par la cliente vaut-elle « spécification du consommateur » ? | lecture, expert (avocat) | [[RCH - Retours, rétractation et abus (30-10-2026)]] | P1 | |
 | Shopify rend-il les frais de paiement lors d'un remboursement ? | lecture, connecté | [[RCH - Retours, rétractation et abus (30-10-2026)]] | P2 | |
@@ -79,6 +82,8 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Statut de marque éventuel de l'expression « Fête des grands-mères » (origine Café Grand'Mère, 1987) | lecture (INPI) | [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]] | P2 | |
 | Étiquetage textile : « 100 % coton » utilisable ou non pour un tablier à enduction polyester | lecture | [[RCH - Tablier personnalisé grands-parents (28-10-2026)]] | P3 | |
 | Décorations de Noël : statut au regard de la directive jouets, mention « ne convient pas aux moins de 3 ans », risque du ruban, obligations GPSR | lecture, expert | [[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]] | P1 si la décoration est testée à Noël | |
+| Garantie légale de conformité sur un article personnalisé : articles exacts (durée 2 ans, présomption 24 mois, risque du transport L216-4) à lire sur Légifrance ; peut-on inviter à signaler sous 30 jours sans clause abusive ? | lecture, expert (avocat) | [[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]] | P1 | |
+| Lots remisés : formulation « 3 pour 49,95 € au lieu de 55,35 € à l'unité » au regard de L112-1-1 ; montant remboursé quand un seul article sans texte d'un lot est rétracté | lecture, expert (avocat) | [[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]] | P1 | |
 
 ## Système
 
@@ -111,7 +116,7 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 |---|---|---|---|---|
 | Volumes Google Keyword Planner et courbes Google Trends France pour « mug mamie personnalisé », « cadeau mamie prénoms petits-enfants », « mug fête des grands-mères », « affiche mamie », « plaid mamie » ; jamais obtenus par aucune recherche | manuel | [[SYN - Choix de la niche]] | P1 | |
 | Bibliothèque publicitaire Meta : publicités actives de Cadeau Plus, Henriette and Co, Famille de Dingue, Monsieur TShirt, Cadeaux.com, CadoMaestro | manuel | [[SYN - Choix de la niche]] | P2 | |
-| Une illustration fixe sans réglage des personnages convertit-elle à 24,90 € face aux avatars réglables au même prix ? | test (Noël 2026) | [[02 - Mug famille illustrée à 24,90 €, panier cible 45 €]], [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]] | P1 | |
+| Une illustration fixe sans réglage des personnages convertit-elle à 24,90 € face aux avatars réglables au même prix ? | test (Noël 2026) | [[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]], [[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]] | P1 | |
 | Sites non audités sur plusieurs produits : Famille de Dingue, Jusqu'à la lune, Ma Petite Fabrique, CadoMaestro, Cadeau Plus ; Amazon.fr et Etsy FR en détail pour la planche, la boîte, la bougie | manuel | [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] | P3 | |
 | Lot tablier + torchon d'Ourson Câlin, et « Family Portrait » sur sous-verres (présence à confirmer) | manuel | [[RCH - Torchon personnalisé grands-parents (28-10-2026)]], [[RCH - Sous-verres personnalisés pour grands-parents (28-10-2026)]] | P3 | |
 | Lien entre Cadeaux.com et Monsieur TShirt (même ville, mêmes paliers de remise) | manuel | [[RCH - Bougie personnalisée grands-parents (29-10-2026)]] | P3 | |

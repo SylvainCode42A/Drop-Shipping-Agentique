@@ -21,9 +21,9 @@ sources:
   - "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]"
   - "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]"
   - "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]"
-  - "Second relevé du 30/10/2026 (cadeauplus.com, monsieurtshirt.com, cadomaestro.com), chiffres repris de la décision 11"
+  - "Second relevé du 30/10/2026 (cadeauplus.com, monsieurtshirt.com, cadomaestro.com), chiffres repris de la décision 01"
 related: ["[[SYN - Choix de la niche]]", "[[NICHE - Grands-parents]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Grands-parents en principal, retraite par métier en secondaire]]", "[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, niches, concurrence, research]
 ---
@@ -120,13 +120,13 @@ Sur les 35 premiers mugs : mamie et maman 7, papa et papy 6, famille 4, animaux 
 
 ### 7. Ce que l'audit suggère (non décidé)
 - **Acheteuse** : inchangée, une femme adulte qui gère les cadeaux de la famille
-  ([[01 - Grands-parents en principal, retraite par métier en secondaire]]).
+  ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]).
 - **Destinataires à cibler** : 1) les parents et grands-parents (papa, papy, maman, mamie), une
   seule offre avec appellation libre ; 2) le couple (Saint-Valentin, anniversaires, « depuis
   AAAA ») ; 3) la fratrie et la famille, surtout à Noël.
 - **Plus tard** : amies, chiens et chats, collègues, métiers et passions.
 - **À éviter** : l'humour sexuel (image de marque, refus des publicités Meta possible ⚠️ à vérifier),
-  la photo du client (écartée par la décision 10), les phrases et compositions recopiées de
+  la photo du client (écartée par la décision 02), les phrases et compositions recopiées de
   Cadeau Plus (droit d'auteur et parasitisme, voir le chat du 30/10).
 - **Effet d'une phrase à appellation libre** : un design « La bande à … » sert papa, papy, maman,
   mamie, tonton ; peu de designs couvrent beaucoup de destinataires.
@@ -183,7 +183,7 @@ Contradictions non tranchées :
 - Monsieur TSHIRT : 30 mugs famille sur 35 (partie 8), contre 17 (partie 6).
 
 ## Retenu / écarté
-Revue du 30/10/2026 ([[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]) :
+Revue du 30/10/2026 ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]) :
 - **Retenu** : parents et grands-parents en principal ; couple en secondaire ; amies et fratrie en
   test ; acheteuse inchangée ; phrases qui nomment le lien, déclinées par rôle.
 - **Reporté** : chiens et chats, travail et retraite. **Écarté** : humour sexuel.

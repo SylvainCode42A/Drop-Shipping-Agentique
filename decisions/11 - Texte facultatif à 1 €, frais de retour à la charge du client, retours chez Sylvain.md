@@ -1,18 +1,20 @@
 ---
 type: decision
-title: 15 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain
+title: 11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain
 status: draft
 date: 2026-10-30
 implemented: non
 related: ["[[RCH - Retours, rétractation et abus (30-10-2026)]]", "[[RCH - Retours et remboursements (28-10-2026)]]", "[[SYN - Juridique]]", "[[MOD - Pages légales et rétractation]]", "[[TODO - Inscrire les frais de retour et le texte à 1 € dans les CGV]]"]
-decisions: ["[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
 last-verified: 2026-10-30
 tags: [dropshipping, juridique, retours, decision]
 ---
-# 15 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain
+# 11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain
+
+> Numérotée 15 jusqu'au 31/10/2026.
 
 ## Contexte
-La décision 11 propose nos designs avec « texte libre en option ». Un design pris sans texte est un
+La décision 01 propose nos designs avec « texte libre en option ». Un design pris sans texte est un
 produit de catalogue : le droit de rétractation de 14 jours s'applique, et Printify ne reprend rien.
 Un retour remboursé coûte alors ≈ 14 à 21 € par article quand le produit est perdu
 ([[RCH - Retours, rétractation et abus (30-10-2026)]]).
@@ -31,11 +33,11 @@ Un retour remboursé coûte alors ≈ 14 à 21 € par article quand le produit 
 ## Conséquences
 - Les commandes sans texte sur nos designs sont rétractables : la fiche produit et le panier doivent
   distinguer « avec texte, pas de rétractation » et « sans texte, rétractation 14 jours ».
-- Prix affiché : 17,90 € sans texte, 18,90 € avec (mug et bois), 19,90 € / 20,90 € (boule), d'après la décision 12.
+- Prix affichés, avec et sans texte : [[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]].
 - Le sort d'un produit renvoyé (revendu en « seconde chance » ou jeté) reste à décider.
 - [[TODO - Inscrire les frais de retour et le texte à 1 € dans les CGV]].
 - Mettre à jour [[MOD - Pages légales et rétractation]], la page Livraison et retours, et la fiche produit.
 - Validation d'Antoine attendue avant de passer en `validé`.
 
 ## Concerne
-[[11 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]] · [[12 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]] · [[SYN - Juridique]] · [[MOD - Pages légales et rétractation]]
+[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]] · [[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]] · [[SYN - Juridique]] · [[MOD - Pages légales et rétractation]]
