@@ -1,0 +1,163 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "A warm family living room scene with grandparents and grandchildren, placed in the upper two thirds of the image only. The lower third of the image is left completely empty: a flat, uniform cream color, with no object, no pattern and no text. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "4_zone_nbpro.png",
+    "references": [],
+    "aspect": "3:4",
+    "taille": "2K",
+    "mime": "image/jpeg",
+    "duree_s": 21.3,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:58:26"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A warm family living room scene with grandparents and grandchildren, placed in the upper two thirds of the image only. The lower third of the image is left completely empty: a flat, uniform cream color, with no object, no pattern and no text. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "opaque",
+      "quality": "high",
+      "size": "1152x1536",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "4_zone_ideo45.png",
+    "duree_s": 0.2,
+    "erreur": "HTTP 400",
+    "reponse": {
+      "error": "this resolution is not supported by the model."
+    },
+    "horodatage": "2026-11-02 16:58:26"
+  },
+  {
+    "lecture": {
+      "fichier": "4_zone_nbpro.png",
+      "ecart_type_zone": 69.9,
+      "couleur_moyenne_zone": [
+        216,
+        199,
+        177
+      ]
+    },
+    "horodatage": "2026-11-02 16:58:26"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "A warm family living room scene with grandparents and grandchildren, placed in the upper two thirds of the image only. The lower third of the image is left completely empty: a flat, uniform cream color, with no object, no pattern and no text. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "4_zone_nbpro.png",
+    "references": [],
+    "aspect": "3:4",
+    "taille": "2K",
+    "mime": "image/jpeg",
+    "duree_s": 21.2,
+    "erreur": null,
+    "horodatage": "2026-11-02 17:06:58"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A warm family living room scene with grandparents and grandchildren, placed in the upper two thirds of the image only. The lower third of the image is left completely empty: a flat, uniform cream color, with no object, no pattern and no text. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "opaque",
+      "quality": "high",
+      "size": "1024x1024",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "4_zone_ideo45.png",
+    "duree_s": 11.1,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "sampling",
+      "generation_id": "s3PvhT6QTjGAE20FgFi-cw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"high_level_description\": \"A gouache illustration of a warm family living room scene with grandparents and grandchildren gathered together, placed in the upper two thirds of the image, with the lower third left as a flat empty cream color.\",\n  \"compositional_deconstruction\": {\n    \"background\": \"The upper two thirds of the square frame shows a warm family living room interior rendered in gouache with opaque pigment, closed contours, and medium-to-saturated colors. A soft terracotta wall fills the back, with a simple rectangular window on the left showing a flat pale yellow sky. A low mustard-yellow sofa sits centered against the wall. A small round wooden side table sits to the right. The floor is a flat warm beige. The lower third of the frame is a completely flat, uniform cream color with no object, no pattern, no texture, no shadow, and no text — a clean empty band spanning edge to edge.\",\n    \"elements\": [\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Grandfather seated on the left side of the mustard-yellow sofa in three-quarter front view facing slightly right toward his family. Round face, light skin tone, short white hair, white mustache, gentle smile with mouth closed. Wears a forest-green cardigan over a cream shirt and brown trousers. Hands resting on his lap. Gaze directed at the granddaughter beside him.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Grandmother seated on the right side of the mustard-yellow sofa in three-quarter front view facing slightly left toward her family. Warm medium skin tone, short curly grey hair, soft smile with closed mouth, eyes open and crinkled at the outer corners. Wears a coral-pink blouse and a long navy skirt. Right arm draped around the grandson's shoulder. Gaze directed at the grandson.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Young granddaughter standing between the grandparents' knees, facing the camera in front view. Light skin tone, shoulder-length dark brown hair tied with a small red ribbon, wide smile showing teeth, bright eyes looking up at the grandfather. Wears a sunny yellow dress with short sleeves and white sneakers. Both arms raised, hugging the grandfather's chest.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Young grandson standing beside the grandmother, in three-quarter view facing left toward her. Warm tan skin tone, short black hair, big smile with visible teeth, eyes open and bright looking up at the grandmother. Wears a cobalt-blue t-shirt and olive-green shorts with red sneakers. Left hand holding the grandmother's hand.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Small round wooden side table to the right of the sofa, rendered as a simple flat brown circle on two short legs. Holds a small green potted plant with two rounded leaves.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 17:07:09"
+  },
+  {
+    "modele": "precise-edit/ideogram-4-5",
+    "champs": {
+      "prompt": "Paint this area as a flat, uniform cream color, with nothing in it.",
+      "context_window": "auto",
+      "quality": "high",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "image",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/4_zone_ideo45.png"
+      ],
+      [
+        "mask",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/4_masque.png"
+      ]
+    ],
+    "fichier": "4_zone_ideo45_masque.png",
+    "duree_s": 27.8,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "33eRLi2UTnGkM1EfXEp_hw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the bottom section of image 1, indicated by the black mask in image 2, with a flat, uniform cream color.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"inpainting\",\n        \"desc\": \"Fill the bottom region of image 1, defined by the black rectangular mask in image 2 spanning across the lower third from bottom-left to bottom-right, with a flat, completely uniform cream color, leaving no objects, textures, or gradients.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The grandfather, grandmother, young girl in the yellow dress, and young boy from image 1 seated and standing together in the center of the frame.\"\n      },\n      {\n        \"type\": \"object_reference:object_same\",\n        \"desc\": \"The yellow upholstered sofa, the potted green plant on the small wooden side stool on the right, and the square window frame on the left from image 1.\"\n      },\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The textured pinkish-terracotta wall and light beige floor occupying the upper two-thirds from image 1.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The warm, hand-drawn children's storybook illustration style with soft pencil outlines and paper texture from image 1.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 17:07:37"
+  },
+  {
+    "lecture": {
+      "fichier": "4_zone_nbpro.png",
+      "ecart_type_zone": 2.19,
+      "couleur_moyenne_zone": [
+        254,
+        236,
+        207
+      ]
+    },
+    "horodatage": "2026-11-02 17:07:37"
+  },
+  {
+    "lecture": {
+      "fichier": "4_zone_ideo45.png",
+      "ecart_type_zone": 0.92,
+      "couleur_moyenne_zone": [
+        252,
+        238,
+        214
+      ]
+    },
+    "horodatage": "2026-11-02 17:07:37"
+  },
+  {
+    "lecture": {
+      "fichier": "4_zone_ideo45_masque.png",
+      "ecart_type_zone": 0.92,
+      "couleur_moyenne_zone": [
+        252,
+        238,
+        214
+      ]
+    },
+    "horodatage": "2026-11-02 17:07:37"
+  }
+]

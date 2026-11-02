@@ -6,10 +6,17 @@ date: 2026-10-25
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Système]]", "[[SYN - Fournisseurs]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
 decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
-last-verified: 2026-10-25
+last-verified: 2026-11-02
 tags: [dropshipping, systeme, decision]
 ---
 # 06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram
+
+> **Confirmée le 02/11/2026** par les tests réels de
+> [[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]] : Nano Banana Pro reste le
+> fournisseur par défaut (rendu conforme au brief, zone vide respectée, éditions invisibles hors zone),
+> Ideogram 4.5 en second (fond transparent natif, Precise Edit). Troisième voie écartée : un modèle
+> local par Ollama (FLUX.2 Klein 4B), version figée, sans référence ni édition ; gardé pour la
+> calibration des prompts seulement ([[RCH - Capacités de FLUX.2 Klein 4B en local pour les deux gabarits (02-11-2026)]]).
 
 ## Contexte
 Sixième décision attendue par [[OVR - Drop shipping agentique]]. La recherche architecture retient une

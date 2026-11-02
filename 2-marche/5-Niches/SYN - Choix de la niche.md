@@ -4,7 +4,7 @@ title: SYN - Choix de la niche
 status: validé
 related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
-last-verified: 2026-10-31
+last-verified: 2026-11-02
 tags: [dropshipping, niches, synthese]
 ---
 # SYN - Choix de la niche
@@ -67,7 +67,11 @@ Chaque point renvoie à la recherche qui le justifie. Rien n'est décidé ici : 
 - Sur le mug famille à prénoms : Cadeau Plus est le plus visible (environ 300 000 visites en septembre 2026 selon Semrush) et probablement en impression à la demande ; CadoMaestro a la meilleure qualité de service (2 % d'avis à 1 étoile) ; Monsieur TSHIRT vend un mug famille illustré à 26,91-29,90 €. Les petites boutiques du même concept (Koala Bleu, La Chouette Mauve) ont leur propre atelier ([[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]).
 - Faiblesses observées dans les avis : « inscriptions peu visibles » (Cadeaux.com, 19/10/2026), casse au transport, texte coupé ou trop compact, décalage entre mockup et produit, garniture de coussin absente, taille unique des tabliers ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
 - Monsieur TShirt ne cite aucun mug parmi ses best-sellers de la fête des grands-mères 2026 (vase gravé, t-shirt brodé, porte-clés) ([[RCH - Marché des mugs grands-parents avec prénoms (28-10-2026)]]).
-- La bibliothèque publicitaire Meta n'a pu être consultée dans aucune recherche ([[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]).
+- La bibliothèque publicitaire Meta a été lue le 02/11/2026. Publicités actives en France : Cadeau Plus environ 1 600, Monsieur TShirt 160, CadoMaestro 25, Cadeaux.com 21, Henriette and Co 12, Ourson Câlin 1 ([[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]]).
+- Les meilleures ventes de Cadeau Plus se déclinent par simple changement de titre : 16 designs sur 30 se vendent pour papa, papi, maman ou mamie sans autre modification. C'est une preuve pour la décision 01, qui décline nos designs par rôle ([[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]], [[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]).
+- « Un symbole par prénom » (cœur, fleur, animal) est vendu par au moins huit concurrents, de 12,90 à 25,41 €. Ce qui est rare, et vendu dans la même gamme de prix, c'est le choix du symbole pour chaque prénom (fleur de naissance, couleur du cœur) : c'est la mécanique retenue dans la décision 14 ([[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]], [[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]).
+- Chez Cadeau Plus, un design rentable se reconnaît à son portage sur un nouveau support pour la saison, plus qu'à l'âge de sa publicité : aucune publicité active n'a commencé avant le 20/08/2026, et cinq designs du relevé sont repris sur des supports de Noël ([[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]]).
+- Monsieur TShirt met en tête de ses mugs un éditeur page blanche avec création par IA ; tous ses mugs sont vendus au même prix, 25,41 € barré 29,90 € ([[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]]).
 
 ### Les risques transversaux
 - Juridique : pas de droit de rétractation pour un bien nettement personnalisé (art. L221-28), GPSR applicable, contact alimentaire, photos d'enfants soumises au RGPD, loi Evin pour le vin, droit de douane de 3 € par catégorie sur les produits hors UE depuis le 01/07/2026. Détail dans [[SYN - Juridique]].
@@ -106,7 +110,6 @@ Décisions attendues :
 - Une illustration fixe convertit-elle à 24,90 € face aux avatars réglables au même prix ? Seul un test de vente répond.
 - Qui achète réellement un mug « Mamie » : parents, grands-parents, futurs parents. Demande « Papi » comparée à « Mamie » (indice : mamie 2 352 produits contre papy 2 225 chez Cadeau Plus, [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]).
 - Collections Mamie et Chats de Cadeau Plus non lues dans le premier relevé, et écart entre les deux relevés du 30/10.
-- Nombre de publicités Meta actives par concurrent (bibliothèque publicitaire, relevé manuel).
 - Options de ciblage Meta réellement disponibles pour les parents, les grands-parents et les couples.
 - Slogans et termes à vérifier à l'INPI et à l'EUIPO.
 - Premier pays de l'UE à ouvrir et déclinaisons (Oma, Nonna, Abuela, Bonne-maman) : rien de collecté hors France.
@@ -128,3 +131,5 @@ Décisions attendues :
 - [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] et les treize études produit qu'elle cite
 - [[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]
 - [[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]
+- [[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]]
+- [[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]]

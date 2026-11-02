@@ -1,0 +1,158 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "mode": "chat",
+    "prompt": "A warm family living room scene: grandparents and grandchildren around a table, a vase of flowers on the table, a plain wall in the upper right corner. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "6_scene_base_nbpro.png",
+    "mime": "image/jpeg",
+    "duree_s": 22.2,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:57:14"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "mode": "chat",
+    "prompt": "Add a window with snow falling outside in the upper right corner. Keep everything else exactly identical.",
+    "fichier": "6_hiver_nbpro.png",
+    "mime": "image/jpeg",
+    "duree_s": 24.1,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:57:38"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A warm family living room scene: grandparents and grandchildren around a table, a vase of flowers on the table, a plain wall in the upper right corner. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "opaque",
+      "quality": "high",
+      "size": "1536x1152",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "6_scene_base_ideo45.png",
+    "duree_s": 0.3,
+    "erreur": "HTTP 400",
+    "reponse": {
+      "error": "this resolution is not supported by the model."
+    },
+    "horodatage": "2026-11-02 16:57:38"
+  },
+  {
+    "lecture": {
+      "modele": "nbpro",
+      "ecart_moyen_hors_masque": 8.44,
+      "part_pixels_changes_hors_masque": 0.0916,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 16:57:39"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "mode": "chat",
+    "prompt": "A warm family living room scene: grandparents and grandchildren around a table, a vase of flowers on the table, a plain wall in the upper right corner. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "6_scene_base_nbpro.png",
+    "mime": "image/jpeg",
+    "duree_s": 20.8,
+    "erreur": null,
+    "horodatage": "2026-11-02 17:03:37"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "mode": "chat",
+    "prompt": "Add a window with snow falling outside in the upper right corner. Keep everything else exactly identical.",
+    "fichier": "6_hiver_nbpro.png",
+    "mime": "image/jpeg",
+    "duree_s": 28.4,
+    "erreur": null,
+    "horodatage": "2026-11-02 17:04:05"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A warm family living room scene: grandparents and grandchildren around a table, a vase of flowers on the table, a plain wall in the upper right corner. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "opaque",
+      "quality": "high",
+      "size": "1024x1024",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "6_scene_base_ideo45.png",
+    "duree_s": 10.6,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "sampling",
+      "generation_id": "ajkPVeAFSJagzVMy3XVhOQ",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"high_level_description\": \"A gouache illustration of a warm family living room scene with grandparents and grandchildren gathered around a table holding a vase of flowers, painted in opaque pigment with closed contours, medium to saturated colors, and bold simple shapes.\",\n  \"compositional_deconstruction\": {\n    \"background\": \"A warm family living room interior rendered in gouache with opaque pigment and closed contours. The upper right corner is a plain wall in a soft warm cream tone. The rest of the wall behind the figures is a muted terracotta pink. A simple wooden floor in a warm ochre extends across the lower portion. No paper texture, no washes, no drop shadows.\",\n    \"elements\": [\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Rectangular wooden dining table occupying the center-lower portion of the frame, viewed from a slight three-quarter angle. Warm honey-brown top with simple straight legs in a darker brown. Bold flat shape with closed black contour, no fine detail.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Round ceramic vase centered on the table, painted in a saturated mustard yellow with a thin dark brown rim. Bold simple cylindrical shape with a closed black outline.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Bouquet of flowers rising from the vase: three large rounded blooms in coral red and one in golden yellow, with broad simplified green leaves fanning outward. Flat opaque shapes with bold black contours, no fine petal detail.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Grandfather seated on the left side of the table in three-quarter view facing right toward the family. Round face with a warm peach skin tone, short white hair, white mustache, wearing a forest-green sweater. Both forearms resting on the table edge, looking toward the grandchildren across the table. Bold simple shapes, closed black contours.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Grandmother seated on the right side of the table in three-quarter view facing left toward the family. Round face with a warm peach skin tone, grey hair pulled back into a low bun, wearing a dusty rose cardigan over a cream blouse. Hands folded together resting on the table, smiling gently toward the grandchildren. Closed black contours, flat saturated colors.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Young grandson standing at the near side of the table on the left, seen from behind in rear view. Short tousled brown hair, wearing a bright cobalt-blue t-shirt. Both hands gripping the edge of the table as he leans forward to look at the flowers. Back of head and shoulders visible.\"\n      },\n      {\n        \"type\": \"obj\",\n        \"desc\": \"Young granddaughter standing at the near side of the table on the right, seen from behind in rear view. Shoulder-length wavy blonde hair tied with a red ribbon, wearing a sunny yellow dress. One hand reaching forward toward the vase, looking up at the flowers. Closed black contours, flat opaque color.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 17:04:16"
+  },
+  {
+    "modele": "precise-edit/ideogram-4-5",
+    "champs": {
+      "prompt": "Add a window with snow falling outside in the upper right corner. Keep everything else exactly identical.",
+      "context_window": "auto",
+      "quality": "high",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "image",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/6_scene_base_ideo45.png"
+      ],
+      [
+        "mask",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/6_masque.png"
+      ]
+    ],
+    "fichier": "6_hiver_ideo45.png",
+    "duree_s": 80.8,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "ZOz7ERc_TVa9IUMwq9mNDw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Add a window showing falling snow to the upper-right corner of the scene from image 1, in the region indicated by the mask in image 2.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"object_add\",\n        \"desc\": \"Add a square wooden-framed window in the top-right corner on the beige wall behind the elderly woman from image 1, corresponding to the black square region in image 2. Outside the windowpane, depict a winter scene with white snowflakes falling against a soft cool greyish-blue sky.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The elderly grandfather in a teal sweater on the center-left, the elderly grandmother in a magenta cardigan and cream shirt on the center-right, the young boy in a blue shirt in the bottom-left, and the little girl in a yellow dress with a red hair ribbon in the bottom-right from image 1.\"\n      },\n      {\n        \"type\": \"object_reference:object_same\",\n        \"desc\": \"The wooden dining table, wooden chairs, and the yellow ceramic vase with red and yellow flowers in the center from image 1.\"\n      },\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The textured pinkish wall on the left and the beige wall background from image 1, except for the newly added window in the top-right.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The soft storybook illustration style with visible textured paper grain, warm tones, and gentle crayon or colored pencil linework from image 1.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 17:05:37"
+  },
+  {
+    "lecture": {
+      "modele": "nbpro",
+      "ecart_moyen_hors_masque": 9.12,
+      "part_pixels_changes_hors_masque": 0.1672,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 17:05:38"
+  },
+  {
+    "lecture": {
+      "modele": "ideo45",
+      "ecart_moyen_hors_masque": 0.13,
+      "part_pixels_changes_hors_masque": 0.0019,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 17:05:38"
+  }
+]

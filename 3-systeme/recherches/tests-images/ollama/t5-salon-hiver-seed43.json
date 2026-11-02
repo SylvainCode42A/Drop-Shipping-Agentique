@@ -1,0 +1,16 @@
+{
+  "path": "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/ollama/t5-salon-hiver-seed43.png",
+  "model": "x/flux2-klein:4b",
+  "seed": 43,
+  "width": 1024,
+  "height": 1024,
+  "size_bytes": 1371994,
+  "seconds_total": 53.6,
+  "seconds_load": 0.1,
+  "prompt": "A warm cozy living room scene with no people: an armchair with a folded knitted throw on it, a standing lamp with a warm glow, a potted green plant and a window, all grouped in the left half of the image. The window is snowy, and a small decorated Christmas tree stands in the left corner. The right half of the image is a large plain flat cream wall, completely empty: no frame, no picture, no shelf, no lamp, no window, no plant, no pattern, no shadow, no texture, reserved for text. Opaque gouache painting, bold simple shapes, closed outlines, medium to saturated warm colors, no wash, no watercolor bleed, no color gradients, children's book illustration style. No text, no face, no person, no character, no animal, no brand, no logo.",
+  "requested": {
+    "width": 1024,
+    "height": 1024
+  },
+  "created_at": "2026-11-02T11:42:55"
+}

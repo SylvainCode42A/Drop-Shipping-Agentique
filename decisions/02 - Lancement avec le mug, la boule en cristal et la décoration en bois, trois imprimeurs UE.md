@@ -1,12 +1,12 @@
 ---
 type: decision
 title: 02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE
-status: draft
+status: validé
 date: 2026-10-30
 implemented: non
-related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[RCH - Choix de la niche de lancement (25-10-2026)]]", "[[RCH - Modèle économique du print-on-demand (22-10-2026)]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Chaussette de Noël personnalisée grands-parents (29-10-2026)]]", "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]", "[[FLOW - Personnalisation à la commande]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]]", "[[RCH - Choix de la niche de lancement (25-10-2026)]]", "[[RCH - Modèle économique du print-on-demand (22-10-2026)]]", "[[RCH - Assiettes et objets de table pour compléter le mug (25-10-2026)]]", "[[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]", "[[RCH - Chaussette de Noël personnalisée grands-parents (29-10-2026)]]", "[[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]]", "[[FLOW - Personnalisation à la commande]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
-last-verified: 2026-10-31
+last-verified: 2026-11-01
 tags: [dropshipping, niches, fournisseurs, boutique, decision, noel]
 ---
 # 02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE
@@ -23,6 +23,11 @@ tags: [dropshipping, niches, fournisseurs, boutique, decision, noel]
 > bois à 17,90 €, aucun prix barré. Texte en option à +1 €, création libre (page blanche) à +2 €.
 > **Le 31/10/2026, tous les prix sont regroupés dans la décision 09** (bois à 17,95 €, simulation de
 > chaque façon de vendre) ; cette décision n'en porte plus.
+
+> **Mis à jour le 01/11/2026** : peu de gabarits de design, beaucoup de déclinaisons, d'après
+> [[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]] (cinq gabarits font 20 des
+> 30 meilleures ventes ; 16 designs sur 30 se déclinent par simple changement de titre). La
+> « sélection d'environ 10 illustrations » est remplacée ci-dessous.
 
 ## Contexte
 Le 25/10/2026, les recherches établissent que le mug générique à moins de 15 € n'est pas tenable en
@@ -61,18 +66,21 @@ Le relevé du catalogue Printify du 30/10 ([[RCH - Sélection du catalogue de la
 **Prix, options et marges** : [[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]].
 
 **Personnalisation, la même sur les trois produits** :
-- **Image** : la cliente choisit librement parmi une sélection d'environ 10 illustrations d'Antoine.
-  C'est la même sélection pour le mug, la boule et la décoration en bois, et chaque illustration est
-  disponible et visible (aperçu) sur chacune des six formes en bois.
-- **Texte** : la cliente peut ajouter le texte de son choix (par exemple l'appellation et les prénoms
-  des petits-enfants), en option. Longueur maximale à fixer par produit selon la zone d'impression.
+- **Image** : la cliente choisit parmi **peu de gabarits de design** (2 à 4, nombre fixé par le brief
+  visuel, décision 14), chacun **décliné** par destinataire (maman, papa, mamie, papy, couple) et par
+  support. Un gabarit de design est une composition fixe (par exemple une fleur par prénom) ; une
+  déclinaison en change le titre, la palette ou le détail saisonnier sans changer la composition.
+  Ce qui est affiché à la cliente est la déclinaison. La même collection vaut pour le mug, la boule
+  et la décoration en bois, visible (aperçu) sur chacune des six formes en bois.
+- **Texte** : titre, prénoms et phrase, facultatifs, couleur dans une palette
+  ([[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]).
 - **Forme** (décoration en bois seulement) : choix libre parmi les six formes.
-- Pas d'image envoyée par la cliente au lancement (qualité d'impression sur bois et verre, photos
-  d'enfants soumises au RGPD, et la signature de la boutique est l'illustration).
+- Image envoyée par la cliente : en mode page blanche seulement ([[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]).
 
-Sur la fiche bois, la forme et l'illustration sont deux options de variante : 6 formes × environ 10
-illustrations, soit environ 60 variantes, avec un aperçu par combinaison. Le mug et la boule ont une
-seule option « Illustration » (environ 10 variantes).
+Sur la fiche bois, la forme et la déclinaison sont deux options de variante : 6 formes × le nombre
+de déclinaisons, avec un aperçu par combinaison. Le mug et la boule ont une seule option
+« Illustration », une variante par déclinaison. Le nombre de variantes dépend du brief ⚠️ plafond
+Shopify à vérifier si les déclinaisons sont nombreuses.
 
 **Panier et publicité** (fixés le 25/10/2026, non rediscutés) :
 - **panier cible : 45 €** ;
@@ -119,8 +127,9 @@ que Printify accepte un design différent par variante et l'aperçu correspondan
 - Précise l'ancienne décision 09 (OPT, supprimée) : la décoration de sapin passe à Noël 2026 (en bois, six formes) ; l'affiche
   sort du lancement ; le partenaire mug devient Textildruck Europa ; trois imprimeurs, donc jusqu'à
   trois colis par commande.
-- Antoine produit environ 10 illustrations déclinées en trois gabarits : bandeau du mug, cercle de la
-  boule, et un gabarit par forme en bois (six), avec une zone réservée au texte libre.
+- Antoine produit 2 à 4 gabarits de design, déclinés par destinataire, chacun recomposé pour trois
+  gabarits de support : tour du mug, disque de la boule, et un par forme en bois (six), avec les zones
+  de texte de la décision 13 ([[CMP - Personnalisation par produit]]).
 - Commande test avant le 05/11/2026 : un mug Textildruck, une boule Chill, une décoration WOYC (deux
   formes si possible), livrés en France ; mesurer le port réel, le délai, l'emballage et la casse du verre.
 - Marges de la boule et des autres produits : décision 09 (boule seule : 0,35 à 2,07 € avant pub).
@@ -135,7 +144,7 @@ que Printify accepte un design différent par variante et l'aperçu correspondan
   [[MOD - Thème Shopify]].
 - À inscrire dans A VERIFIER : port réel du mug Textildruck, frais de port de plusieurs boules,
   rendu des accents sur verre et sur bois.
-- Validation d'Antoine attendue avant de passer en `validé`.
+- Validée par Antoine le 01/11/2026.
 
 ## Concerne
 [[RCH - Sélection du catalogue de lancement (30-10-2026)]] · [[SYN - Choix de la niche]] · [[SYN - Fournisseurs]] · [[FLOW - Personnalisation à la commande]] · [[MOD - Thème Shopify]]

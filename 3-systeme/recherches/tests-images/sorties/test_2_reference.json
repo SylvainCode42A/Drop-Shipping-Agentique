@@ -1,0 +1,198 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a heart, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture. Plain white background.",
+    "fichier": "2_ref_coeur_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+    ],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": "image/jpeg",
+    "duree_s": 16.6,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:52:02"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a heart, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "high",
+      "size": "1024x1024",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "images",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+      ]
+    ],
+    "fichier": "2_ref_coeur_ideo45.png",
+    "duree_s": 36.2,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "eq51W3U7RqCIcJx2OOqZbg",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the red flower from image 1 with a simple red heart painted in the same gouache style, isolated on the same checkerboard background.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"object_remove\",\n        \"desc\": \"Remove the red flower with five rounded petals, yellow circular center, green stem, and two green leaves from image 1.\"\n      },\n      {\n        \"type\": \"object_add\",\n        \"desc\": \"Add a single red heart shape at the center of the frame, painted with solid, opaque gouache with smooth rounded lobes and a pointed bottom, rendered with medium-to-saturated red color, bold simplified contours, and no fine details or drop shadows.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The grey and white checkerboard background representing transparency from image 1 remains identical across the entire frame.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The flat, opaque gouache painting style without wash, drop shadows, or paper texture, maintaining the bold simple shapes, closed contours, and smooth hand-painted look from image 1.\"\n      },\n      {\n        \"type\": \"color_palette\",\n        \"desc\": \"The saturated red gouache palette matching the red petals from image 1.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 1796899244
+        }
+      ],
+      "seed": 1796899244
+    },
+    "horodatage": "2026-11-02 16:52:38"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a small bird, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture. Plain white background.",
+    "fichier": "2_ref_oiseau_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+    ],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": "image/jpeg",
+    "duree_s": 14.2,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:52:52"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a small bird, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "high",
+      "size": "1024x1024",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "images",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+      ]
+    ],
+    "fichier": "2_ref_oiseau_ideo45.png",
+    "duree_s": 30.0,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "cdnOc0ZwTUiMCTublk6cyw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the painted flower from image 1 with a small bird drawn in the same gouache illustration style on an isolated transparent checkerboard background.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"object_remove\",\n        \"desc\": \"Remove the red flower with five rounded petals, yellow center, and green stem with two leaves from image 1.\"\n      },\n      {\n        \"type\": \"object_add\",\n        \"desc\": \"Add a small simple bird in the center of the frame, facing right, rendered with bold rounded shapes, a small orange beak, a rounded body, and a simple wing.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The empty background represented by the grey and white transparency grid checkerboard from image 1 across the entire frame.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The gouache illustration style from image 1, featuring opaque flat pigment, closed contours, bold simple silhouettes, no paper texture, and no drop shadows.\"\n      },\n      {\n        \"type\": \"color_palette\",\n        \"desc\": \"The saturated, matte color palette and smooth painting technique from image 1.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 766625241
+        }
+      ],
+      "seed": 766625241
+    },
+    "horodatage": "2026-11-02 16:53:22"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a Christmas bauble, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture. Plain white background.",
+    "fichier": "2_ref_boule_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+    ],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": "image/jpeg",
+    "duree_s": 14.9,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:53:37"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a Christmas bauble, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "high",
+      "size": "1024x1024",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "images",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+      ]
+    ],
+    "fichier": "2_ref_boule_ideo45.png",
+    "duree_s": 133.4,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "ybScCLR4RMqCqwwUfb_NnQ",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the red flower from image 1 with a centered Christmas bauble rendered in the identical gouache illustration style over the transparent checkerboard background.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"object_remove\",\n        \"desc\": \"Remove the red flower with five rounded petals, yellow circular center, green stem, and two green leaves from image 1.\"\n      },\n      {\n        \"type\": \"object_add\",\n        \"desc\": \"Add a single round Christmas bauble ornament in the center of the frame, featuring a decorative cap and hanging loop at the top, colored in coral red and mustard yellow with simple bold green decorative accents.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The grey and white transparency checkerboard pattern background from image 1 remains completely unchanged across the entire frame.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The gouache illustration aesthetic from image 1, featuring opaque flat pigment, no wash, bold simple silhouettes, soft closed contours, medium-to-saturated colors, absence of drop shadows, and absence of visible paper texture.\"\n      },\n      {\n        \"type\": \"color_palette\",\n        \"desc\": \"The color palette from image 1, consisting of coral red, warm mustard yellow, and muted sage green.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 1824363293
+        }
+      ],
+      "seed": 1824363293
+    },
+    "horodatage": "2026-11-02 16:55:51"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a Christmas star, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture. Plain white background.",
+    "fichier": "2_ref_etoile_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+    ],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": "image/jpeg",
+    "duree_s": 14.3,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:56:05"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "Same painting style, palette and contour thickness as the reference image. Replace the flower with a Christmas star, centered, isolated. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "high",
+      "size": "1024x1024",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "images",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/1_transparence_ideo45.png"
+      ]
+    ],
+    "fichier": "2_ref_etoile_ideo45.png",
+    "duree_s": 45.9,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "1_XO8kLoQ4mtcB4A-IS3kQ",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the red gouache flower from image 1 with a centered gouache Christmas star in the same artistic style over the identical transparent checkerboard background.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"object_remove\",\n        \"desc\": \"Remove the painted red flower with its round yellow center, green stem, and two green leaves from image 1.\"\n      },\n      {\n        \"type\": \"object_add\",\n        \"desc\": \"Add a classic five-pointed Christmas star rendered as a flat gouache illustration with opaque golden-yellow pigment, bold rounded points, and simple closed contours, positioned directly in the center of the frame.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The transparent checkerboard pattern background of light grey and white squares from image 1 remains completely unchanged across the entire frame.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The gouache illustration style from image 1, featuring opaque matte pigment, no washes, no paper texture, bold simple forms, and no drop shadows, is preserved.\"\n      },\n      {\n        \"type\": \"color_palette\",\n        \"desc\": \"The warm, saturated yellow hue found in the flower's center in image 1 is applied to the Christmas star.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 598691743
+        }
+      ],
+      "seed": 598691743
+    },
+    "horodatage": "2026-11-02 16:56:51"
+  }
+]
