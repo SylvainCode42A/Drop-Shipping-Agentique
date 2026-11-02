@@ -1,0 +1,95 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Replace the vase of flowers on the table with a teapot, same painting style. Change nothing else.",
+    "fichier": "3_edit_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/6_scene_base_nbpro.png"
+    ],
+    "aspect": "4:3",
+    "taille": "2K",
+    "mime": "image/jpeg",
+    "duree_s": 22.9,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:58:03"
+  },
+  {
+    "lecture": {
+      "modele": "nbpro",
+      "ecart_moyen_hors_masque": 4.53,
+      "part_pixels_changes_hors_masque": 0.0532,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 16:58:04"
+  },
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "Replace the vase of flowers on the table with a teapot, same painting style. Change nothing else.",
+    "fichier": "3_edit_nbpro.png",
+    "references": [
+      "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/6_scene_base_nbpro.png"
+    ],
+    "aspect": "4:3",
+    "taille": "2K",
+    "mime": "image/jpeg",
+    "duree_s": 23.4,
+    "erreur": null,
+    "horodatage": "2026-11-02 17:06:02"
+  },
+  {
+    "modele": "precise-edit/ideogram-4-5",
+    "champs": {
+      "prompt": "Replace the vase of flowers on the table with a teapot, same painting style. Change nothing else.",
+      "context_window": "auto",
+      "quality": "high",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [
+      [
+        "image",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/6_scene_base_ideo45.png"
+      ],
+      [
+        "mask",
+        "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/sorties/3_masque.png"
+      ]
+    ],
+    "fichier": "3_edit_ideo45.png",
+    "duree_s": 33.3,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "workflow",
+      "generation_id": "lpVB1a9oSka8lWl1BhnmOg",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"instruction_caption\": {\n    \"high_level_instruction\": \"Replace the vase of flowers in the center of the table in image 1 with a ceramic teapot, maintaining the same textured illustration style.\",\n    \"content_change_instructions\": [\n      {\n        \"type\": \"inpainting\",\n        \"desc\": \"Replace the yellow vase with red and yellow flowers located in the center of the wooden table from image 1 with a round, glazed ceramic teapot in an off-white color featuring a small spout pointing to the left and a curved handle on the right.\"\n      }\n    ],\n    \"content_that_stay_the_same\": [\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The elderly man with grey hair and a moustache wearing a green sweater on the left side of the table from image 1 stays identical in pose, expression, and position.\"\n      },\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The elderly woman with grey hair wearing a mauve cardigan over a white top on the right side of the table from image 1 stays identical in pose, expression, and position.\"\n      },\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The young boy with brown hair wearing a blue shirt sitting at the bottom-left of the table from image 1 stays identical in appearance and position.\"\n      },\n      {\n        \"type\": \"character_reference:character_same\",\n        \"desc\": \"The young blonde girl wearing a yellow dress and red bow sitting at the bottom-right of the table from image 1 stays identical in appearance and position.\"\n      },\n      {\n        \"type\": \"object_reference:object_same\",\n        \"desc\": \"The wooden dining table and surrounding wooden chairs from image 1 remain unchanged.\"\n      },\n      {\n        \"type\": \"background_reference\",\n        \"desc\": \"The textured pinkish-beige and light cream wall background from image 1 remains completely unchanged.\"\n      }\n    ],\n    \"style_change_instructions\": [],\n    \"style_that_stay_the_same\": [\n      {\n        \"type\": \"style_reference\",\n        \"desc\": \"The soft textured, colored pencil and gouache illustration style on textured craft paper from image 1 is preserved across the entire scene.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 17:06:35"
+  },
+  {
+    "lecture": {
+      "modele": "nbpro",
+      "ecart_moyen_hors_masque": 6.01,
+      "part_pixels_changes_hors_masque": 0.1094,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 17:06:36"
+  },
+  {
+    "lecture": {
+      "modele": "ideo45",
+      "ecart_moyen_hors_masque": 2.45,
+      "part_pixels_changes_hors_masque": 0.0395,
+      "tailles_differentes": false
+    },
+    "horodatage": "2026-11-02 17:06:36"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "A single Christmas bauble, centered, isolated, on a plain flat white background. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "5_boule_nbpro.png",
+    "references": [],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": "image/jpeg",
+    "duree_s": 15.0,
+    "erreur": null,
+    "horodatage": "2026-11-02 16:58:41"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A single Christmas bauble, centered, isolated, on a plain flat white background. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "opaque",
+      "quality": "high",
+      "size": "1024x1024",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "5_boule_ideo45_opaque.png",
+    "duree_s": 9.8,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "sampling",
+      "generation_id": "JlxEwS9TTXiQZLkM6_CaJw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"high_level_description\": \"A gouache illustration of a single Christmas bauble centered on a plain flat white background, rendered in opaque pigment with closed contours, medium to saturated colors, and bold simple shapes.\",\n  \"compositional_deconstruction\": {\n    \"background\": \"Plain flat white background, completely uniform with no texture, no gradient, no shadow.\",\n    \"elements\": [\n      {\n        \"type\": \"obj\",\n        \"desc\": \"A single Christmas bauble centered in the frame, filling roughly 70% of the frame height as the unambiguous focal subject. Bold simple teardrop shape with a rounded bulb body and a small pointed cap at the top. Saturated red opaque gouache fill with a single closed contour outline in dark red. A small silver-grey metallic cap sits at the top with a tiny loop for hanging. One flat oval highlight shape in pale cream on the upper-left curve of the bulb. No fine detail, no wash, no drop shadow.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 16:58:51"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A single Christmas bauble, centered, isolated, on a plain flat white background. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "high",
+      "size": "1024x1024",
+      "seed": "4242",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "5_boule_ideo45_transp.png",
+    "duree_s": 17.3,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "sampling",
+      "generation_id": "m16PyEB2RpO9JjQwZHYaGw",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"high_level_description\": \"A gouache illustration of a single Christmas bauble centered on a plain flat white background, rendered in opaque pigment with closed contours, medium to saturated colors, and bold simple shapes.\",\n  \"compositional_deconstruction\": {\n    \"background\": \"Plain flat white background, completely uniform with no texture, no gradient, and no shadow.\",\n    \"elements\": [\n      {\n        \"type\": \"obj\",\n        \"desc\": \"A single Christmas bauble centered in the frame, filling roughly 70% of the frame height as the unambiguous focal subject. Bold simple teardrop shape with a rounded bulb body and a small pointed cap at the top. Saturated red opaque gouache fill with a single closed contour outline. A small silver-grey metallic cap sits at the top with a tiny loop for hanging. One flat oval highlight shape in pale cream on the upper-left curve of the bulb. No fine detail, no wash, no drop shadow.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 4242
+        }
+      ],
+      "seed": 4242
+    },
+    "horodatage": "2026-11-02 16:59:09"
+  },
+  {
+    "lecture": {
+      "fichier": "5_boule_nbpro.png",
+      "ecart_type_fond": 10.14,
+      "couleur_moyenne_fond": [
+        255,
+        255,
+        255
+      ]
+    },
+    "horodatage": "2026-11-02 16:59:09"
+  },
+  {
+    "lecture": {
+      "fichier": "5_boule_ideo45_opaque.png",
+      "ecart_type_fond": 0.62,
+      "couleur_moyenne_fond": [
+        249,
+        248,
+        246
+      ]
+    },
+    "horodatage": "2026-11-02 16:59:09"
+  }
+]

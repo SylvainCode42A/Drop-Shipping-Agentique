@@ -1,0 +1,16 @@
+{
+  "path": "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/ollama/t2-fleur-zone-vide-seed43.png",
+  "model": "x/flux2-klein:4b",
+  "seed": 43,
+  "width": 1024,
+  "height": 1024,
+  "size_bytes": 497434,
+  "seconds_total": 52.5,
+  "seconds_load": 0.1,
+  "prompt": "A single stylized flower with a coral red bloom, a short stem and two dark olive leaves, placed in the upper two thirds of the image, on a plain flat cream background. The lower third of the image is a flat uniform cream color area with no element at all: no flower, no leaf, no stem, no ground, no grass, no shadow, no texture, no line, no decoration. Opaque gouache painting, bold simple shapes, closed outlines, medium to saturated colors, no wash, no watercolor bleed, no color gradients, children's book illustration style. No text, no face, no character, no brand, no logo.",
+  "requested": {
+    "width": 1024,
+    "height": 1024
+  },
+  "created_at": "2026-11-02T11:10:04"
+}

@@ -1,0 +1,606 @@
+{
+  "images": [
+    {
+      "fichier": "1_transparence_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": true,
+      "dpi": null,
+      "octets": 1482177
+    },
+    {
+      "fichier": "2_ref_boule_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 948849
+    },
+    {
+      "fichier": "2_ref_boule_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 242084
+    },
+    {
+      "fichier": "2_ref_coeur_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1258224
+    },
+    {
+      "fichier": "2_ref_coeur_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 201393
+    },
+    {
+      "fichier": "2_ref_etoile_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1211307
+    },
+    {
+      "fichier": "2_ref_etoile_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 265284
+    },
+    {
+      "fichier": "2_ref_oiseau_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 781906
+    },
+    {
+      "fichier": "2_ref_oiseau_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 257482
+    },
+    {
+      "fichier": "3_diff_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 114621
+    },
+    {
+      "fichier": "3_diff_nbpro.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1893941
+    },
+    {
+      "fichier": "3_edit_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 2261182
+    },
+    {
+      "fichier": "3_edit_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 2524862
+    },
+    {
+      "fichier": "3_masque.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 3172
+    },
+    {
+      "fichier": "3_masque_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 3172
+    },
+    {
+      "fichier": "3_masque_nbpro.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 8166
+    },
+    {
+      "fichier": "4_masque.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 2479
+    },
+    {
+      "fichier": "4_zone_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1729829
+    },
+    {
+      "fichier": "4_zone_ideo45_masque.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1744774
+    },
+    {
+      "fichier": "4_zone_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1792,
+      "hauteur": 2400,
+      "profil_icc": false,
+      "dpi": [
+        300,
+        300
+      ],
+      "octets": 2639293
+    },
+    {
+      "fichier": "5_boule_ideo45_opaque.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 733899
+    },
+    {
+      "fichier": "5_boule_ideo45_transp.png",
+      "format_reel": "PNG",
+      "mode": "RGBA",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": true,
+      "dpi": null,
+      "octets": 954440
+    },
+    {
+      "fichier": "5_boule_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": [
+        300,
+        300
+      ],
+      "octets": 416371
+    },
+    {
+      "fichier": "6_diff_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 61559
+    },
+    {
+      "fichier": "6_diff_nbpro.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 1821941
+    },
+    {
+      "fichier": "6_hiver_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 2309953
+    },
+    {
+      "fichier": "6_hiver_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": [
+        300,
+        300
+      ],
+      "octets": 2901173
+    },
+    {
+      "fichier": "6_masque.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 3172
+    },
+    {
+      "fichier": "6_masque_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 3172
+    },
+    {
+      "fichier": "6_masque_nbpro.png",
+      "format_reel": "PNG",
+      "mode": "L",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 8164
+    },
+    {
+      "fichier": "6_scene_base_ideo45.png",
+      "format_reel": "PNG",
+      "mode": "RGB",
+      "largeur": 1024,
+      "hauteur": 1024,
+      "profil_icc": false,
+      "dpi": null,
+      "octets": 2288451
+    },
+    {
+      "fichier": "6_scene_base_nbpro.png",
+      "format_reel": "JPEG",
+      "mode": "RGB",
+      "largeur": 2400,
+      "hauteur": 1792,
+      "profil_icc": false,
+      "dpi": [
+        300,
+        300
+      ],
+      "octets": 2890120
+    }
+  ],
+  "appels": [
+    {
+      "script": "test_1_transparence",
+      "modele": "gemini-3-pro-image",
+      "fichier": "1_transparence_nbpro.png",
+      "duree_s": 14.5,
+      "mime": null,
+      "erreur": "'NoneType' object is not iterable"
+    },
+    {
+      "script": "test_1_transparence",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "1_transparence_ideo45.png",
+      "duree_s": 11.3,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "gemini-3-pro-image",
+      "fichier": "2_ref_coeur_nbpro.png",
+      "duree_s": 16.6,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "2_ref_coeur_ideo45.png",
+      "duree_s": 36.2,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "gemini-3-pro-image",
+      "fichier": "2_ref_oiseau_nbpro.png",
+      "duree_s": 14.2,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "2_ref_oiseau_ideo45.png",
+      "duree_s": 30.0,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "gemini-3-pro-image",
+      "fichier": "2_ref_boule_nbpro.png",
+      "duree_s": 14.9,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "2_ref_boule_ideo45.png",
+      "duree_s": 133.4,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "gemini-3-pro-image",
+      "fichier": "2_ref_etoile_nbpro.png",
+      "duree_s": 14.3,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_2_reference",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "2_ref_etoile_ideo45.png",
+      "duree_s": 45.9,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_3_edition_locale",
+      "modele": "gemini-3-pro-image",
+      "fichier": "3_edit_nbpro.png",
+      "duree_s": 22.9,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_3_edition_locale",
+      "modele": "gemini-3-pro-image",
+      "fichier": "3_edit_nbpro.png",
+      "duree_s": 23.4,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_3_edition_locale",
+      "modele": "precise-edit/ideogram-4-5",
+      "fichier": "3_edit_ideo45.png",
+      "duree_s": 33.3,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "gemini-3-pro-image",
+      "fichier": "4_zone_nbpro.png",
+      "duree_s": 21.3,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "4_zone_ideo45.png",
+      "duree_s": 0.2,
+      "mime": null,
+      "erreur": "HTTP 400",
+      "cout_annonce": null
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "gemini-3-pro-image",
+      "fichier": "4_zone_nbpro.png",
+      "duree_s": 21.2,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "4_zone_ideo45.png",
+      "duree_s": 11.1,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "precise-edit/ideogram-4-5",
+      "fichier": "4_zone_ideo45_masque.png",
+      "duree_s": 27.8,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_5_element_isole",
+      "modele": "gemini-3-pro-image",
+      "fichier": "5_boule_nbpro.png",
+      "duree_s": 15.0,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_5_element_isole",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "5_boule_ideo45_opaque.png",
+      "duree_s": 9.8,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_5_element_isole",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "5_boule_ideo45_transp.png",
+      "duree_s": 17.3,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "gemini-3-pro-image",
+      "fichier": "6_scene_base_nbpro.png",
+      "duree_s": 22.2,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "gemini-3-pro-image",
+      "fichier": "6_hiver_nbpro.png",
+      "duree_s": 24.1,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "6_scene_base_ideo45.png",
+      "duree_s": 0.3,
+      "mime": null,
+      "erreur": "HTTP 400",
+      "cout_annonce": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "gemini-3-pro-image",
+      "fichier": "6_scene_base_nbpro.png",
+      "duree_s": 20.8,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "gemini-3-pro-image",
+      "fichier": "6_hiver_nbpro.png",
+      "duree_s": 28.4,
+      "mime": "image/jpeg",
+      "erreur": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "6_scene_base_ideo45.png",
+      "duree_s": 10.6,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "precise-edit/ideogram-4-5",
+      "fichier": "6_hiver_ideo45.png",
+      "duree_s": 80.8,
+      "mime": null,
+      "erreur": null,
+      "cout_annonce": null
+    }
+  ],
+  "erreurs": [
+    {
+      "script": "test_1_transparence",
+      "modele": "gemini-3-pro-image",
+      "fichier": "1_transparence_nbpro.png",
+      "duree_s": 14.5,
+      "mime": null,
+      "erreur": "'NoneType' object is not iterable"
+    },
+    {
+      "script": "test_4_zone_vide",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "4_zone_ideo45.png",
+      "duree_s": 0.2,
+      "mime": null,
+      "erreur": "HTTP 400",
+      "cout_annonce": null
+    },
+    {
+      "script": "test_6_variante",
+      "modele": "generate/ideogram-4-5",
+      "fichier": "6_scene_base_ideo45.png",
+      "duree_s": 0.3,
+      "mime": null,
+      "erreur": "HTTP 400",
+      "cout_annonce": null
+    }
+  ],
+  "nombre_appels": 28,
+  "nombre_erreurs": 3
+}

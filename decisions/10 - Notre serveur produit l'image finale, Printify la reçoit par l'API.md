@@ -1,12 +1,12 @@
 ---
 type: decision
 title: 10 - Notre serveur produit l'image finale, Printify la reçoit par l'API
-status: draft
+status: validé
 date: 2026-10-29
 implemented: non
 related: ["[[FLOW - Personnalisation à la commande]]", "[[SYN - Fournisseurs]]", "[[SYN - Système]]"]
 decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"]
-last-verified: 2026-10-31
+last-verified: 2026-11-01
 tags: [dropshipping, systeme, fournisseurs, decision]
 ---
 # 10 - Notre serveur produit l'image finale, Printify la reçoit par l'API
@@ -14,6 +14,8 @@ tags: [dropshipping, systeme, fournisseurs, decision]
 > Numérotée 14 puis 13 jusqu'au 31/10/2026. Mise en cohérence le 31/10/2026 : c'est la seule décision
 > sur la production du fichier d'impression. Elle remplace le flux à prénoms obligatoires de la
 > décision 08 et la personnalisation automatisée Printify des décisions 01 et 02.
+> Précisée le 01/11/2026 par [[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]] :
+> le champ texte unique devient trois champs facultatifs (titre, prénoms, phrase).
 
 ## Contexte
 Trois mécanismes coexistaient : génération interne avec 1 à 8 prénoms obligatoires (08),
@@ -63,7 +65,7 @@ puis `send_to_production` (source : developers.printify.com/openapi.json, lu le 
 - Le suivi d'expédition ne remonte pas seul dans Shopify : à relayer depuis Printify ⚠️ à vérifier (webhooks Printify).
 - À inscrire dans A VERIFIER : commande `lineItemWithBlueprint` chez Textildruck, Chill et WOYC ;
   webhooks d'expédition Printify ; accents de la police ; rendu d'un texte long sur verre et sur bois.
-- Validation d'Antoine attendue avant de passer en `validé`.
+- Validée par Antoine le 01/11/2026.
 
 ## Concerne
 [[FLOW - Personnalisation à la commande]] · [[SYN - Fournisseurs]] · [[SYN - Système]] ·

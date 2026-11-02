@@ -1,0 +1,14 @@
+{
+  "path": "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/ollama/t6-edition-salon-hiver-seed43.png",
+  "model": "x/flux2-klein:4b",
+  "seed": 43,
+  "width": 1024,
+  "height": 1024,
+  "size_bytes": 1539544,
+  "seconds_total": 59.6,
+  "seconds_load": 0.1,
+  "reference_image": "t3-salon-seed43.png",
+  "prompt": "Edit this image: make the window show falling snow outside and add a small decorated Christmas tree in the left corner. Keep everything else exactly the same: the same armchair, throw, lamp, plant, curtain, window frame, floor, and the same empty cream right half. Opaque gouache painting, bold simple shapes, closed outlines, medium to saturated colors, no wash, no watercolor bleed, no color gradients, children's book illustration style. No text, no face, no character, no brand, no logo.",
+  "via": "test_img2img.py (API directe, hors connecteur)",
+  "created_at": "2026-11-02T11:54:46"
+}
