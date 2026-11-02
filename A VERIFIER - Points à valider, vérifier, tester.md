@@ -130,6 +130,9 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Rendu physique : blanc et alpha sur verre UV et sur bois (sous-couche blanche ?) ; forme réelle de la boule (disque biseauté ou sphère) ; recto-verso du bois ; question au support Printify avant la commande ; aucun avis client avec photo sur les trois références | support, échantillon | [[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]] | P1 (avant le 05/11) | |
 | Zone du mug : panneau de 2475 × 1155 px (environ 210 × 98 mm) et non tour complet, environ 40 mm sous l'anse ; à confirmer par `variants.json` | connecté (jeton Printify) | [[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]] | P1 | |
 | Concurrents : réparer le CSV (30 premières lignes à 35-38 colonnes) ; vérifier le design 0065 de Cadeau Plus ; nombre de publicités Cadeau Plus gonflé par la recherche par mot-clé | relevé | [[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]] | P2 | |
+| Rendu imprimé des éléments validés : flocon (blanc cassé et bleu clair) sur la céramique blanche du mug ; mailles blanches du cœur à 12-15 px ; guirlandes et boules du sapin d'hiver sous 12 px à 1 004 px | échantillon (commande test, puis première commande réelle) | [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]] | P1 | |
+| Recoloration par code (`recolorer.py`) sur une scène à ombres fortes ou à couleurs proches entre rôles ; feuilles du bouquet qui suivent la vaisselle | test | [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]] | P2 | |
+| Journal `production.json` : `oeillet-seed3.png` généré deux fois, une entrée sans verdict ; `analyse.py --verdict` n'écrit que sur la dernière entrée | relevé | [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]] | P3 | |
 
 ## Marché
 
@@ -150,3 +153,10 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 
 ## Tranchés
 (déplacer ici les lignes résolues, avec résultat et date)
+
+| Point | Moyen | Source | Priorité | Résultat |
+|---|---|---|---|---|
+| La graine de Nano Banana Pro reproduit-elle une image à l'identique ? | test | [[MOD - Connecteur nolaprint-image]] | — | **Non** (02/11/2026) : même prompt, même graine, même dessin mais proportions différentes (tête 17,3 % contre 13,9 %), écart moyen 9,5 sur 255. Une image validée se garde en fichier ; les six palettes de la scène se font par recoloration de code (brief, section 5). |
+| Rendu gouache atteignable par Nano Banana Pro | test | [[CMP - Brief de génération des illustrations de Noël 2026]] | — | **Oui** (02/11/2026), avec le préfixe v3 et sans image de référence : douze fleurs et six ornements validés, style cohérent sur 22 éléments. Glaïeul remplacé par le tournesol. |
+| Image de référence de style : utile ou nuisible ? | test | [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]] | — | **Nuisible** (02/11/2026) : le modèle recopie le sujet de la référence autour du nôtre (feuilles de la rose, couronne de souci). Le style tient par le préfixe seul. |
+| Déclinaisons de palette d'une scène : régénération ou code ? | test | [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]] | — | **Code** (02/11/2026) : cinq régénérations à la même graine ont donné cinq mises en place ; `recolorer.py` donne six scènes identiques à la couleur près, sans appel. |

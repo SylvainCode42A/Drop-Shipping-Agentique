@@ -55,6 +55,11 @@ décision 01, et une catégorie vide nuit plus qu'une absence. À ouvrir quand u
   fiche : janvier œillet, février violette, mars jonquille, avril marguerite, mai muguet, juin rose,
   juillet pied-d'alouette, août glaïeul, septembre aster, octobre souci, novembre chrysanthème,
   décembre houx. La cliente choisit la fleur dans le champ de chaque prénom.
+- *Production du 02/11/2026* : douze fleurs validées en gouache (journal `production.json`). Août est le
+  **tournesol**, le glaïeul n'ayant pas passé en sept essais ; mars garde la jonquille, la tulipe reste
+  en réserve. La liste affichée sur la fiche dit « août : tournesol ». Les six ornements, la scène de
+  goûter en six palettes et son calque d'hiver sont validés le même jour ; les 18 éléments détourés
+  sont dans `production/valides/` ([[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]).
 - **Noël : six ornements** au choix de la même façon : boule, étoile, sapin, flocon, bonhomme de pain
   d'épice, cœur de Noël.
 - Chaque symbole est un élément isolé, généré une fois en gouache, détouré, placé par le code selon le

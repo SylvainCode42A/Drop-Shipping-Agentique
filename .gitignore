@@ -1,3 +1,8 @@
 .DS_Store
 3-systeme/recherches/planche-test/api/adresse.json
 __pycache__/
+
+# Images de production de Noël 2026 (environ 100 Mo), hors dépôt pour l'instant.
+# Les scripts, production.json, gabarits.json et les éléments détourés de valides/ restent suivis.
+3-systeme/recherches/tests-images/production/*.png
+3-systeme/recherches/tests-images/production/lots/

@@ -49,7 +49,9 @@ Le workflow du créateur, discuté le 28/10/2026, a trois phases : calibration (
 - Reste bloquant avant le 05/11 : produire la planche de test ([[TODO - Planche de test des trois procédés pour la commande du 05-11]]), question au support Printify, jeton API Printify.
 - Ollama et un connecteur MCP local sont installés sur le Mac d'Antoine pour calibrer les prompts.
 - Planche de test produite et rangée, commande test Printify passée le 02/11 (voir le TODO).
-- Décision 15 prise : catalogue de Noël, six destinataires (dont Famille ; Noël en collection croisée, Amies et fratrie masquée), douze fleurs de naissance et six ornements au choix par prénom, table de goûter en scène fixe, six palettes, neuf produits. Prochaine étape : le brief de génération.
+- Décision 15 prise : catalogue de Noël, six destinataires (dont Famille ; Noël en collection croisée, Amies et fratrie masquée), douze fleurs de naissance et six ornements au choix par prénom, table de goûter en scène fixe, six palettes, neuf produits. Brief de génération écrit ([[CMP - Brief de génération des illustrations de Noël 2026]]).
+- Production lancée le soir même et terminée : rose de référence au préfixe v3, **douze fleurs, six ornements, la scène en six palettes et son calque d'hiver validés**, 18 éléments détourés dans `production/valides/` (66 appels, environ 9 USD ; [[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]). Connecteur MCP local écrit et documenté ([[MOD - Connecteur nolaprint-image]]). Deux leçons qui corrigent le brief : pas d'image de référence (elle se recopie), palettes par recoloration de code (la graine ne fixe pas la mise en place).
+- Prochaine étape : les gabarits de support et le module de rendu (texte en trois champs, symboles par prénom, recadrage de la scène par support), puis les mockups provisoires et les fiches Shopify, avant le 15/11.
 
 ## État au 01/11/2026
 - Décisions 01, 02 et 10 validées par Antoine ; décision 13 prise (texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente).

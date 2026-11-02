@@ -2,7 +2,7 @@
 type: component
 title: CMP - Brief de génération des illustrations de Noël 2026
 status: validé
-related: ["[[CMP - Personnalisation par produit]]", "[[SYN - Système]]", "[[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]]", "[[RCH - Détourage, nettoyage des bords et agrandissement pour l'impression (02-11-2026)]]", "[[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]]", "[[RCH - Rendu du texte, polices et OCR des accents (02-11-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[CMP - Personnalisation par produit]]", "[[MOD - Connecteur nolaprint-image]]", "[[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]", "[[SYN - Système]]", "[[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]]", "[[RCH - Détourage, nettoyage des bords et agrandissement pour l'impression (02-11-2026)]]", "[[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]]", "[[RCH - Rendu du texte, polices et OCR des accents (02-11-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]", "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"]
 last-verified: 2026-11-02
 tags: [dropshipping, systeme, generation-images, brief, component]
@@ -33,17 +33,21 @@ flowchart LR
 ```
 
 ## 1. Style commun
-Préfixe de tous les prompts, en anglais, inchangé :
+Préfixe de tous les prompts, en anglais, inchangé. Version v3 du 02/11/2026 : le v1 (« opaque flat
+pigment, closed bold contours ») donnait du vecteur à contour noir ; le v2 (traces de pinceau, sans
+contour) a réglé la matière mais ramené du lavis sur les feuilles et des fonds en dégradé. Les deux
+restent en commentaire dans `brief.py`.
 
-> gouache illustration, opaque flat pigment, no wash, no gradient, closed bold contours, medium to
-> saturated colors, simple bold shapes, no fine detail, no drop shadow, no paper texture, no text,
-> no letters, no watermark, children's book illustration style, no realistic face, no recognizable
-> character or brand
+> gouache painting, hand-painted with visible brush strokes inside the shapes, fully opaque paint,
+> no wash, no watercolor, no transparency, no faded or ghosted parts, every shape ends with a clean
+> crisp edge, thick painterly shapes, no black outline, no vector look, no gradient, medium to
+> saturated colors, simple bold shapes, no fine detail, no drop shadow, no text, no letters,
+> no watermark, children's book illustration, no realistic face, no recognizable character or brand
 
-Suffixe des éléments isolés :
+Suffixe des éléments isolés (v2 du 02/11/2026, renforcé contre les fonds en dégradé) :
 
-> single object, centered, fully inside the frame with wide margins, flat uniform background
-> color #00C853, nothing else in the image
+> single object, centered, fully inside the frame with wide margins, the background is one single
+> flat color {FOND} with no gradient, no vignette, no halo, no glow, nothing else in the image
 
 Suffixe des scènes :
 
@@ -51,8 +55,12 @@ Suffixe des scènes :
 > color {FOND} with nothing on it, soft even lighting
 
 Paramètres : `gemini-3-pro-image`, `image_size` `2K`, `aspect_ratio` `1:1` pour les éléments et
-`4:3` pour les scènes, graine notée à chaque appel. Référence de style : le premier élément validé,
-passé en image de référence à tous les appels suivants (3 références de style au plus).
+`4:3` pour les scènes, graine notée à chaque appel (elle fixe le dessin, pas les pixels).
+**Pas d'image de référence par défaut** (*corrigé le 02/11/2026*,
+[[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]) :
+le modèle recopie le sujet de la référence autour du nôtre (feuilles de la rose sur la jonquille,
+couronne de souci autour de la tulipe). Le style tient par le préfixe seul. Une référence reste
+possible pour un cas précis, décidé en chat, jamais en règle.
 
 Fond des éléments : vert #00C853, hors de toute la palette. Si un élément contient du vert (feuilles),
 le fond passe au magenta #E600E6 pour cet élément, noté dans le journal.
@@ -114,8 +122,17 @@ Prompt de base, entre le préfixe et le suffixe de scène :
 > a few wooden toys on the floor, a chair on the left, warm interior, wall color {FOND}, floor in
 > {ACCENT3}
 
-Six appels, un par palette, même graine, en remplaçant {FOND}, {ACCENT1..3} par les codes de la
-section 2. Les six scènes doivent avoir la même composition : seule la palette change.
+Six scènes, une par palette, avec la même composition. *Corrigé le 02/11/2026, deux fois* : la graine
+fixe le dessin mais pas la mise en place (mesure dans [[MOD - Connecteur nolaprint-image]], confirmée
+sur cinq scènes), donc ni la régénération à la même graine ni l'édition locale par palette ne sont
+retenues. Méthode retenue :
+1. générer et valider la scène Mamie (deux graines, prompt ci-dessus avec les codes Mamie) ;
+2. obtenir les cinq autres palettes par **recoloration de code** (`recolorer.py`) : chaque zone d'un
+   rôle (mur, nappe, vaisselle, sol) est retrouvée en Lab et ramenée sur le code de la palette cible,
+   nuances et traces de pinceau gardées ; composition identique par construction, aucun appel ;
+3. prolonger par code la bande de sol vers la droite sous la zone de texte, pour que la pièce ne se
+   lise pas comme un panneau collé (à ajouter à `recolorer.py`).
+Limite connue : les petites feuilles du bouquet suivent la couleur de la vaisselle.
 
 Calque d'hiver, une fois sur la scène Mamie validée, par édition en second tour :
 
@@ -123,13 +140,14 @@ Calque d'hiver, une fois sur la scène Mamie validée, par édition en second to
 > in the left corner; keep everything else exactly the same
 
 Puis recollage par code de la zone éditée sur l'image d'origine (RCH modèles d'images), et le même
-calque est reporté sur les cinq autres palettes par le code (recoloration), pas par régénération.
+calque est reporté sur les cinq autres palettes par `recolorer.py`, pas par régénération. Mesuré le
+02/11 : écart hors zone de 2,63 sur 255 avant recollage, zéro après.
 
 ## 6. Procédure
 1. Un script par série (fleurs, ornements, scènes), dans `3-systeme/recherches/tests-images/production/`,
    réutilisant `commun.py`. Clé dans `GEMINI_API_KEY`, jamais écrite.
-2. Ordre : la rose en premier (sujet simple), validée, devient la référence de style ; puis les onze
-   autres fleurs, puis les ornements, puis la scène Mamie, puis les cinq palettes, puis l'hiver.
+2. Ordre : la rose en premier (sujet simple) pour caler le préfixe ; puis les onze autres fleurs, puis
+   les ornements, puis la scène Mamie, puis la recoloration et l'hiver. Sans image de référence.
 3. Deux essais par élément, graines 1 et 2 ; un troisième seulement si les deux sont refusés, avec un
    prompt corrigé selon la raison du refus. Pas plus de quatre.
 4. Journal `production.json` : élément, prompt complet, graine, fichier, verdict, raison du refus en
@@ -151,7 +169,10 @@ Un refus porte une raison courte parmi : silhouette, matière, détail fin, ombr
 zone de texte envahie, autre (précisé).
 
 ## Entrées et sorties
-- Entrées : ce brief, `commun.py`, la clé API, la référence de style une fois validée.
+- Implémentation : `brief.py` (ce brief en données, seule source des prompts), `generer.py` (un appel
+  par élément, journal), `analyse.py` (mesures, planche contact, verdicts) dans
+  `3-systeme/recherches/tests-images/production/`, pilotés par [[MOD - Connecteur nolaprint-image]].
+- Entrées : ce brief, `commun.py`, la clé API.
 - Sorties : 18 PNG alpha d'éléments, 6 scènes et 1 calque d'hiver en PNG, `production.json`.
 - Coût estimé : 36 à 70 appels Nano Banana Pro en 2K, soit 5 à 10 USD (estimé, 0,134 USD l'appel).
 
@@ -159,9 +180,13 @@ zone de texte envahie, autre (précisé).
 - Le modèle dessine du texte ou un visage : refus, prompt renforcé, nouvelle graine.
 - Une fleur n'est pas reconnaissable après quatre essais : on la remplace par la fleur de repli
   (tulipe pour mars, pivoine pour juin, tournesol pour août, dahlia pour septembre), noté dans la
-  décision 15 à la revue.
+  décision 15 à la revue. *02/11/2026 : le glaïeul a été remplacé par le tournesol ; la jonquille a
+  passé au septième essai, la tulipe reste en réserve.*
 - La scène déborde sur le mur : on repeint la zone par masque (Precise Edit) ou on recadre.
-- Dérive de style au fil des appels : on repasse la référence et on régénère les derniers éléments.
+- Dérive de style au fil des appels : on compare à la planche contact des éléments validés et on
+  régénère les derniers éléments avec une autre graine.
+- Cadrage vu seulement à l'œil : fleur peinte dans un rectangle plus clair que le fond, ou sur une carte
+  à bordure blanche. La mesure de bordure ne les voit pas ; la planche contact, si.
 
 ## Notes liées
 [[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]] ·
