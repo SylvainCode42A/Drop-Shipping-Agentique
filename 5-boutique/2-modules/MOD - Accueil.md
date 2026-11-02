@@ -1,73 +1,79 @@
 ---
 type: module
 title: MOD - Accueil
-language: HTML, CSS, JavaScript
-path: Claude outputs/nolaprint-sans-apercu-en-direct.html
-symbol: renderHome
+language: Liquid, JSON, CSS, JavaScript
+path: ~/Documents/nolaprint-theme/templates/index.json (layout mesange) · sections/np-hero, np-trust, np-modes, np-galerie, np-catalogue, np-offres, np-demo, np-faq
+symbol: index.json, initGallery, initDemo
 status: draft
-related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Produit]]", "[[CMP - Illustrations]]", "[[FLOW - Routage par ancre]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-31
+related: ["[[OVR - Boutique NolaPrint]]", "[[CMP - Catégories des designs]]", "[[CMP - Illustrations]]", "[[CMP - Produit]]", "[[FLOW - Lots et trio]]", "[[MOD - Habillage]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]"]
+last-verified: 2026-11-02
 tags: [dropshipping, boutique, module]
 ---
 # MOD - Accueil
 
 ## Rôle
-La page d'arrivée, celle que voit le trafic publicitaire. Elle enchaîne sept sections, de la
-promesse jusqu'aux questions, et renvoie vers la fiche du mug ou du Duo.
+La page d'arrivée du trafic publicitaire (`/`). Huit sections, de la promesse aux questions, qui
+renvoient toutes vers une fiche produit : un design précis (`?design=dNN`), « Votre image » (`?mode=libre`)
+ou un lot (`?lot=3`).
 
 ## Intention
-- La page parle à l'acheteuse (une femme adulte qui gère les cadeaux de la famille), pas aux
-  grands-parents ([[SYN - Choix de la niche]]). Le titre nomme le produit visible sur l'image, pour
-  reprendre le message de la publicité ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
-- La version ordinateur est figée ; seul le téléphone s'ajuste (trafic principal attendu sur mobile).
-- Les avis défilent sans pause au survol, et sont étiquetés « Exemple » tant qu'il n'y a pas de vrais avis.
+- Parler à l'acheteuse qui cherche un cadeau pour quelqu'un de sa famille : la galerie se filtre par
+  personne ([[CMP - Catégories des designs]]).
+- Montrer les deux façons de personnaliser dès le haut : nos designs, ou votre image.
+- Chaque bouton mène à une fiche déjà réglée (design choisi, mode, lot), sans étape inutile.
+- Surtitre de la couverture retiré le 02/11 à ta demande (réglage vide par défaut).
 
 ## Diagramme
 ```mermaid
 flowchart TB
-    C["Couverture l.911<br/>titre, mug, boutons, compte à rebours"] --> T["Réassurance l.924<br/>4 promesses"]
-    T --> K["Catalogue l.931 · fond bordeaux<br/>filtres + 3 cartes + Voir plus"]
-    K --> D["Démo l.944<br/>prénoms → mug redessiné"]
-    D --> A["Avis l.959 · fond bordeaux<br/>2 lignes qui défilent"]
-    A --> U["Duo Mamie & Papi l.967"]
-    U --> Q["Questions l.975<br/>5 premières de faqItems()"]
+    H["1. Couverture np-hero<br/>titre, 3 étapes, 2 boutons, mug + 2 vignettes"] --> T["2. Réassurance np-trust<br/>4 arguments"]
+    T --> M["3. Deux façons np-modes<br/>nos designs / votre image"]
+    M --> G["4. Galerie np-galerie #designs<br/>onglets objet + 9 catégories + 11 cartes"]
+    G --> C["5. Catalogue np-catalogue #catalogue<br/>3 cartes produit"]
+    C --> O["6. Nos offres np-offres #offres<br/>3 lots + trio"]
+    O --> D["7. Démo np-demo #essai<br/>prénom tapé → mug"]
+    D --> Q["8. Questions np-faq #questions<br/>6 questions"]
 ```
 
-## Fonctions
+## Les sections
+| # | Section | Contenu | Liens sortants |
+|---|---|---|---|
+| 1 | `np-hero` | titre « Le cadeau personnalisé, à votre façon. », texte, étapes 1-2-3 (masquées sur téléphone), boutons « Choisir un design » et « Créer le mien de A à Z », mug `np-mug-d01-hd.jpg` + boule d07 + bois d05, étiquette « Mug personnalisé · prix » | `#designs`, mug `?mode=libre`, mug `?design=d01` |
+| 2 | `np-trust` | Livraison offerte dès 60 € · Fabriqué en Europe · 10 designs + création libre · Casse remplacée | — |
+| 3 | `np-modes` | Option 1 « Un de nos designs, à votre prénom » · Option 2 « Votre création de A à Z » | `#designs`, mug `?mode=libre` |
+| 4 | `np-galerie` | onglets Mugs / Boules de Noël en verre / Décorations en bois, puces de catégorie, 10 cartes design + carte « Créer le vôtre », prix + prix barré sur une ligne | fiche `?design=dNN`, `?mode=libre` |
+| 5 | `np-catalogue` | 3 cartes produit (`np-product-card`), ou la liste choisie dans l'éditeur | fiche |
+| 6 | `np-offres` | Lot de 3 mugs / boules / décorations (prix lot + prix barré, pastille −X €) et Trio de Noël (51,15 € au lieu de 56,35 €) | fiche `?lot=3`, mug |
+| 7 | `np-demo` | 5 designs (d01-d05), champ texte, mug redessiné à chaque frappe | mug `?design=dNN&texte=…` |
+| 8 | `np-faq` | 6 questions (personnaliser, image, formes, lave-vaisselle, date Noël, retours) | — |
+
+Textes des blocs : `templates/index.json` ; valeurs par défaut : schéma de chaque section.
+
+## Fonctions et repères
 | Symbole | Rôle | Appelé par | Appelle |
 |---|---|---|---|
-| `renderHome()` l.907 | construit le HTML des sept sections | [[FLOW - Routage par ancre]] `route` | `daysLeft`, `artFor`, `homeGrid`, `rvCard`, `rvSmall`, `faqItems` |
-| `daysLeft()` l.620 | jours avant `NOEL_DEADLINE` (10/12/2026), 0 ensuite | `renderHome` | — |
-| `homeGrid(list)` l.906 | les 3 premiers produits de la liste + la carte « Voir plus » | `renderHome`, filtres | [[MOD - Catalogue et fiche produit]] `card`, `moreCard` |
-| `moreCard(n)` l.905 | carte « Voir plus » vers `#boutique` | `homeGrid` | — |
-| `rvCard(r)` l.903, `rvSmall(r)` l.904 | une carte d'avis longue ou courte, avec l'étiquette « Exemple » | `renderHome` | — |
-| `faqItems()` l.878 | les 7 questions ; l'accueil en montre 5 | `renderHome`, `LEGAL.faq` | — |
-| `bindPage()` l.1275 | branche les filtres, la démo et le lien « Voir les cadeaux » | `route` | `homeGrid`, [[CMP - Illustrations]] `artFor` |
+| `np-hero.liquid` l.9-34 | couverture ; étiquette prix l.32 | `index.json` | `all_products['mug-personnalise']` |
+| `np-trust.liquid` l.1-17 | 4 blocs icône + titre + texte (max 4) | `index.json` | — |
+| `np-modes.liquid` l.9-49 | deux cartes rouges | `index.json` | — |
+| `np-galerie.liquid` l.12-81 | onglets l.18, puces l.24-32, prix et prix barré l.45-64, cartes l.67, carte libre l.69 | `index.json` | `np-designs` mode `gallery` |
+| `np-catalogue.liquid` l.11-24 | grille produits, message si aucun produit | `index.json` | `np-product-card` |
+| `np-offres.liquid` l.21-72 | cartes lots l.24-51, trio l.52-71, note l.73 | `index.json` | réglages `np_lot_off_*`, `np_trio_*` |
+| `np-demo.liquid` l.9-34 | scène + 5 vignettes + bouton | `index.json` | `np-name-overlay`, `np-designs` `json` |
+| `np-faq.liquid` l.1-8 | `<details>` par question | `index.json` | — |
+| `initGallery(sec)` `np.js` l.52 | onglets et filtres de la galerie | `init()` | — |
+| `initDemo(box)` `np.js` l.72 | redessine le prénom, met à jour le lien du bouton | `init()` | `setOverlay`, `withFont` |
 
 ## Entrées et sorties
-- Entrées : `PRODUCTS` ([[CMP - Produit]]), `REVIEWS` et `SHORT_REVIEWS` (avis d'exemple), `NOEL_DEADLINE`.
-- Sortie : le HTML injecté dans `<main id="app">`. Liens sortants : `#p-mug-famille-illustree`,
-  `#p-duo-mamie-papi`, `#boutique`, `#faq`.
-- Filtres : `data-filter` = `all`, `mamie`, `sapin`, `cuisine`, `lots` ; chaque clic refait `homeGrid` avec la liste filtrée.
-- Démo : `#demoTitle` et `#demoN0` à `#demoN3` redessinent le mug à chaque frappe, sans rien enregistrer.
-
-## Dans le thème Shopify
-| Bloc de la maquette | Devient |
-|---|---|
-| Couverture, réassurance, Duo | sections du thème, textes repris tels quels |
-| Catalogue et filtres | collection Shopify, filtres par tag ⚠️ à vérifier |
-| Démo | à décider : reprise en section, ou renvoi vers l'aperçu de l'app de personnalisation ⚠️ |
-| Avis | app d'avis vérifiés (Judge.me ou équivalent ⚠️ à choisir) |
-| Compte à rebours | section liée à une date de configuration |
+- Entrées : les 3 produits (prix mini, prix barré), réglages du thème (lots, trio, suppléments), textes de `index.json`.
+- Sorties : uniquement des liens. La démo n'enregistre rien ; son bouton transmet design et texte à la fiche.
 
 ## Cas limites
-- Après le 10/12/2026 : la pastille disparaît (`d > 0`), mais le bandeau garde « jusqu'au 10 décembre ».
-- Un filtre qui donne moins de 3 produits affiche moins de cartes, plus « Voir plus ».
-- Démo sans prénom : le mug affiche « Léa » par défaut.
-- Le lien « Voir les cadeaux » pointe vers `#catalogue-anchor`, qui n'existe pas ; c'est le clic
-  JavaScript qui fait défiler vers `#catalogue`. Sans JavaScript, le lien ne mène nulle part.
-- L'en-tête de la FAQ contient un lien vide `<a href="#faq"></a>` l.976, et le titre « Foire au questions » prend un « x ».
+- Produit absent : la galerie affiche les prix de secours (« Dès 18,45 € », « Dès 19,95 € », « Dès 17,95 € ») ; le catalogue affiche « Les produits arrivent ».
+- Lots désactivés (`np_lots_enabled` faux) : la section Offres disparaît entière.
+- Remise trio à 0 ou désactivée : la carte trio affiche « 56,35 € les trois », sans prix barré.
+- Prix barrés : affichés seulement si le « Prix avant réduction » Shopify est renseigné ⚠️ décision 09.
+- Textes de la FAQ et dates de Noël écrits en dur dans `index.json` : à mettre à jour à la main.
 
 ## Notes liées
-[[OVR - Boutique NolaPrint]] · [[MOD - Catalogue et fiche produit]] · [[MOD - Habillage]] · [[FLOW - Routage par ancre]]
+[[CMP - Catégories des designs]] · [[CMP - Illustrations]] · [[FLOW - Lots et trio]] · [[MOD - Habillage]]
