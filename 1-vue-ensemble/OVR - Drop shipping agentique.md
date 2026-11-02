@@ -3,7 +3,7 @@ type: overview
 title: OVR - Drop shipping agentique
 status: validé
 related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[SYN - Système]]", "[[OVR - Boutique NolaPrint]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]"]
+decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]", "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"]
 last-verified: 2026-11-02
 tags: [dropshipping, overview]
 ---
@@ -48,6 +48,8 @@ Le workflow du créateur, discuté le 28/10/2026, a trois phases : calibration (
 - Zone du mug Printify : panneau de 2475 × 1155 px (environ 210 × 98 mm), pas un tour complet.
 - Reste bloquant avant le 05/11 : produire la planche de test ([[TODO - Planche de test des trois procédés pour la commande du 05-11]]), question au support Printify, jeton API Printify.
 - Ollama et un connecteur MCP local sont installés sur le Mac d'Antoine pour calibrer les prompts.
+- Planche de test produite et rangée, commande test Printify passée le 02/11 (voir le TODO).
+- Décision 15 prise : catalogue de Noël, six destinataires (dont Famille ; Noël en collection croisée, Amies et fratrie masquée), douze fleurs de naissance et six ornements au choix par prénom, table de goûter en scène fixe, six palettes, neuf produits. Prochaine étape : le brief de génération.
 
 ## État au 01/11/2026
 - Décisions 01, 02 et 10 validées par Antoine ; décision 13 prise (texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente).
@@ -83,10 +85,11 @@ Chacune fait l'objet d'une note NN dans `decisions/`.
 13. ~~Les champs de personnalisation~~ : prise, [[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]] ; détaillée dans [[CMP - Personnalisation par produit]].
 
 14. ~~Le brief visuel~~ : prise, [[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]] ; options de repli gardées dans la note.
+15. ~~Le catalogue de Noël~~ : prise, [[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]].
 
 Décisions attendues, dans l'ordre proposé :
-15. La conservation des métadonnées IPTC et C2PA dans la chaîne de publication ([[SYN - Juridique]], [[SYN - Système]]).
-16. La politique de contenus interdits, base de la REGLE des agents ([[SYN - Juridique]]).
+16. La conservation des métadonnées IPTC et C2PA dans la chaîne de publication ([[SYN - Juridique]], [[SYN - Système]]).
+17. La politique de contenus interdits, base de la REGLE des agents ([[SYN - Juridique]]).
 
 ## Où lire quoi
 | Question | Note |
