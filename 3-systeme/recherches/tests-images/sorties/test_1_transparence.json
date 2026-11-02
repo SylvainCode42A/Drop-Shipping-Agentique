@@ -1,0 +1,57 @@
+[
+  {
+    "modele": "gemini-3-pro-image",
+    "prompt": "A single stylized flower, centered, isolated, on a transparent background. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+    "fichier": "1_transparence_nbpro.png",
+    "references": [],
+    "aspect": "1:1",
+    "taille": "1K",
+    "mime": null,
+    "duree_s": 14.5,
+    "erreur": "'NoneType' object is not iterable",
+    "horodatage": "2026-11-02 16:51:33"
+  },
+  {
+    "modele": "generate/ideogram-4-5",
+    "champs": {
+      "prompt": "A single stylized flower, centered, isolated, on a transparent background. gouache illustration, opaque pigment, no wash, closed contours, medium to saturated colors, bold simple shapes, no fine detail, no drop shadow, no paper texture.",
+      "magic_prompt": "off",
+      "background": "transparent",
+      "quality": "medium",
+      "size": "1024x1024",
+      "num_images": "1"
+    },
+    "joints": [],
+    "fichier": "1_transparence_ideo45.png",
+    "duree_s": 11.3,
+    "erreur": null,
+    "reponse": {
+      "generation_kind": "sampling",
+      "generation_id": "jmJvYsGuQjiPzhC2DGTzCQ",
+      "data": [
+        {
+          "url": "<url>",
+          "prompt": "{\n  \"high_level_description\": \"A single stylized flower centered on a transparent background, rendered as a gouache illustration with opaque pigment, closed contours, and bold simple shapes in medium to saturated colors.\",\n  \"compositional_deconstruction\": {\n    \"background\": \"transparent background\",\n    \"elements\": [\n      {\n        \"type\": \"obj\",\n        \"desc\": \"A single stylized flower centered in the frame, filling roughly 70% of the canvas. Five rounded petals in saturated coral pink radiate from a circular mustard-yellow center. A short sage-green stem extends downward with two simple pointed leaves angled outward. Opaque gouache pigment, closed black contours, flat fills with no wash or gradient, bold simplified shapes.\"\n      }\n    ]\n  }\n}",
+          "resolution": "1024x1024",
+          "is_image_safe": true,
+          "seed": 1720320148
+        }
+      ],
+      "seed": 1720320148
+    },
+    "horodatage": "2026-11-02 16:51:45"
+  },
+  {
+    "lecture": {
+      "fichier": "1_transparence_ideo45.png",
+      "mode": "RGBA",
+      "taille": [
+        1024,
+        1024
+      ],
+      "part_pixels_transparents": 0.765,
+      "part_pixels_semi_transparents": 0.1945
+    },
+    "horodatage": "2026-11-02 16:51:45"
+  }
+]

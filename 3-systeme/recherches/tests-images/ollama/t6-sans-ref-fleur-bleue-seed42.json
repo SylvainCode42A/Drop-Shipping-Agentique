@@ -1,0 +1,14 @@
+{
+  "path": "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/ollama/t6-sans-ref-fleur-bleue-seed42.png",
+  "model": "x/flux2-klein:4b",
+  "seed": 42,
+  "width": 1024,
+  "height": 1024,
+  "size_bytes": 1491133,
+  "seconds_total": 56.2,
+  "seconds_load": 0.1,
+  "reference_image": null,
+  "prompt": "Use the reference image as the model for style and shape. Paint the same single stylized flower, with the same shape, the same outline and the same texture, but with deep blue petals and a yellow center, alone, centered, on the same flat uniform green background. Opaque gouache painting, bold simple shapes, closed outlines, medium to saturated colors, no wash, no watercolor bleed, no color gradients, children's book illustration style. No text, no face, no character, no brand, no logo.",
+  "via": "test_img2img.py (API directe, hors connecteur)",
+  "created_at": "2026-11-02T11:53:47"
+}

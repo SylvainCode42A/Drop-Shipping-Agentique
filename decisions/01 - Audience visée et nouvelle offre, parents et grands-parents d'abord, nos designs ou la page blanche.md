@@ -1,12 +1,12 @@
 ---
 type: decision
 title: 01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche
-status: draft
+status: validé
 date: 2026-10-30
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]", "[[RCH - Audit des cibles adultes chez les concurrents (30-10-2026)]]", "[[RCH - Choix de la niche de lancement (25-10-2026)]]", "[[RCH - Départ en retraite, mugs et assiettes personnalisés (25-10-2026)]]", "[[RCH - Passions des plus de 40 ans pour mugs et assiettes personnalisés (25-10-2026)]]", "[[RCH - Mugs et assiettes pour les anniversaires de 40, 50, 60 et 70 ans (25-10-2026)]]", "[[RCH - Concurrents du mug famille à prénoms (29-10-2026)]]", "[[RCH - Concurrence des mugs et assiettes personnalisés en France (25-10-2026)]]", "[[RCH - Sélection du catalogue de lancement (30-10-2026)]]", "[[SYN - Juridique]]", "[[MOD - Thème Shopify]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
-last-verified: 2026-10-31
+last-verified: 2026-11-01
 tags: [dropshipping, niches, boutique, decision]
 ---
 # 01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche
@@ -133,7 +133,7 @@ seule décision de prix (page blanche : + 2 € depuis le 31/10/2026).
 - À inscrire dans A VERIFIER : calques image Printify, boule transparente, contrôle des images
   clientes. Réserves déjà au registre, à lever par le premier test : aucun volume Google mesuré ;
   disposition à payer non prouvée.
-- Validation d'Antoine attendue avant de passer en `validé`.
+- Validée par Antoine le 01/11/2026.
 
 ## Concerne
 [[OVR - Drop shipping agentique]] · [[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]] · [[SYN - Choix de la niche]] · [[SYN - Juridique]] · [[MOD - Thème Shopify]]

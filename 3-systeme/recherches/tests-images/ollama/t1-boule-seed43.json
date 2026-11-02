@@ -1,0 +1,16 @@
+{
+  "path": "/Users/munozantoine/Documents/Obsidian Vault/20 Projets/Drop shipping agentique/3-systeme/recherches/tests-images/ollama/t1-boule-seed43.png",
+  "model": "x/flux2-klein:4b",
+  "seed": 43,
+  "width": 1024,
+  "height": 1024,
+  "size_bytes": 657311,
+  "seconds_total": 56.4,
+  "seconds_load": 0.1,
+  "prompt": "A single round Christmas bauble ornament, deep blue with one simple ochre yellow band and a small ochre cap with a short loop of string, alone, centered, entirely inside the frame including the string loop, with a wide empty margin on every side, on a perfectly flat uniform pure green background (#00FF00). The background is one single flat color: no shadow, no cast shadow, no reflection, no glow, no halo, no vignette, no gradient, no texture. Opaque gouache painting, bold simple shapes, closed outlines, medium to saturated colors, no wash, no watercolor bleed, no color gradients, no shiny highlights, children's book illustration style. No text, no face, no character, no brand, no logo.",
+  "requested": {
+    "width": 1024,
+    "height": 1024
+  },
+  "created_at": "2026-11-02T11:06:51"
+}
