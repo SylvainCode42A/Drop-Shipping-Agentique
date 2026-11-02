@@ -1,99 +1,99 @@
 ---
 type: component
 title: CMP - Produit
-language: JavaScript
-path: Claude outputs/nolaprint-sans-apercu-en-direct.html
-symbol: PRODUCTS, bySlug
+language: Shopify (produits, variantes, tags) + Liquid
+path: ~/Documents/nolaprint-theme/_imports-shopify/nolaprint-produits-v3-prix-decision-09.csv · snippets/np-type.liquid · config/settings_schema.json (groupe « NolaPrint : offres et livraison »)
+symbol: np-type, options « Forme » et « Personnalisation », np_* (réglages)
 status: draft
-related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Illustrations]]", "[[CMP - Panier]]", "[[SYN - Choix de la niche]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-31
+related: ["[[OVR - Boutique NolaPrint]]", "[[CMP - Illustrations]]", "[[MOD - Catalogue et fiche produit]]", "[[FLOW - Importer les produits par CSV]]", "[[FLOW - Lots et trio]]", "[[SYN - Fournisseurs]]"]
+decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]"]
+last-verified: 2026-11-02
 tags: [dropshipping, boutique, component]
 ---
 # CMP - Produit
 
 ## Rôle
-Le catalogue de la maquette : le tableau `PRODUCTS` (l.759), 11 objets qui disent tout d'un produit
-(nom, prix, catégories, badge, texte, champs de personnalisation, valeurs de départ, caractéristiques).
-Toutes les pages le lisent ; rien ne l'écrit.
+Les **3 produits Shopify** de la boutique, leurs variantes et leurs prix, et la façon dont le thème les
+reconnaît. Ce sont de vrais produits Shopify, créés par import CSV ([[FLOW - Importer les produits par CSV]]).
 
 ## Intention
-- **Un seul endroit pour les prix et les textes**, pour que la maquette serve de cahier des charges aux
-  fiches Shopify ([[07 - La maquette est le cahier des charges du thème Shopify]]).
-- **Chaque produit est personnalisé par un texte du client** : c'est la condition de l'exclusion de
-  rétractation ([[SYN - Juridique]]).
-- **Prix de maquette** : le mug et le Duo suivent la décision 02 ; les autres prix sont estimés, à recalculer
-  sur les coûts réels Printify ([[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]).
+- **Le prix suit ce que la cliente choisit** : une variante par niveau de personnalisation
+  (illustration seule, + texte, votre image), pour que Shopify encaisse le bon montant sans app.
+- **Le tag décide de la fiche** : `np-mug`, `np-verre` ou `np-bois` donne la fiche personnalisable ;
+  sans tag, fiche simple.
+- **Un seul fournisseur, Printify, partenaires UE figés** ([[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]).
 
 ## Diagramme
 ```mermaid
-classDiagram
-    class Produit {
-      slug : string
-      name : string
-      price : number
-      art : clé de ART
-      cat : string[]
-      badge : string
-      hot : bool
-      short : string
-      fields : Champ[]
-      def : valeurs de départ
-      specs : string[]
-    }
-    class Champ {
-      key : string
-      label : string
-      type : select | text | names
-      options : string[]  (select)
-      maxLen : number     (text, names)
-      min, max : number   (names)
-    }
-    Produit "1" --> "1..*" Champ
-    Produit ..> ART : art
+flowchart LR
+    CSV["CSV v3<br/>décision 09"] -->|import| P[("Produit Shopify<br/>tags, options, variantes")]
+    P --> T["np-type.liquid<br/>tag → mug | verre | bois"]
+    T --> F["np-main-product<br/>fiche personnalisable"]
+    P -->|variantes + prix| J["data-np-data<br/>variants[], extra{}"]
+    J --> PV["np.js pickVariant()<br/>l.190"]
+    PV -->|id de variante| CART["/cart/add"]
+    S["Réglages du thème<br/>np_text_extra, np_libre_extra,<br/>np_lot_off_*, np_trio_*"] --> F
 ```
 
-## Les 11 produits
-| slug | Nom | Prix | `cat` | Champs |
-|---|---|---|---|---|
-| `mug-famille-illustree` | Mug famille illustrée | 24,90 € | mamie, cuisine | appellation, 1-4 prénoms, ligne |
-| `duo-mamie-papi` | Duo Mamie & Papi | 44,90 € | mamie, lots | 2 appellations, 1-4 prénoms, ligne |
-| `boule-ceramique-famille` | Boule de Noël de la famille | 16,90 € | sapin | nom de famille, 0-4 prénoms, année |
-| `boules-famille` | Lot de 4 boules | 54,90 € | sapin, lots | 4 prénoms, année |
-| `chaussette-prenom` | Chaussette au prénom | 24,90 € | sapin | prénom |
-| `sous-verres-famille` | Sous-verres, lot de 4 | 19,90 € | cuisine, mamie | 4 prénoms |
-| `tablier-cuisine` | Tablier « La cuisine de… » | 29,90 € | cuisine, mamie | appellation, 0-4 prénoms |
-| `boite-gouter` | Boîte à goûters | 27,90 € | cuisine, mamie | appellation |
-| `torchon-recette` | Torchon « La recette de… » | 17,90 € | cuisine | appellation, recette |
-| `plaid-famille` | Plaid de la famille | 49,90 € | mamie, lots | titre, 0-6 prénoms, année |
-| `mug-annonce` | Mug « Tu vas être… » | 24,90 € | mamie | appellation, ligne |
+## Les 3 objets
+| | Mug | Boule de Noël en verre | Décoration de sapin en bois |
+|---|---|---|---|
+| Handle | `mug-personnalise` | `boule-de-noel-verre-personnalisee` | `decoration-bois-personnalisee` |
+| Titre | Mug personnalisé avec votre prénom ou votre image | Boule de Noël en verre personnalisée | Décoration de sapin en bois personnalisée |
+| Type | Mug | Boule de Noël | Décoration en bois |
+| Tag thème | `np-mug` | `np-verre` | `np-bois` |
+| Options | Personnalisation | Personnalisation | Forme × Personnalisation |
+| Formes | — | — | Cœur, Sapin, Étoile, Cloche, Chaussette de Noël, Ovale |
+| Imprimeur (GPSR) | Textildruck Europa, Allemagne (blueprint 1016) | Chill, Pays-Bas | WOYC, Italie |
+| Caractéristiques | céramique blanche 33 cl, lave-vaisselle et micro-ondes | verre cristal | bois massif, dos aimanté |
 
-Seuls le mug et le Duo portent `hot: true` (badge vert). Appellations : `TITLES_GM` (Mamie, Mamy, Mémé,
-Mamounette, Nona, Grand-mère) et `TITLES_GP` (Papi, Papy, Pépé, Papounet, Nono, Grand-père). Prénoms
-d'exemple : `DEMO` (Léa, Hugo, Inès, Noé, Chloé, Élio).
+Source imprimeurs : [[RCH - Relevé connecté du catalogue Printify UE (29-10-2026)]] et [[MOD - Thème Shopify]].
+Fabricant affiché sur la fiche : NolaPrint (sans nom de fournisseur).
 
-## Interfaces
+## Prix (TTC, TVA non applicable art. 293 B du CGI)
+| Variante « Personnalisation » | Mug | Boule | Décoration (toutes formes) |
+|---|---|---|---|
+| Illustration seule | 18,45 € | 19,95 € | 17,95 € |
+| Illustration + texte | 19,45 € | 20,95 € | 18,95 € |
+| Votre image (texte inclus) | 20,45 € | 21,95 € | 19,95 € |
+
+Source : CSV v3, [[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]].
+Si les variantes « Personnalisation » n'existent pas encore, le thème ajoute lui-même les suppléments des
+réglages : `np_text_extra` = 100 (+1 €), `np_libre_extra` = 200 (+2 €) ; dans ce cas seul l'affichage
+change, le panier facture la variante de base ⚠️.
+
+## Offres
+| Offre | Règle | Montant | Où c'est appliqué |
+|---|---|---|---|
+| Lot de 3 du même objet | dès 3 articles du même produit | −1,80 € par mug (`np_lot_off_mug` = 180), −1,97 € par boule (197), −1,80 € par décoration (180) → 49,95 / 53,94 / 48,45 € | remise automatique Shopify « Montant fixe sur des produits » |
+| Trio de Noël | un mug + une boule + une décoration | −5,20 € (`np_trio_off` = 520), 56,35 € → 51,15 € | code `TRIO-NOEL` (`np_trio_code`) posé par le panier |
+
+Détail : [[FLOW - Lots et trio]].
+
+## Livraison et délais
+| | Mug | Boule | Décoration |
+|---|---|---|---|
+| Expédition (jours ouvrés) | 2-3 | 2-3 | 2-3 |
+| Livraison (jours ouvrés) | 7-12 | 12-32 | 7-12 |
+| « Pour Noël, commandez avant le » | 08/12/2026 | 10/11/2026 | 08/12/2026 |
+
+Source : réglages de la section `np-main-product` (valeurs par défaut, `templates/product.json` ne les change pas) ⚠️ délais à mesurer sur les échantillons.
+Livraison France : 4,90 € (`np_ship_price` = 490), offerte dès 60 € (`np_free_ship` = 6000).
+
+## Fonctions et repères
 | Symbole | Rôle | Appelé par | Appelle |
 |---|---|---|---|
-| `PRODUCTS` l.759 | le catalogue | `renderShop`, `homeGrid`, `renderProduct`, `bindPage` (filtres) | — |
-| `bySlug(s)` l.817 | trouve un produit par son slug | `renderProduct`, `renderCart`, `renderSummary`, `bindProduct` | — |
-| `artFor(p, v)` l.818 | dessine le produit avec les valeurs `v`, ou `p.def` | partout où un produit s'affiche | [[CMP - Illustrations]] `ART[p.art]` |
-
-## Dans le thème Shopify
-| Champ de la maquette | Devient |
-|---|---|
-| `slug`, `name`, `price`, `short`, `specs` | handle, titre, prix, description, caractéristiques du produit Shopify |
-| `cat` | tags ou collections |
-| `badge`, `hot` | métachamp ou tag affiché par le thème |
-| `fields`, `def` | options de l'app de personnalisation, transmises à Printify ⚠️ à choisir |
-| `art` | remplacé par les photos des échantillons et les maquettes Printify |
-| mentions GPSR | métachamps produit (non présents dans `PRODUCTS`, saisis dans la fiche) |
+| `np-type.liquid` | renvoie `mug`, `verre`, `bois` ou rien, d'après les tags | fiche, cartes, panier | — |
+| boucle des options `np-main-product.liquid` l.51-58 | repère les options « Forme » et « Personnalisation » | fiche | — |
+| calcul des prix `np-main-product.liquid` l.61-82 | prix illustration, texte, image ; suppléments de secours | fiche | réglages `np_text_extra`, `np_libre_extra` |
+| `pickVariant()` `np.js` l.190 | choisit la variante selon forme et personnalisation | `refresh()` | — |
+| `priceOf(v)` `np.js` l.186 | prix affiché, supplément ajouté s'il n'y a pas d'option « Personnalisation » | `refresh()` | — |
 
 ## Cas limites
-- Les prix autres que le mug et le Duo ne viennent d'aucune décision ni d'aucun coût mesuré ⚠️ à vérifier.
-- L'assiette est absente, conformément à la décision 02. La boîte à goûters a un contact alimentaire non
-  prouvé (zone `todo` dans `specs`).
-- Le produit n'a pas de variante (couleur, taille) : un seul prix par produit.
+- CSV v3 pas encore importé : variantes absentes, prix affichés corrects mais panier facturé au prix de base ⚠️ à vérifier.
+- La colonne « Variant Compare At Price » est vide dans le CSV v3 : un import en écrasement peut effacer les prix barrés.
+- Handle renommé : les liens de l'en-tête, de l'accueil et du trio retombent sur les URL par défaut ; il faut choisir le produit dans les réglages des sections.
+- Variante épuisée : bouton « Épuisé ».
 
 ## Notes liées
-[[MOD - Catalogue et fiche produit]] · [[CMP - Illustrations]] · [[CMP - Panier]] · [[SYN - Choix de la niche]]
+[[MOD - Catalogue et fiche produit]] · [[FLOW - Importer les produits par CSV]] · [[FLOW - Lots et trio]] · [[SYN - Fournisseurs]]

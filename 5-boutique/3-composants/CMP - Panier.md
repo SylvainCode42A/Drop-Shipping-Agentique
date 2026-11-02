@@ -1,69 +1,77 @@
 ---
 type: component
 title: CMP - Panier
-language: JavaScript
-path: Claude outputs/nolaprint-sans-apercu-en-direct.html
-symbol: cart, store, saveCart, subtotal, count
+language: Shopify (ligne de panier, propriétés) + Liquid
+path: ~/Documents/nolaprint-theme/sections/np-main-product.liquid (formulaire product) · sections/np-main-cart.liquid
+symbol: properties[…], id, quantity, discount
 status: draft
-related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Panier et commande]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Produit]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+related: ["[[MOD - Panier et commande]]", "[[MOD - Catalogue et fiche produit]]", "[[CMP - Produit]]", "[[FLOW - De la personnalisation à la commande]]", "[[FLOW - De la commande personnalisée à Printify]]"]
+decisions: ["[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"]
+last-verified: 2026-11-02
 tags: [dropshipping, boutique, component]
 ---
 # CMP - Panier
 
 ## Rôle
-Le panier de la maquette : un tableau `cart` de lignes `{slug, price, qty, v}`, gardé dans le
-navigateur sous la clé `mc_cart`. Il survit au rechargement de la page et se vide à la confirmation
-de commande.
+La forme d'une ligne de panier NolaPrint : la variante Shopify (objet, forme, niveau de personnalisation)
+et les **propriétés de ligne** qui décrivent ce qu'il faut imprimer. C'est ce que le serveur lit ensuite
+dans la commande pour fabriquer le fichier envoyé à Printify ([[FLOW - De la commande personnalisée à Printify]]).
 
 ## Intention
-- **Chaque ligne garde sa personnalisation** (`v`) : deux mugs pour deux grands-mères différentes sont
-  deux lignes distinctes, chacune avec ses prénoms.
-- **Le prix est copié dans la ligne** au moment de l'ajout, comme le ferait un panier réel.
-- **Aucune donnée ne quitte le navigateur** : c'est une maquette ; le vrai panier sera celui de Shopify
-  ([[07 - La maquette est le cahier des charges du thème Shopify]]).
+- **Tout ce qui sert à l'impression voyage avec la ligne** : design, texte, police, couleur, image.
+- **Les propriétés qui commencent par `_`** sont techniques ou juridiques : invisibles pour la cliente au panier et au paiement, visibles dans la commande.
+- Deux lignes identiques sauf le texte restent deux lignes distinctes (Shopify sépare les lignes par propriétés).
 
 ## Diagramme
 ```mermaid
-sequenceDiagram
-    participant F as Fiche produit
-    participant C as cart
-    participant S as store (localStorage)
-    participant R as renderCart
-    F->>C: cart.push({slug, price, qty, v})
-    C->>S: saveCart() → store.set("mc_cart", cart)
-    C->>R: renderCart() : compteur, lignes, sous-total
-    Note over C,S: au chargement : cart = store.get("mc_cart", [])
-    Note over C: coDone() : cart = [] puis saveCart()
+classDiagram
+    class LigneDePanier {
+      id : variante (Forme × Personnalisation)
+      quantity : 1 à 20 (1 par article en lot)
+      Personnalisation : "Design NolaPrint" | "Création libre"
+      Design : nom du design
+      _design : d01…d10
+      Texte : 0 à 15 caractères
+      Votre image : fichier JPG/PNG (lien /uploads/)
+      Police : Classique | Manuscrite | Moderne | Ronde
+      Couleur du texte : Noir | Blanc | Rouge | Doré | Bleu marine
+      _Droits sur l'image : oui
+      _Aperçu vérifié : oui
+    }
+    class Panier {
+      lignes[]
+      discount_codes : TRIO-NOEL + codes de la cliente
+      remises automatiques : lots de 3
+    }
+    Panier "1" --> "*" LigneDePanier
 ```
 
-## Interfaces
-| Symbole | Rôle | Appelé par | Appelle |
-|---|---|---|---|
-| `store.get(k, d)` / `store.set(k, v)` l.608-611 | lecture et écriture JSON dans `localStorage`, dans un try/catch | `cart`, cookies | — |
-| `cart` l.820 | les lignes du panier | tout le module panier et commande | — |
-| `saveCart()` l.821 | enregistre et redessine le tiroir | ajout, + / − / Supprimer, `coDone` | `store.set`, `renderCart` |
-| `subtotal()` l.822 | somme de `price × qty` | `renderCart`, `renderSummary`, `coPayment` | — |
-| `count()` l.823 | nombre d'articles, affiché sur le bouton panier | `renderCart` | — |
+## Propriétés
+| Propriété | Mode | Valeurs | Obligatoire | Source (`np-main-product.liquid`) |
+|---|---|---|---|---|
+| `id` | les deux | id de variante choisi par `pickVariant()` | oui | l.148 |
+| `quantity` | les deux | 1-20 ; forcée à 1 en lot | oui | l.270 |
+| `Personnalisation` | les deux | `Design NolaPrint` ou `Création libre` | oui | l.150 |
+| `Design` | design | nom, ex. « Mamie chérie » | oui | l.189 |
+| `_design` | design | `d01` à `d10` | oui | l.190 |
+| `Texte` | les deux | texte de la cliente, 15 caractères au plus | non (+1 € en mode design) | l.196, l.215 |
+| `Votre image` | image | fichier, 15 Mo, JPG ou PNG | oui | l.207 |
+| `Police` | image | Classique (Playfair), Manuscrite (Dancing), Moderne (Figtree), Ronde (Fredoka) | oui | l.219 |
+| `Couleur du texte` | image | Noir #222222, Blanc #FFFFFF, Rouge #C1121F, Doré #C8901E, Bleu marine #1F3A5F | oui | l.230 |
+| `_Droits sur l'image` | image | `oui` (case « Je certifie avoir les droits… ») | oui | l.235 |
+| `_Aperçu vérifié` | les deux | `oui` (case « J'ai vérifié l'aperçu et l'orthographe ») | oui | l.268 |
 
-## Exemple avec des valeurs
-- Un mug seul : sous-total 24,90 € ; « Plus que **24,10 €** pour la livraison offerte » ; barre remplie à 24,90 / 49 = **51 %** ;
-  livraison France 4,90 €, total **29,80 €**.
-- Un mug + un Duo : 24,90 + 44,90 = **69,80 €** ; livraison offerte en France ; vers la Belgique, + 6,90 € = **76,70 €**.
+La forme de la décoration en bois est portée par la variante (option « Forme »), pas par une propriété.
 
-## Dans le thème Shopify
-| Bloc de la maquette | Devient |
-|---|---|
-| `cart` et `mc_cart` | panier Shopify (Cart API / Ajax du thème) |
-| `v` (personnalisation) | propriétés de ligne, posées par l'app de personnalisation et transmises à Printify ⚠️ à vérifier |
-| `price` copié dans la ligne | prix du produit Shopify au moment du checkout |
+## Affichage au panier
+- Options de variante (Forme, Personnalisation), puis chaque propriété non vide sans `_` (sauf `Personnalisation`) ; l'image importée devient « image importée ✓ » cliquable (`np-main-cart.liquid` l.144-155).
+- Vignette : `np-<objet>-[<forme>-]<_design>-t.jpg`, ou l'objet vierge en mode image.
+- Règle de rétractation : « Article personnalisé : pas de rétractation » dès qu'il y a un texte ou une image.
 
 ## Cas limites
-- Sans `localStorage`, le panier vit seulement le temps de la page.
-- Si un produit est retiré de `PRODUCTS`, une ligne déjà gardée avec son slug ferait échouer `bySlug` (aucune protection) ⚠️ à vérifier.
-- Un prix modifié dans `PRODUCTS` ne met pas à jour les lignes déjà dans le panier.
-- La clé `mc_cart` vient de l'ancien nom Mésange & Cie.
+- Panier modifié dans un autre onglet : les quantités affichées peuvent être en retard jusqu'au rechargement.
+- Le fichier importé est hébergé par Shopify ; son lien est dans la commande ⚠️ à vérifier : durée de conservation chez Shopify.
+- Les noms de propriétés sont lus par le serveur : les renommer casse la fabrication ([[FLOW - De la commande personnalisée à Printify]]).
 
 ## Notes liées
-[[MOD - Panier et commande]] · [[MOD - Catalogue et fiche produit]] · [[CMP - Produit]]
+[[MOD - Panier et commande]] · [[MOD - Catalogue et fiche produit]] · [[FLOW - De la commande personnalisée à Printify]]

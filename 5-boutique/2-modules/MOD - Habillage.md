@@ -1,83 +1,76 @@
 ---
 type: module
 title: MOD - Habillage
-language: HTML, CSS, JavaScript
-path: Claude outputs/nolaprint-sans-apercu-en-direct.html
-symbol: ANN, menuBtn, mockChip, snow
+language: Liquid, CSS, JavaScript
+path: ~/Documents/nolaprint-theme/layout/mesange.liquid (= theme.liquid) · sections/np-header.liquid · np-footer.liquid · np-404.liquid · np-main-search.liquid · assets/mesange.css · assets/np.css · assets/np.js
+symbol: np-header, np-footer, annTrack, menuBtn, mockChip, snow
 status: draft
-related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Accueil]]", "[[MOD - Pages légales et rétractation]]", "[[MOD - Cookies et consentement]]"]
-decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]"]
-last-verified: 2026-10-29
+related: ["[[OVR - Boutique NolaPrint]]", "[[MOD - Cookies et consentement]]", "[[MOD - Pages légales et rétractation]]", "[[MOD - Thème Shopify]]"]
+decisions: []
+last-verified: 2026-11-02
 tags: [dropshipping, boutique, module]
 ---
 # MOD - Habillage
 
 ## Rôle
-Tout ce qui entoure les pages et reste visible partout : le bandeau d'annonces qui défile, l'en-tête
-collant (logo renne, menu, panier), le pied de page bordeaux, les flocons, le toast et la puce
-« mode maquette ». Plus les jetons de couleur et de police qui donnent l'identité NolaPrint.
+Tout ce qui entoure les pages : la bande d'annonce qui défile, l'en-tête (logo, menu, panier), le pied
+de page, les polices et couleurs, les flocons, la puce « mode maquette », la page 404 et la recherche.
 
 ## Intention
-- **Identité de Noël sobre** : rouge et bordeaux en alternance avec le blanc, police Young Serif pour les
-  titres et Figtree pour le texte, logo renne qui rit au bonnet de Noël, flocons discrets. Thème clair
-  seulement, quel que soit le réglage du système (le mode sombre donnait un fond bordeaux illisible).
-- **Le bandeau ne s'arrête jamais**, ni au survol ni au toucher, et chaque message porte un emoji.
-- **Les flocons et les défilements s'arrêtent** si le visiteur a demandé à limiter les animations.
-- **Le mode maquette** montre ou masque d'un clic les zones à compléter, pour faire des captures propres.
+- **Ambiance Noël sobre** : rouge airelle `#C1121F`, bordeaux pour les sections pleines, blanc partout, flocons discrets.
+- **Typographie lisible** : Nunito Sans pour les titres, Inter pour le texte, Young Serif pour le logo (refonte du 02/11).
+- **En-tête collant**, menu replié en burger sur téléphone ; compteur du panier toujours visible.
+- **Rien d'agressif** : flocons et défilement coupés si la visiteuse limite les animations.
 
 ## Diagramme
 ```mermaid
 flowchart TB
-    subgraph Toutes les pages
-      B["Bandeau .announce<br/>ANN l.1293, défilement 38 s"] --> H["En-tête collant<br/>logo · menu · panier"]
-      H --> M["main #app<br/>page rendue par route()"]
-      M --> F["Pied de page bordeaux<br/>4 colonnes + mentions"]
-    end
-    S["Flocons #snow l.1328<br/>canvas au-dessus, sans clic"] -.-> M
-    K["Puce mode maquette l.1316"] -.-> M
-    T["toast() l.616"] -.-> M
+    L["layout mesange.liquid<br/>polices Google, mesange.css, np.css, JSON-LD accueil"] --> HD["np-header<br/>bande d'annonce · logo · menu · panier"]
+    L --> MAIN["main#app<br/>sections de la page"]
+    L --> FT["np-footer<br/>contact · Aide · Légal · © · paiements<br/>+ bannière cookies + puce maquette"]
+    L --> JS["np.js (defer)"]
+    JS --> A["bande doublée l.561"]
+    JS --> MN["menu l.565"]
+    JS --> MC["puce maquette l.587"]
+    JS --> SN["flocons l.594"]
 ```
 
-## Fonctions
-| Symbole | Rôle | Appelé par | Appelle |
-|---|---|---|---|
-| `ANN` l.1293 + IIFE | 6 messages dupliqués une fois pour une boucle sans saut (`translateX(-50%)`) | démarrage | — |
-| `#menuBtn` (écouteur) l.1317 | ouvre ou ferme le menu sous 860 px, met à jour `aria-expanded` | clic | — |
-| `#cartBtn`, `#closeCart`, `#scrim`, Échap l.1318-1319 | ouvrent ou ferment le tiroir panier | clic, clavier | [[CMP - Panier]] `openCart`, `closeCart` |
-| `#mockChip` (écouteur) l.1320 | ajoute ou retire `body.hide-todo` | clic | — |
-| flocons (IIFE) l.1328 | canvas plein écran, au plus 90 flocons, étoiles pour les plus gros | démarrage, sauf `prefers-reduced-motion` | `requestAnimationFrame` |
-| `toast(msg)` l.616 | message en bas d'écran pendant 2,6 s | ajout au panier, cookies, formulaires | — |
+## Éléments
+| Élément | Fichier, lignes | Détail |
+|---|---|---|
+| Bande d'annonce | `np-header.liquid` l.19-26 | 6 messages (réglages `ann_1` à `ann_6`) : 10 designs, votre image, lot de 3 −10 %, fabriqué en Europe, article abîmé refait, livraison offerte dès 60 € ; doublés en JS pour défiler sans fin |
+| Logo | `np-header.liquid` l.30-33 | renne au bonnet de Noël (SVG) + « NolaPrint » en Young Serif |
+| Menu | `np-header.liquid` l.37-44 | Mugs · Boules de Noël · Décorations en bois · Nos designs · Créer le vôtre · Questions |
+| Panier | `np-header.liquid` l.45-48 | icône + compteur `#cartCount` (mis à jour après un ajout de lot) |
+| Pied de page | `np-footer.liquid` l.10-50 | e-mail, délai de réponse, liens Aide et Informations légales, © année en cours, logos de paiement |
+| Puce maquette | `np-footer.liquid` l.71, `np.js` l.587 | montre ou cache les zones jaunes `.todo` ; choix gardé (`np_hide_todo`) |
+| Flocons | `np.js` l.594 | canvas plein écran, ≤ 70 flocons, désactivés si « réduire les animations » |
+| Page 404 | `np-404.liquid` | « Page introuvable » + retour à l'accueil |
+| Recherche | `np-main-search.liquid` | champ, nombre de résultats, cartes produit |
+| Marges des pages simples | `np.css` bloc Panier | `.page` : 16 px de chaque côté sur téléphone (02/11) |
+
+## Couleurs et polices
+| Jeton (`mesange.css` l.3-11) | Valeur | Usage |
+|---|---|---|
+| `--berry` | #C1121F | boutons, prix, icônes |
+| `--berry-deep`, `--band` | #9D0E19 | bande d'annonce |
+| fond des sections pleines | #6E0B15 | galerie des designs (`.sec-bdx`), pied de page |
+| `--ink` | #2A1B1D | texte |
+| `--green` | #1E6B45 | « Pour : », remises, réussite |
+| `--gold` | #D4A72C | contour de focus |
+| `--todo-bg` | #FFF4CC | zones à compléter |
+| `--font-display` | Nunito Sans | titres, boutons, prix |
+| `--font-body` | Inter | texte |
+| logo | Young Serif | |
+| polices de personnalisation | Dancing Script, Fredoka, Playfair Display italique, Caveat, Figtree | designs et « Votre image » |
 
 ## Entrées et sorties
-- Entrées : `ANN` (textes du bandeau), `FREE_SHIP` (seuil cité), les jetons `:root` l.13-24.
-- Sorties : aucune donnée. Le menu, le pied de page et le bandeau renvoient vers les ancres des autres modules.
-
-## Jetons de l'identité
-| Jeton | Valeur | Usage |
-|---|---|---|
-| `--berry` | `#C1121F` | rouge principal, boutons |
-| `--band` / `--berry-deep` | `#9D0E19` | bandeau, survol |
-| bordeaux `.sec-bdx`, pied de page | `#6E0B15` | sections alternées |
-| `--green` | `#1E6B45` | compteur du panier, badges « signature » |
-| `--gold` | `#D4A72C` | contour de focus clavier |
-| `--font-display` / `--font-body` | Young Serif / Figtree | titres / texte |
-
-## Dans le thème Shopify
-| Bloc de la maquette | Devient |
-|---|---|
-| Bandeau | barre d'annonces du thème, messages en réglage |
-| En-tête, menu, panier | en-tête du thème, menu Shopify |
-| Pied de page | pied de page du thème avec les liens légaux et « Renoncer au contrat ici » |
-| Jetons de couleur et polices | réglages du thème (couleurs, typographie) |
-| Flocons | script du thème, désactivable après Noël |
-| Mode maquette | supprimé : sert seulement à la maquette |
+- Réglages de l'en-tête (produits des liens, 6 messages) et du pied de page (e-mail, délai de réponse) dans l'éditeur de thème.
 
 ## Cas limites
-- Le `<title>`, le libellé du logo (`aria-label`) et le pied de page portent encore « Mésange & Cie ».
-- Les dates du bandeau (« 10 décembre ») et le prix du Duo (« 44,90 € ») sont écrits en dur, sans lien
-  avec `NOEL_DEADLINE` ni `PRODUCTS`.
-- Des styles ne servent plus (`.live-label`, `.tag-perso`, `.news`, `.perso`, `.steps`, `.cover-sprig`).
-- Sous 860 px, le menu ouvert reste ouvert si on fait défiler ; il se ferme au changement de page (`route`).
+- Les messages par défaut de la bande d'annonce commencent par un emoji (🎨 🖼️ 🎁 📦 ✨ 🚚), contrairement aux cases de la fiche passées en icônes au trait ⚠️ à harmoniser si voulu.
+- La puce maquette s'affiche aussi pour les clientes tant qu'elle est dans le pied de page ⚠️ à retirer avant la mise en ligne.
+- Produit d'un lien du menu renommé : choisir le produit dans les réglages de l'en-tête.
 
 ## Notes liées
-[[OVR - Boutique NolaPrint]] · [[MOD - Accueil]] · [[MOD - Pages légales et rétractation]] · [[MOD - Cookies et consentement]]
+[[MOD - Thème Shopify]] · [[MOD - Cookies et consentement]] · [[MOD - Pages légales et rétractation]]
