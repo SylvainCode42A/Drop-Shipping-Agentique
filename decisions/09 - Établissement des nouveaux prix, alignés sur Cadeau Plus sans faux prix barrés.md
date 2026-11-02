@@ -24,11 +24,11 @@ Les prix de lancement (mug 24,90 €, boule 27,90 €, bois 19,90 €) sont jug�
 le 30/10/2026 : une boutique sans avis clients ne peut pas être nettement plus chère que Cadeau Plus,
 le principal concurrent.
 
-| Produit | Cadeau Plus, prix affiché | Prix barré | Fréquence |
-|---|---|---|---|
-| Mug | 18,45 € | 30,95 € | 168 mugs sur 250 lus |
-| Boule de Noël en verre | 19,95 € | 29,95 € | toute la collection (63) |
-| Ornement en bois | 12,95 € | 22,95 € | 216 sur 250 |
+| Produit                | Cadeau Plus, prix affiché | Prix barré | Fréquence                |
+| ---------------------- | ------------------------- | ---------- | ------------------------ |
+| Mug                    | 18,45 €                   | 30,95 €    | 168 mugs sur 250 lus     |
+| Boule de Noël en verre | 19,95 €                   | 29,95 €    | toute la collection (63) |
+| Ornement en bois       | 12,95 €                   | 22,95 €    | 216 sur 250              |
 
 Source : cadeauplus.com, mesuré le 30/10 ([[RCH - Audit des prix Cadeau Plus et coûts Printify (30-10-2026)]]).
 Livraison 4,95 €, offerte dès 70 € ; prix barrés permanents ; leur boule à 13,95 € est en acrylique
