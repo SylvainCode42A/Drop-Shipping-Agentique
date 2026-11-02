@@ -84,6 +84,13 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Décorations de Noël : statut au regard de la directive jouets, mention « ne convient pas aux moins de 3 ans », risque du ruban, obligations GPSR | lecture, expert | [[RCH - Décoration de sapin personnalisée grands-parents (29-10-2026)]] | P1 si la décoration est testée à Noël | |
 | Garantie légale de conformité sur un article personnalisé : articles exacts (durée 2 ans, présomption 24 mois, risque du transport L216-4) à lire sur Légifrance ; peut-on inviter à signaler sous 30 jours sans clause abusive ? | lecture, expert (avocat) | [[RCH - Défauts produit, casse et réclamations Printify (31-10-2026)]] | P1 | |
 | Lots remisés : formulation « 3 pour 49,95 € au lieu de 55,35 € à l'unité » au regard de L112-1-1 ; montant remboursé quand un seul article sans texte d'un lot est rétracté | lecture, expert (avocat) | [[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]] | P1 | |
+| Rattachement au foyer fiscal parental (CGI, art. 6-3) : âge apprécié au 1er janvier de quelle année, statut d'étudiant de 42 ; simulation rattaché ou détaché | lecture, expert (centre des impôts) | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P1 | |
+| Seuil du versement libératoire 2026 (29 315 € par part, une seule source) et délai d'option pour un créateur | lecture (impots.gouv.fr, URSSAF) | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P1 | |
+| Shopify Payments active-t-il un compte d'entreprise individuelle sans SIREN, dossier déposé ? (Paramètres → Paiements) | connecté | [[TODO - Déclarer la micro-entreprise sur le guichet unique]] | P1 | |
+| Règlement de copropriété de l'appartement de la mère de Sylvain, si retenu comme adresse : clause d'habitation bourgeoise exclusive | lecture | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P1 | |
+| « Domicile » (LCEN, art. 1-1) ou « adresse où elle est établie » (art. 19) : l'adresse de l'entreprise suffit-elle dans les mentions légales ? | lecture, expert (avocat) | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P2 | |
+| Facturation entre le dépôt et le SIREN : mention « en cours d'immatriculation » ou facture différée (source contradictoire) | lecture, expert | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P2 | |
+| Mentions légales complètes de Cadeau Plus (forme sociale, SIREN) | manuel | [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]] | P3 | |
 
 ## Système
 
