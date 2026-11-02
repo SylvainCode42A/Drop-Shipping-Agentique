@@ -2,9 +2,9 @@
 type: synthese
 title: SYN - Juridique
 status: validé
-related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
+related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]", "[[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]", "[[TODO - Déclarer la micro-entreprise sur le guichet unique]]"]
 decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
-last-verified: 2026-10-30
+last-verified: 2026-11-02
 tags: [dropshipping, juridique, synthese]
 ---
 # SYN - Juridique
@@ -63,7 +63,7 @@ Ce n'est pas un avis juridique ni fiscal : les points marqués « à valider » 
 - Inflammabilité des textiles d'ameublement : aucune exigence française spécifique trouvée pour un coussin décoratif ; règles britanniques si vente UK ⚠️ ([[RCH - Coussin grands-parents (28-10-2026)]]).
 
 ### Site, CGV, médiation, RGPD
-- Mentions légales (LCEN art. 6), CGV avec formulaire type de rétractation, adhésion à un médiateur référencé par la CECMC. La plateforme européenne RLL a fermé le 20/07/2025 : ne plus la citer ([[RCH - Cadre juridique (22-10-2026)]]).
+- Mentions légales (LCEN art. 6), CGV avec formulaire type de rétractation, adhésion à un médiateur référencé par la CECMC. La plateforme européenne RLL a fermé le 20/07/2025 : ne plus la citer ([[RCH - Cadre juridique (22-10-2026)]]). L'article 6 de la LCEN est devenu l'article 1-1 avec la loi SREN du 21/05/2024 ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
 - Cookies : consentement préalable pour les pixels publicitaires, bouton « Tout refuser » au premier niveau, même logique pour l'API Conversions de Meta ([[RCH - Cadre juridique (22-10-2026)]]).
 - RGPD : registre des traitements obligatoire même en micro-entreprise, contrats de sous-traitance avec Shopify, l'imprimeur et les outils d'email. Le Data Privacy Framework reste valide, un pourvoi est pendant. Google traite les prompts selon son avenant de sous-traitant, avec cache possible hors UE ([[RCH - Cadre juridique (22-10-2026)]], [[RCH - Images IA, modèles et plateformes (29-10-2026)]]). Les photos d'enfants envoyées par les clients sont des données personnelles à durée de conservation limitée ([[SYN - Choix de la niche]]).
 
@@ -74,6 +74,11 @@ Ce n'est pas un avis juridique ni fiscal : les points marqués « à valider » 
 - Piège principal : si l'imprimeur expédie depuis un autre pays de l'UE, le seuil ne joue pas et la TVA du pays du client peut être due dès le premier euro ⚠️ à valider par un expert-comptable avant de choisir le fournisseur ([[RCH - Cadre juridique (22-10-2026)]]).
 - Le statut de TVA décide de la rentabilité : toutes les marges estimées des études produit tombent de 4 à 7 € entre franchise et TVA collectée, et une TVA fournisseur non récupérable en franchise en retire 2 à 3 € de plus ([[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]).
 - Imprimeur hors UE : droit forfaitaire de 3 € par catégorie tarifaire d'article sur les colis ≤ 150 €, du 01/07/2026 au 01/07/2028 (règlement UE 2026/382), en plus de la TVA à l'import ; taxe française de 2 € suspendue depuis le 01/07/2026 ; frais de gestion de 2 € par article annoncés au 01/11/2026 ⚠️ à vérifier sur le texte officiel ([[RCH - Cadre juridique (22-10-2026)]], [[SYN - Fournisseurs]]).
+- Création gratuite en 15 à 30 minutes, SIREN en 5 à 14 jours ouvrés. La vente est permise dès le dépôt du dossier, jamais avant (C. trav., art. L8221-3, 1° ; 3 ans et 45 000 €) ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
+- Nom et prénom du titulaire obligatoires dans les mentions légales (LCEN, art. 1-1 ; sanction art. 1-2 : 1 an et 75 000 €). Seule une société les retire du site ; l'opposition à la diffusion Sirene (C. com., art. R123-232-1) les masque dans Sirene seulement ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
+- Adresse de l'entreprise : à décider. Options : l'appartement de la mère de Sylvain avec son accord écrit (C. com., art. L123-10 : déclarer l'adresse et en justifier la jouissance), une société de domiciliation (≈ 15 à 30 € par mois, estimé) ou le domicile ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
+- Impôts : abattement de 71 % (CGI, art. 50-0), le reste s'ajoute aux revenus du foyer ; rattachement au foyer parental jusqu'à 21 ans, ou 25 ans en études (CGI, art. 6-3), statut de 42 ⚠️ ; versement libératoire si le RFR 2024 ne dépasse pas 29 315 € par part pour 2026 ⚠️ ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
+- ACRE : les 18 à moins de 26 ans sont éligibles ; formulaire URSSAF sous 60 jours, réponse sous 30 jours, silence vaut accord (décret n° 2026-69 du 06/02/2026), ce qui confirme le délai de 60 jours ci-dessus ([[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]).
 
 ### Suspensions de comptes
 - Shopify : atteintes à la propriété intellectuelle et chargebacks (seuil d'alerte estimé 1 %, cible sous 0,5 %, non officiel). Google Merchant Center : « Misrepresentation », première cause, sur les incohérences site et flux. Meta : propriété intellectuelle, affirmations trompeuses, page de destination non conforme ([[RCH - Cadre juridique (22-10-2026)]]).
@@ -115,9 +120,13 @@ Décisions attendues :
 - Statut de l'amendement L. 331-4-2 sur le style d'un auteur identifiable.
 - Source publique pour les personnages sous licence.
 - Assurance responsabilité civile professionnelle.
+- Rattachement de Sylvain au foyer fiscal de sa mère ou déclaration séparée : simulation des deux cas ; statut d'étudiant de 42 au sens de l'art. 6-3 du CGI.
+- Adresse de l'entreprise : appartement de sa mère (gratuit, règlement de copropriété à lire), société de domiciliation ou domicile.
+- Adresse de retour des colis (décision 11) : le domicile de Sylvain serait communiqué aux clients ; à trancher avec l'adresse de l'entreprise.
 
 ## Recherches
 - [[RCH - Cadre juridique (22-10-2026)]]
 - [[RCH - Images IA, modèles et plateformes (29-10-2026)]]
 - [[RCH - Retours, rétractation et abus (30-10-2026)]]
+- [[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]
 - Points juridiques remontés par les études produit : [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]]
