@@ -6,3 +6,10 @@ __pycache__/
 # Les scripts, production.json, gabarits.json et les éléments détourés de valides/ restent suivis.
 3-systeme/recherches/tests-images/production/*.png
 3-systeme/recherches/tests-images/production/lots/
+
+# Rendus de contrôle du module de rendu (environ 30 Mo), régénérables par rendu.py --essai,
+# exemples.py et apercu.py.
+3-systeme/recherches/tests-images/production/rendu/essais/
+3-systeme/recherches/tests-images/production/rendu/exemples/
+3-systeme/recherches/tests-images/production/rendu/apercus/
+3-systeme/recherches/tests-images/production/batch.log
