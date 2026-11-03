@@ -45,6 +45,12 @@ Titres en liste fermée, plus une saisie libre (décision 13).
 | Couple | Papy et Mamie, Pépé et Mémé, Papa et Maman, ou deux surnoms choisis séparément |
 | Famille | Famille, Famille + nom saisi, Chez nous, Notre tribu |
 
+*Précision du 02/11/2026* : le titre affiché est une phrase formée avec le surnom : « Le jardin de
+Mamie », « Le sapin de Papou », « Le goûter chez Pépé et Mémé », « Le jardin de la famille Dupont ». La
+cliente choisit le surnom, le gabarit fournit la phrase. Des **phrases proposées** par destinataire
+(trois ou quatre, tendres et courtes, plus la saisie libre) sont à écrire dans la fiche produit, à
+partir du registre relevé chez les concurrents.
+
 **Noël** est une collection croisée, pas un destinataire : elle regroupe par tag les déclinaisons de
 Noël (boule, bois, mug avec ornements), qui restent aussi dans leur catégorie de destinataire.
 **Amies et fratrie** reste masquée pour Noël 2026 : aucun signal dans les relevés, public hors de la
@@ -55,16 +61,35 @@ décision 01, et une catégorie vide nuit plus qu'une absence. À ouvrir quand u
   fiche : janvier œillet, février violette, mars jonquille, avril marguerite, mai muguet, juin rose,
   juillet pied-d'alouette, août glaïeul, septembre aster, octobre souci, novembre chrysanthème,
   décembre houx. La cliente choisit la fleur dans le champ de chaque prénom.
+- *Production du 02/11/2026* : douze fleurs validées en gouache (journal `production.json`). Août est le
+  **tournesol**, le glaïeul n'ayant pas passé en sept essais ; mars garde la jonquille, la tulipe reste
+  en réserve. La liste affichée sur la fiche dit « août : tournesol ». Les six ornements, la scène de
+  goûter en six palettes et son calque d'hiver sont validés le même jour ; les 18 éléments détourés
+  sont dans `production/valides/` ([[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]).
 - **Noël : six ornements** au choix de la même façon : boule, étoile, sapin, flocon, bonhomme de pain
   d'épice, cœur de Noël.
 - Chaque symbole est un élément isolé, généré une fois en gouache, détouré, placé par le code selon le
   nombre de prénoms (1 à 6). Les fleurs et les ornements gardent leurs couleurs propres.
+- *Précision du 02/11/2026, après comparaison des maquettes aux meilleures ventes* : les fleurs sont
+  **plantées**, pas posées. Une bande de sol en gouache (herbe et terre, bouts arrondis), générée une
+  fois et recomposée à toute largeur par le code (bout gauche, milieu répété, bout droit), passe sous
+  les tiges ; à Noël, une branche de sapin horizontale remplace le sol et les ornements y pendent par
+  une ficelle tracée par le code. Le gabarit s'appelle **« Le jardin de … »** en base et
+  **« Le sapin de … »** à Noël, avec le surnom choisi. Le **mois** s'écrit en petit sous chaque prénom
+  (« Léa · juin ») : c'est ce qui explique le cadeau, et qu'aucun concurrent ne fait. Sur le mug, le
+  fond est le crème de la palette, pas le blanc. Le souci et le chrysanthème sont régénérés avec une
+  tige courte. Raison : le n°1 du marché s'appelle « Jardin d'amour de Mamie » et montre un lien
+  visible entre les éléments ; nos fleurs isolées sur blanc ne le montraient pas.
 - Police pressentie : Caveat Brush ⚠️ à confirmer à l'œil sur le gabarit.
 
 ### 3. Gabarit B : scène fixe, la table de goûter
 Une table de goûter sans personnage : nappe, théière, tasses, gâteau, quelques jouets au sol, la zone
 de texte sur le mur du fond. Elle convient à tous les destinataires. Calque d'hiver pour la boule et
 le bois : fenêtre enneigée, sapin dans l'angle. Police pressentie : Nunito ⚠️ à confirmer.
+*Précision du 02/11/2026* : le titre est une phrase qui nomme le lieu, **« Le goûter chez … »**, sinon
+la scène ne dit pas pourquoi elle est là (le plus proche sur le marché est « le garage de Papa »). Le
+sol est prolongé par code sous la zone de texte. Gabarit non prouvé par le marché : si Noël ne le vend
+pas, le jardin devient la seule base.
 
 ### 4. Six palettes
 Le fond, les accents et les 4 couleurs de texte (décision 13) changent par destinataire ; couleurs

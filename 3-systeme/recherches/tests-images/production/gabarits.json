@@ -1,0 +1,70 @@
+{
+  "_doc": "CMP - Gabarits de support (02/11/2026). Millimètres ; origine en haut à gauche, sauf boule (centre). Conversion en pixels à l'export, 300 DPI, à la taille du placeholder Printify.",
+  "communs": {
+    "cap_mm": {"titre": {"mug": 8, "bois": 5, "boule": 5}, "prenom": {"mug": 4, "bois": 3.5, "boule": 3}, "phrase": {"mug": 3, "bois": 2.5, "boule": 2.5}},
+    "cap_min_mm": {"prenom": {"mug": 3, "bois": 3.5, "boule": 3}, "titre": {"mug": 5, "bois": 4, "boule": 4}},
+    "espace_symboles_mm": {"mug": 2.5, "bois": 2, "boule": 2.5},
+    "police": {"A": "CaveatBrush-Regular.ttf", "B": "Nunito[wght].ttf", "a_confirmer": true},
+    "fond": {"mug": "palette.fond", "boule": "transparent", "bois": "transparent"},
+    "support_symboles": {"base": "sol", "noel": "branche", "hauteur_fraction": 0.12, "marge_largeur_symboles": 1.0, "bouts_fraction": 0.15,
+                          "sol_enfoncement_fraction": 0.15, "branche_decalage_mm": 6, "ficelle": {"epaisseur_mm": 0.6, "longueur_mm": 6, "couleur": "#6B4430"}},
+    "mois": {"cap_mm": {"mug": 2.5, "bois": 3, "boule": 2.5}, "opacite": 0.6, "separateur": " · ", "omis_boule_si_n_sup": 3},
+    "titre_phrase": {"A_base": "Le jardin de {surnom}", "A_noel": "Le sapin de {surnom}", "B": "Le goûter chez {surnom}"}
+  },
+  "mug": {
+    "panneau_mm": [210, 98], "placeholder_px": [2475, 1155],
+    "zone_sure": {"x": 10, "y": 5, "l": 190, "h": 88},
+    "A": {
+      "titre": {"x": 20, "y": 8, "l": 170, "h": 14},
+      "symboles": {"y": 26, "centre_x": 105, "taille_par_n": {"1": 36, "2": 36, "3": 36, "4": 32, "5": 28, "6": 24}},
+      "prenom": {"decalage_y": 2, "h": 7, "mois_h": 4},
+      "phrase": {"x": 20, "y": 80, "l": 170, "h": 8, "lignes": 1}
+    },
+    "B": {
+      "scene": {"x": 10, "y": 5, "l": 130, "h": 88, "recadrage": {"ratio": 1.477, "hauteur_fraction": 0.9, "centre_x_fraction": 0.5}},
+      "titre": {"x": 145, "y": 8, "l": 55, "h": 14, "lignes": 2, "cap": 5.5, "cap_min": 4},
+      "prenoms": {"x": 145, "y0": 26, "pas": 8, "l": 55, "h": 7, "deux_colonnes_si_n_min": 4},
+      "phrase": {"x": 145, "l": 55, "h": 8, "lignes": 2, "au_dessus_du_sol_mm": 1}
+    }
+  },
+  "boule": {
+    "disque_mm": 76.2, "placeholder_px": [900, 900], "rayon_utile": 33, "origine": "centre",
+    "A": {
+      "titre_arc": {"rayon": 30, "deg_debut": 200, "deg_fin": 340},
+      "symboles": {"n_max_rangee": 3, "une_rangee": {"taille": 19, "y": 0}, "deux_rangees": {"taille": 14, "y": [-12, 14.5]}},
+      "titre_si_n_max": 3,
+      "titre_omis_noel": true,
+      "prenom": {"decalage_y": 1},
+      "phrase_arc": {"rayon": 30, "deg_debut": 30, "deg_fin": 150, "si_n_max": 3}
+    },
+    "B": {
+      "scene": {"recadrage": {"ratio": 1.0, "hauteur_fraction": 0.75, "centre_x_fraction": 0.62, "haut_fraction": 0.0}},
+      "titre": {"x": -17.5, "y": -28, "l": 35, "h": 10, "lignes": 2, "cap": 4, "cap_min": 4},
+      "prenoms": {"x": 10, "y0": -13, "pas": 6, "l": 23, "h": 5},
+      "phrase": {"x": 8, "y": 6, "l": 25, "h": 6}
+    }
+  },
+  "bois": {
+    "placeholder_px_estime": {"ovale": [1004, 1476]},
+    "formes": {
+      "ovale":      {"fichier_mm": [85, 125], "utile": {"x": 5, "y": 5, "l": 75, "h": 115}, "n_max": 6, "B": true,
+                     "A": {"titre": {"x": 17.5, "y": 11, "l": 50, "h": 11}, "titre_cap": 4.5, "grille_y": 27, "centre_x": 42.5, "phrase": {"x": 20, "y": 108, "l": 45, "h": 6}, "phrase_si_n_max": 4,
+                           "disposition": {"1": [[40, 1, 1]], "2": [[28, 2, 1]], "3": [[24, 2, 2]], "4": [[24, 2, 2]], "5": [[20, 2, 3]], "6": [[20, 2, 3]]}, "pas_par_n": {"5": 30, "6": 30},
+                           "noel": {"disposition": {"5": [[16, 2, 3]], "6": [[16, 2, 3]]}, "pas_par_n": {"5": 31, "6": 31}}},
+                     "B_zones": {"titre": {"x": 18, "y": 6, "l": 49, "h": 11, "lignes": 2, "cap": 4.4, "cap_min": 4}, "prenoms": {"x": 18, "y": 19, "l": 49, "h": 10, "lignes": 2}, "scene": {"x": 12, "y": 30, "l": 61, "h": 88, "recadrage": {"ratio": 0.693, "hauteur_fraction": 1.0, "centre_x_fraction": 0.42}}, "phrase_si_n_max": 4}},
+      "chaussette": {"fichier_mm": [86, 162], "utile": {"jambe": {"x": 42, "y": 8, "l": 36, "h": 95}, "pied": {"x": 8, "y": 108, "l": 70, "h": 46}}, "n_max": 6, "B": true,
+                     "A": {"disposition": {"1": [[28, 1, 1]], "2": [[22, 1, 2]], "3": [[22, 1, 3]], "4": [[22, 1, 4]], "5": [[16, 2, 3]], "6": [[16, 2, 3]]}, "phrase_dans": "pied"},
+                     "B_zones": {"scene_dans": "pied", "texte_dans": "jambe", "a_dessiner": true}},
+      "sapin":      {"fichier_mm": [92, 132], "utile": {"x": 24, "y": 40, "l": 44, "h": 80}, "n_max": 6, "B": true,
+                     "A": {"titre_cap": 5, "disposition": {"1": [[28, 1, 1]], "2": [[28, 1, 2]], "3": [[20, 2, 2]], "4": [[20, 2, 2]], "5": [[18, 2, 3]], "6": [[18, 2, 3]]}},
+                     "B_zones": {"scene_dans": "tiers_bas", "a_dessiner": true}},
+      "cloche":     {"fichier_mm": [86, 105], "utile": {"x": 15, "y": 25, "l": 56, "h": 70}, "n_max": 4, "B": false,
+                     "A": {"disposition": {"1": [[36, 1, 1]], "2": [[26, 2, 1]], "3": [[22, 2, 2]], "4": [[22, 2, 2]]}}},
+      "coeur":      {"fichier_mm": [87, 115], "utile": {"x": 13, "y": 20, "l": 60, "h": 55}, "n_max": 4, "B": false,
+                     "A": {"disposition": {"1": [[40, 1, 1]], "2": [[28, 2, 1]], "3": [[24, 2, 2]], "4": [[24, 2, 2]]}, "phrase_dans": "pointe"}},
+      "etoile":     {"fichier_mm": [85, 97], "utile": {"x": 22, "y": 30, "l": 40, "h": 40}, "n_max": 4, "B": false,
+                     "A": {"disposition": {"1": [[30, 1, 1]], "2": [[18, 2, 1]], "3": [[16, 2, 2]], "4": [[16, 2, 2]]}, "prenom_cap": 3}}
+    },
+    "_disposition": "[taille_mm, colonnes, rangees] ; les rectangles utiles sont estimés, à confirmer sur le gabarit de découpe réel"
+  }
+}
