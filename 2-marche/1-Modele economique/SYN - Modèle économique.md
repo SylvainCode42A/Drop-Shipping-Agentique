@@ -2,10 +2,22 @@
 type: synthese
 title: SYN - Modèle économique
 status: validé
-related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Acquisition]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"
+  - "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"
+  - "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
 last-verified: 2026-10-30
-tags: [dropshipping, modele-economique, synthese]
+tags:
+  - dropshipping
+  - modele-economique
+  - synthese
 ---
 # SYN - Modèle économique
 

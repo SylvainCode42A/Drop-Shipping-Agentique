@@ -2,10 +2,36 @@
 type: overview
 title: OVR - Drop shipping agentique
 status: validé
-related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Acquisition]]", "[[SYN - Système]]", "[[OVR - Boutique NolaPrint]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]", "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Acquisition]]"
+  - "[[SYN - Système]]"
+  - "[[OVR - Boutique NolaPrint]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"
+  - "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"
+  - "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]"
+  - "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"
+  - "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"
+  - "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"
+  - "[[07 - La maquette est le cahier des charges du thème Shopify]]"
+  - "[[08 - Personnalisation à la commande en génération interne, test Printify avant le 5 novembre]]"
+  - "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
+  - "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]"
+  - "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"
+  - "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]"
+  - "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]"
+  - "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]"
+  - "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"
 last-verified: 2026-11-02
-tags: [dropshipping, overview]
+tags:
+  - dropshipping
+  - overview
 ---
 # OVR - Drop shipping agentique
 
@@ -96,7 +122,7 @@ Décisions attendues, dans l'ordre proposé :
 ## Où lire quoi
 | Question | Note |
 |---|---|
-| Les règles du dossier | [[_conventions]] |
+| Les règles du dossier | [[10 - School/20 - TAP/_conventions]] |
 | Quelle niche, quel public, quel calendrier | [[SYN - Choix de la niche]] |
 | Quels produits après le mug, et pourquoi | [[RCH - Synthèse comparative des produits d'élargissement (29-10-2026)]] |
 | Combien ça rapporte, combien ça coûte | [[SYN - Modèle économique]] |
@@ -113,6 +139,6 @@ Décisions attendues, dans l'ordre proposé :
 - Noël 2026 en test manuel : ouvrir la boutique, commander des échantillons, 8 à 12 mugs en ligne au plus tard le 15/11/2026 (notes TODO à créer).
 - Fiches TODO ouvertes par Sylvain : corriger la maquette, choisir l'app de personnalisation, choisir les apps de rétractation et de consentement. La fiche sur l'app de personnalisation est à relire avec la décision 08.
 - Reprendre les quatre RCH du 28/10 de Sylvain dans [[SYN - Juridique]] et [[SYN - Modèle économique]].
-- Décisions 10 à 13, une par une, selon le protocole de [[_conventions]].
+- Décisions 10 à 13, une par une, selon le protocole de [[10 - School/20 - TAP/_conventions]].
 - Dans `3-systeme/` : la note FLOW de la personnalisation à la commande, puis les notes MOD, CMP et FLOW, à partir du schéma de données esquissé le 25/10/2026 et des formats par support de [[SYN - Système]], pour le test de mars 2027.
 - Recherche restante : le puzzle, non étudié. Les deux RCH planche du 29/10 ont été fusionnées ; la note « gravée ou imprimée » n'est plus qu'une redirection, supprimable.

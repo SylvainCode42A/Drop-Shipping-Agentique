@@ -2,7 +2,9 @@
 type: research
 title: Méthodes statistiques pour garder ou retirer un produit
 status: validé
-related: ["[[_conventions]]", "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]"
 decisions: []
 date: 2026-10-25
 sources:
@@ -33,7 +35,11 @@ sources:
   - https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Contextual-Bandit-algorithms
   - https://github.com/david-cortes/contextualbandits
 last-verified: 2026-10-25
-tags: [dropshipping, systeme, statistiques, analyste]
+tags:
+  - dropshipping
+  - systeme
+  - statistiques
+  - analyste
 ---
 # RCH - Méthodes statistiques pour garder ou retirer un produit (25-10-2026)
 

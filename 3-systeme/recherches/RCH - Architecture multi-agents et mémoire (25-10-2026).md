@@ -2,7 +2,10 @@
 type: research
 title: Architecture multi-agents et mémoire pour la boutique agentique
 status: validé
-related: ["[[_conventions]]", "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]", "[[RCH - Méthodes statistiques pour garder ou retirer un produit (25-10-2026)]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[RCH - API Shopify pour la boutique agentique (22-10-2026)]]"
+  - "[[RCH - Méthodes statistiques pour garder ou retirer un produit (25-10-2026)]]"
 decisions: []
 date: 2026-10-25
 sources:
@@ -38,7 +41,12 @@ sources:
   - https://www.privacyworld.blog/2026/07/regulating-the-irreversible-the-edpbs-web-scraping-guidelines-and-the-limits-of-gdpr-orthodoxy/
   - https://www.shopify.com/news/winter-26-edition-merchant
 last-verified: 2026-10-25
-tags: [dropshipping, systeme, architecture, agents, memoire]
+tags:
+  - dropshipping
+  - systeme
+  - architecture
+  - agents
+  - memoire
 ---
 # RCH - Architecture multi-agents et mémoire (25-10-2026)
 

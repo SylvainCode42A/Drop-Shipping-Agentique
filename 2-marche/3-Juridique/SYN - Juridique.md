@@ -2,10 +2,25 @@
 type: synthese
 title: SYN - Juridique
 status: validé
-related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Fournisseurs]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[SYN - Acquisition]]", "[[A VERIFIER - Points à valider, vérifier, tester]]", "[[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]", "[[TODO - Déclarer la micro-entreprise sur le guichet unique]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Système]]"
+  - "[[SYN - Acquisition]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+  - "[[RCH - Création de la micro-entreprise, impôts, délais et nom sur le site (02-11-2026)]]"
+  - "[[TODO - Déclarer la micro-entreprise sur le guichet unique]]"
+decisions:
+  - "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]"
+  - "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"
+  - "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"
 last-verified: 2026-11-02
-tags: [dropshipping, juridique, synthese]
+tags:
+  - dropshipping
+  - juridique
+  - synthese
 ---
 # SYN - Juridique
 

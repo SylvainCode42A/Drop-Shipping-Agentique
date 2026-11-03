@@ -2,10 +2,21 @@
 type: registre
 title: A VERIFIER - Points à valider, vérifier, tester
 status: validé
-related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Acquisition]]"]
+related:
+  - "[[Drop-Shipping-Agentique/_conventions]]"
+  - "[[OVR - Drop shipping agentique]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Système]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Acquisition]]"
 decisions: []
 last-verified: 2026-11-02
-tags: [dropshipping, registre, a-verifier]
+tags:
+  - dropshipping
+  - registre
+  - a-verifier
 ---
 # A VERIFIER - Points à valider, vérifier, tester
 
@@ -147,6 +158,7 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Ovale B : les coins bas de la scène sortent de l'ellipse ; masquer la scène à l'ellipse ou la réduire | test (calque de contour) | [[MOD - Module de rendu]] | P1 | |
 | Boule B pour un Couple : « Le goûter chez Papy et Mamie » ne tient pas en deux lignes à 4 mm, tâche humaine | décision | [[MOD - Module de rendu]] | P2 | |
 | Boule A en base : le titre en arc frôle la feuille de houx à droite | échantillon | [[MOD - Module de rendu]] | P3 | |
+| Intégration des éléments d'Antoine dans le thème : 10 écarts avec rendu.py (taille 400 px, tulipe absente, texte canvas, pas d'eviter_titre ni de rogner_au_cercle, aperçu qui ne refuse jamais, scènes B dessinées par code, un seul ornement boule/bois, cœur à 78 %, symboles des exemples) | lecture (Antoine) | [[FLOW - Des éléments d'Antoine aux visuels de la boutique]] | P1 | |
 
 ## Marché
 
