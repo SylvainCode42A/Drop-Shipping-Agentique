@@ -63,8 +63,12 @@ FLEURS = {
     # "glaieul":     ("a single gladiolus stem", "straight stem with several trumpet flowers stacked along it", "orange to red", True),
     "glaieul":       ("a single gladiolus stem", "straight stem with several trumpet flowers stacked along it, no leaves, the stem ends in a clean blunt cut well above the bottom edge", "orange to red", True),
     "aster":         ("a single aster flower", "small daisy-like flower with many thin purple petals", "purple petals, yellow center", True),
-    "souci":         ("a single marigold flower", "dense round head with tightly packed petals", "bright orange", True),
-    "chrysantheme":  ("a single chrysanthemum flower", "very full round pompom head", "yellow or bronze", True),
+    # Souci et chrysanthème v1 (02/11/2026), têtes sans tige, validés ; régénérés avec une tige courte pour
+    # être plantés dans la bande de sol (décision 15, précision du 02/11).
+    # "souci":        ("a single marigold flower", "dense round head with tightly packed petals", "bright orange", True),
+    # "chrysantheme": ("a single chrysanthemum flower", "very full round pompom head", "yellow or bronze", True),
+    "souci":         ("a single marigold flower", "dense round head with tightly packed petals, on a short straight stem ending in a clean blunt cut", "bright orange, green stem", True),
+    "chrysantheme":  ("a single chrysanthemum flower", "very full round pompom head, on a short straight stem ending in a clean blunt cut", "yellow or bronze, green stem", True),
     "houx":          ("a sprig of holly", "three glossy jagged leaves and a cluster of berries", "dark green leaves, red berries", True),
     # Fleurs de repli (02/11/2026) : la jonquille (mars) et le glaïeul (août) refusés après cinq essais, la rose de
     # référence déteignant sur leurs tiges et leurs feuilles. Silhouettes écrites pour ce brief, sans feuille large.
@@ -80,6 +84,14 @@ ORNEMENTS = {
     "pain-epice": ("a single gingerbread man", "rounded brown silhouette, three buttons, simple icing smile, no realistic face", "brown, white and red", False),
     "coeur":      ("a single Christmas heart", "red heart with a simple white knitted border", "red and white", False),
 }
+
+# Supports des symboles (ajoutés le 02/11/2026, brief section 4 bis) : générés en 16:9, découpés par le code
+# en trois morceaux (15 % gauche, milieu répété, 15 % droite) pour tenir toute largeur.
+SUPPORTS = {
+    "sol":     ("a horizontal strip of short green grass with a thin band of brown earth below it", "soft rounded ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "bright green grass, brown earth", True),
+    "branche": ("a horizontal fir tree branch", "bold needles, two natural ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "dark green needles, brown twig", True),
+}
+ASPECT_SUPPORTS = "16:9"
 
 SCENE = ("a cozy afternoon tea table seen from the front, slightly from above: a round table with a "
          "tablecloth in {ACCENT1}, a teapot and three cups in {ACCENT2}, a cake on a stand, a small "
@@ -100,8 +112,8 @@ REFERENCE_STYLE = ("Use the reference image only for its painting style and its 
 
 
 def prompt_element(nom):
-    """Prompt complet d'une fleur ou d'un ornement, et le fond à utiliser."""
-    sujet, silhouette, couleurs, vert = (FLEURS | ORNEMENTS)[nom]
+    """Prompt complet d'une fleur, d'un ornement ou d'un support, et le fond à utiliser."""
+    sujet, silhouette, couleurs, vert = (FLEURS | ORNEMENTS | SUPPORTS)[nom]
     fond = FOND_MAGENTA if vert else FOND_VERT
     return (f"{PREFIXE}. {sujet}, {silhouette}, {couleurs}. "
             f"{SUFFIXE_ELEMENT.format(FOND=fond)}"), fond

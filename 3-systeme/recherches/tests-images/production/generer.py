@@ -4,6 +4,7 @@ Usage, depuis tests-images/production/ :
   python generer.py element rose 1 2            # la rose, graines 1 et 2
   python generer.py element oeillet violette 1  # plusieurs éléments, une graine
   python generer.py ornement boule etoile 1 2
+  python generer.py support sol branche 1 2      # bande de sol et branche, en 16:9 (brief 4 bis)
   python generer.py scene mamie 1 2              # scène Mamie, graines 1 et 2
   python generer.py scene papy papa 7            # autres palettes, graine retenue
   python generer.py hiver mamie 7                # calque d'hiver sur la scène Mamie (second tour)
@@ -65,7 +66,8 @@ def element(nom, graine):
     refs = [REFERENCE] if REFERENCE.exists() else []
     if refs:
         prompt = brief.REFERENCE_STYLE + prompt
-    return appel(prompt, f"{nom}-seed{graine}.png", graine, "1:1", refs)
+    aspect = brief.ASPECT_SUPPORTS if nom in brief.SUPPORTS else "1:1"
+    return appel(prompt, f"{nom}-seed{graine}.png", graine, aspect, refs)
 
 
 def scene(destinataire, graine):
@@ -91,8 +93,8 @@ if __name__ == "__main__":
     mode, noms, graines = args[0], [a for a in args[1:] if not a.isdigit()], [a for a in args[1:] if a.isdigit()]
     for nom in noms:
         for g in graines:
-            if mode in ("element", "ornement"):
-                if nom not in brief.FLEURS and nom not in brief.ORNEMENTS:
+            if mode in ("element", "ornement", "support"):
+                if nom not in brief.FLEURS and nom not in brief.ORNEMENTS and nom not in brief.SUPPORTS:
                     raise SystemExit(f"élément inconnu : {nom}")
                 element(nom, g)
             elif mode == "scene":

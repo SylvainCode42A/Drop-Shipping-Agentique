@@ -95,8 +95,8 @@ validation.
 | juillet | pied-d'alouette | épi vertical de petites fleurs serrées | bleu, violet |
 | août | glaïeul | tige droite avec plusieurs fleurs en trompette étagées | orange, rouge |
 | septembre | aster | marguerite à pétales fins et nombreux, plus petite, violette | violet, cœur jaune |
-| octobre | souci | tête ronde dense aux pétales serrés | orange vif |
-| novembre | chrysanthème | pompon rond très fourni | jaune ou bronze |
+| octobre | souci | tête ronde dense aux pétales serrés, **une tige courte et droite** (corrigé le 02/11, pour être planté) | orange vif |
+| novembre | chrysanthème | pompon rond très fourni, **une tige courte et droite** (corrigé le 02/11) | jaune ou bronze |
 | décembre | houx | trois feuilles dentelées brillantes et une grappe de baies | vert foncé, rouge |
 
 Deux fleurs se ressemblent (marguerite et aster) : elles se distinguent par la taille et la couleur ;
@@ -113,6 +113,20 @@ la validation vérifie qu'on les reconnaît côte à côte.
 | cœur de Noël | cœur rouge avec une bordure blanche tricotée simple | rouge, blanc |
 
 Le flocon et le bonhomme sont les plus fragiles sur bois (blanc, détails) : à juger sur l'échantillon.
+
+## 4 bis. Les deux supports des symboles (ajouté le 02/11/2026)
+Les fleurs sont plantées et les ornements pendent (décision 15, précision du 02/11). Deux éléments de
+plus, générés une fois en 16:9 sur fond magenta, détourés, puis découpés par le code en trois
+morceaux (15 % à gauche, milieu répété, 15 % à droite) pour tenir toute largeur.
+
+| Élément | Silhouette à obtenir | Couleurs |
+|---|---|---|
+| bande de sol | bande horizontale d'herbe courte avec une fine bande de terre en dessous, bouts arrondis, sans motif marqué (la jonction du milieu doit être invisible), hauteur environ un cinquième de la largeur | vert franc, brun |
+| branche de sapin | branche horizontale de sapin, aiguilles franches, deux bouts naturels, sans motif marqué, hauteur environ un cinquième de la largeur | vert foncé, brun |
+
+Prompt : « a horizontal strip of {élément}, {silhouette}, {couleurs} » entre le préfixe et le suffixe des
+éléments, `aspect_ratio` `16:9`. Critère supplémentaire de validation : le tiers central est répétable
+sans rupture visible (on colle deux copies du tiers central et on regarde).
 
 ## 5. La scène : table de goûter
 Prompt de base, entre le préfixe et le suffixe de scène :
@@ -173,7 +187,8 @@ zone de texte envahie, autre (précisé).
   par élément, journal), `analyse.py` (mesures, planche contact, verdicts) dans
   `3-systeme/recherches/tests-images/production/`, pilotés par [[MOD - Connecteur nolaprint-image]].
 - Entrées : ce brief, `commun.py`, la clé API.
-- Sorties : 18 PNG alpha d'éléments, 6 scènes et 1 calque d'hiver en PNG, `production.json`.
+- Sorties : 20 PNG alpha d'éléments (12 fleurs, 6 ornements, sol, branche), 6 scènes et 1 calque d'hiver
+  en PNG, `production.json`.
 - Coût estimé : 36 à 70 appels Nano Banana Pro en 2K, soit 5 à 10 USD (estimé, 0,134 USD l'appel).
 
 ## Cas limites

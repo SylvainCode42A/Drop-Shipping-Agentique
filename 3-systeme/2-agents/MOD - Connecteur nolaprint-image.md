@@ -6,7 +6,7 @@ path: ~/dev/nolaprint-image-mcp — server.py, prod.py, batch_worker.py, test_lo
 status: validé
 related: ["[[CMP - Brief de génération des illustrations de Noël 2026]]", "[[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]]", "[[RCH - Détourage, nettoyage des bords et agrandissement pour l'impression (02-11-2026)]]", "[[SYN - Système]]"]
 decisions: ["[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"]
-last-verified: 2026-11-02
+last-verified: 2026-11-03
 tags: [dropshipping, systeme, generation-images, mcp, module]
 ---
 # MOD - Connecteur nolaprint-image
@@ -16,8 +16,9 @@ Un serveur MCP local qui permet à Claude Desktop de produire lui-même les illu
 avec Nano Banana Pro, sans copier-coller de commandes. Claude génère, mesure, regarde les images et
 écrit les verdicts ; Antoine tranche en chat. Le serveur ne contient aucun prompt : il appelle
 `brief.py`, `generer.py` et `analyse.py` du dossier `3-systeme/recherches/tests-images/production/`,
-tels qu'ils sont utilisés en ligne de commande. Il lance aussi les scripts de post-traitement du même
-dossier (`detourage.py`, `recolorer.py`), sans appel à l'API.
+tels qu'ils sont utilisés en ligne de commande. Il lance aussi les scripts de post-traitement et de rendu
+du même dossier (`detourage.py`, `recolorer.py`, `rendu/rendu.py`, `rendu/exemples.py`,
+`rendu/apercu.py`), sans appel à l'API.
 
 ## Intention
 - **Le brief reste la seule source des prompts.** Le serveur importe `brief.py` et le recharge à chaque
@@ -46,13 +47,13 @@ flowchart LR
     W --> P
     W --> L[lots/&lt;id&gt;.json<br/>batch.log]
     S -->|run_script| W
-    W -->|SCRIPTS_PYTHON| X[detourage.py, recolorer.py<br/>valides/, *-recolor.png]
+    W -->|SCRIPTS_PYTHON| X[détourage, recoloriage, rendu<br/>valides/, *-recolor.png, rendu/exemples/]
 ```
 
 ## Entrées et sorties
 | Outil | Entrée | Sortie |
 |---|---|---|
-| `list_elements` | aucune | éléments du brief, fichiers, verdicts, essais restants, référence active, appels du jour, coût cumulé |
+| `list_elements` | aucune | éléments du brief (fleurs, ornements, supports `sol` et `branche`, destinataires), fichiers, verdicts, essais restants, référence active, appels du jour, coût cumulé |
 | `generate` | `kind` (element, scene, hiver), `name`, `seed`, `derogation` facultative | chemin, durée, erreur, tentatives, mesures d'`analyse.py` |
 | `analyse` | un fichier de `production/` | fond uni, marges, part de l'objet, tiers droit |
 | `contact_sheet` | liste de fichiers, nom de sortie | chemin de la planche |
@@ -61,12 +62,14 @@ flowchart LR
 | `set_reference` · `clear_reference` | fichier validé · nom | `reference.png` posée ou mise de côté |
 | `run_batch` | items, graines, `max_calls` | identifiant du lot, coût maximal |
 | `batch_status` · `list_batches` · `stop_batch` | identifiant · aucune · identifiant | avancement, fichiers, erreurs, coût · liste des lots · demande d'arrêt |
-| `run_script` | `detourage.py` ou `recolorer.py`, arguments vérifiés | identifiant ; `batch_status` rend le code de retour et la fin de la sortie |
+| `run_script` | `detourage.py`, `recolorer.py`, `rendu/rendu.py`, `rendu/exemples.py` ou `rendu/apercu.py`, arguments vérifiés | identifiant ; `batch_status` rend le code de retour et la fin de la sortie |
 
 Écrit seulement dans `production/` : images, `production.json`, planches, `batch.log`, `lots/`,
 verrou `.production.lock`. Variables d'environnement : `PRODUCTION_DIR`, `GEMINI_API_KEY`,
 `MAX_CALLS_PER_DAY` (défaut 60), `GENERATE_TIMEOUT_S` (défaut 230), `SCRIPTS_PYTHON` (le Python de
-conda, où `rembg`, `onnxruntime`, `opencv-python`, `pymatting` et `scipy` sont installés à la main).
+conda, où `rembg`, `onnxruntime`, `opencv-python`, `pymatting`, `scipy` et `resvg_py` sont installés à la
+main), `SCRIPTS_LIBRARY_PATH` (`/opt/homebrew/lib`, le fribidi de Homebrew pour le raqm du module de
+rendu, passé aux scripts seuls).
 Installation, bloc JSON de Claude Desktop et lot de nuit : voir le `README.md` du dépôt.
 
 ## Cas limites
@@ -86,6 +89,8 @@ Installation, bloc JSON de Claude Desktop et lot de nuit : voir le `README.md` d
   fraction ou une option permise ; pas de shell, aucune clé transmise, une heure au plus.
 - **Un détourage partiel écrase `controle-detourage.png`** : relancer le détourage complet pour
   retrouver la planche.
+- **Le rendu dépend de fribidi** : sans `SCRIPTS_LIBRARY_PATH`, Pillow n'a pas raqm et `rendu.py` refuse
+  de mesurer les textes (vérifié le 03/11).
 - **Coût estimé** à 0,134 USD par appel réussi en 2K (estimé) ; la facture réelle est sur Google AI Studio.
 
 ## Notes liées

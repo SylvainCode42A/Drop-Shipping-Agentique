@@ -13,7 +13,9 @@ Chaîne de la RCH « Détourage, nettoyage des bords et agrandissement pour l'im
 5. démêlage du bord : alpha recalculé comme mélange de la peinture voisine et du fond, puis
    décontamination des couleurs du bord avec pymatting ;
 6. recadrage sur l'objet avec une marge, PNG RGBA, profil sRGB, 300 DPI. Pas d'agrandissement :
-   un élément 2K dépasse déjà 1 004 px (85 mm à 300 DPI).
+   un élément 2K dépasse déjà 1 004 px (85 mm à 300 DPI) ;
+7. supports (sol, branche, brief 4 bis) : découpe en bout gauche, tuile répétable et bout droit,
+   avec une planche de répétition dans production/controle-repetition-<nom>.png.
 
 Usage, depuis tests-images/production/ :
   python detourage.py                      # tous les éléments au verdict ok du journal
@@ -161,7 +163,7 @@ def enregistrer(rgb, a, chemin):
 
 def elements_valides():
     """Fichiers au verdict ok du journal dont le nom est une fleur ou un ornement du brief."""
-    noms = set(brief.FLEURS) | set(brief.ORNEMENTS)
+    noms = set(brief.FLEURS) | set(brief.ORNEMENTS) | set(getattr(brief, "SUPPORTS", {}))
     fichiers = []
     for e in json.loads(JOURNAL.read_text()):
         f = e.get("fichier", "")
@@ -169,6 +171,41 @@ def elements_valides():
             if f not in fichiers:
                 fichiers.append(f)
     return fichiers
+
+
+def raccorder(chemin, nom, fondu=48):
+    """Supports (sol, branche) : découpe en trois morceaux, bout gauche, tuile répétable, bout droit.
+
+    Les coupes sont cherchées entre 15 et 30 % et entre 70 et 85 % de la largeur (brief 4 bis), là où
+    les deux bandes de 48 px se ressemblent le plus. Le début de la tuile est un fondu de la bande
+    qui suit la coupe droite vers la bande qui suit la coupe gauche : la tuile s'enchaîne avec
+    elle-même et avec le bout droit sans rupture. Écrit <nom>-gauche, -tuile, -droite dans valides/
+    et une planche de contrôle (bout gauche, trois tuiles, bout droit) dans production/."""
+    im = np.asarray(Image.open(chemin).convert("RGBA")).astype(np.float32)
+    w = im.shape[1]
+    meilleur = None
+    for x1 in range(int(0.15 * w), int(0.30 * w), 2):
+        for x2 in range(int(0.70 * w), int(0.85 * w) - fondu, 2):
+            d = np.abs(im[:, x1:x1 + fondu] - im[:, x2:x2 + fondu]).mean()
+            if meilleur is None or d < meilleur[0]:
+                meilleur = (d, x1, x2)
+    _, x1, x2 = meilleur
+    t = np.linspace(0, 1, fondu)[None, :, None]
+    tuile = im[:, x1:x2].copy()
+    tuile[:, :fondu] = im[:, x2:x2 + fondu] * (1 - t) + im[:, x1:x1 + fondu] * t
+    morceaux = {"gauche": im[:, :x1], "tuile": tuile, "droite": im[:, x2:]}
+    srgb = ImageCms.ImageCmsProfile(ImageCms.createProfile("sRGB")).tobytes()
+    for k, m in morceaux.items():
+        Image.fromarray(np.clip(m, 0, 255).astype(np.uint8), "RGBA").save(
+            SORTIE / f"{nom}-{k}.png", dpi=(300, 300), icc_profile=srgb)
+    saut = np.abs(tuile[:, -1, :3] - tuile[:, 0, :3]).mean()
+    voisin = np.abs(np.diff(tuile[..., :3], axis=1)).mean()
+    bande = np.concatenate([im[:, :x1], tuile, tuile, tuile, im[:, x2:]], axis=1)
+    fond = Image.new("RGBA", (bande.shape[1], bande.shape[0]), (255, 255, 255, 255))
+    fond.alpha_composite(Image.fromarray(np.clip(bande, 0, 255).astype(np.uint8), "RGBA"))
+    fond.convert("RGB").save(ICI / f"controle-repetition-{nom}.png")
+    print(f"  raccord {nom} : coupes à {x1} et {x2} px sur {w}, saut à la jonction {saut:.1f} "
+          f"(saut entre colonnes voisines {voisin:.1f}) -> controle-repetition-{nom}.png")
 
 
 def planche(chemins, sortie):
@@ -209,6 +246,8 @@ def main(args):
         nom = f.split("-seed")[0] + ".png"
         enregistrer(rgb, a, SORTIE / nom)
         faits.append(SORTIE / nom)
+        if f.split("-seed")[0] in getattr(brief, "SUPPORTS", {}):
+            raccorder(SORTIE / nom, f.split("-seed")[0])
         print(f"{f} -> valides/{nom} : {a.shape[1]} x {a.shape[0]} px, fond #%02X%02X%02X, %.1f s"
               % (*fond.astype(int), time.time() - t))
     if faits:

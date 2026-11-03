@@ -101,6 +101,31 @@ et le détourage doit forcer opaque la peinture franche, car le réseau rate les
   Il écrit toujours sur la dernière entrée d'un fichier généré deux fois (un `oeillet-seed3.png`
   reste sans verdict).
 
+### 8. Ajouts du 02/11 soir : sol, branche, tiges
+Après la revue des maquettes face aux meilleures ventes (décision 15, précision du 02/11), les fleurs
+sont plantées dans une bande de sol et les ornements pendent à une branche de sapin. Quatre éléments,
+sans image de référence, 8 appels.
+- **Tiges courtes** : la silhouette du souci et du chrysanthème a reçu « on a short straight stem
+  ending in a clean blunt cut ». Les quatre essais ont une tige nette et opaque du premier coup. Le
+  choix s'est fait sur la distinction entre les deux : souci seed 3 orange franc à tête dense,
+  chrysanthème seed 3 jaune bronze ; le chrysanthème seed 4, doré orangé, se confondait avec le souci,
+  et le souci seed 4, à pétales lâches, se lisait comme un zinnia.
+- **Sol et branche** en 16:9 : une image sur deux est bonne (sol seed 1, branche seed 1). Le sol seed 2
+  porte une bande fantôme en lavis et un motif en volutes ; la branche seed 2 sort en diagonale et
+  fourchue, malgré « horizontal » dans le prompt.
+- **Aucun des deux ne se répète tel quel** : collé à lui-même, le tiers central brut casse à la
+  jonction (saut moyen de 27 pour le sol et de 45 pour la branche, contre 3 à 4 entre deux colonnes
+  voisines). Le prompt « no marked pattern so that the middle can be repeated » ne suffit pas.
+- **Le raccord se fait par code** (`detourage.py`, fonction `raccorder`) : coupes cherchées entre 15 et
+  30 % et entre 70 et 85 % de la largeur là où les bandes se ressemblent le plus, puis fondu de 48 px
+  au début de la tuile. Saut à la jonction ramené à 3,2 (sol) et 3,4 (branche), invisible à l'œil.
+  La branche garde une répétition régulière de ses grappes, qui se lit comme une guirlande.
+- Le détourage a gardé les bouts du sol et de la branche entiers ; aucune partie n'a été retirée comme
+  détachée. Sortie : `sol`, `branche` et leurs morceaux `-gauche`, `-tuile`, `-droite` dans `valides/`.
+- Le connecteur ne connaissait pas les supports : `prod.py` (fonction `valider`) a reçu
+  `brief.SUPPORTS`, et `list_elements` les affiche. L'aspect 16:9 venait déjà de `generer.py`.
+- Coût : 8 appels, soit 1,07 USD (estimé). Total du jour : 74 appels réussis, soit 9,92 USD (estimé).
+
 ## Chiffres
 
 ### Mesurés le 02/11
