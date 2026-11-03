@@ -159,6 +159,8 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Boule B pour un Couple : « Le goûter chez Papy et Mamie » ne tient pas en deux lignes à 4 mm, tâche humaine | décision | [[MOD - Module de rendu]] | P2 | |
 | Boule A en base : le titre en arc frôle la feuille de houx à droite | échantillon | [[MOD - Module de rendu]] | P3 | |
 | Intégration des éléments d'Antoine dans le thème : 10 écarts avec rendu.py (taille 400 px, tulipe absente, texte canvas, pas d'eviter_titre ni de rogner_au_cercle, aperçu qui ne refuse jamais, scènes B dessinées par code, un seul ornement boule/bois, cœur à 78 %, symboles des exemples) | lecture (Antoine) | [[FLOW - Des éléments d'Antoine aux visuels de la boutique]] | P1 | |
+| Lots : la fiche et « Nos offres » annoncent une remise fixe par article dès 3 du même objet (1,80 / 1,97 / 1,80 €), le panier annonce −10 % dès 3 articles mélangés (`np_lot_pct`) ; une seule règle à retenir, puis aligner panier, fiche et remises Shopify | décision, test | [[FLOW - Lots et trio]] | P1 | |
+| Trio à −5,20 € contre « sans remise » dans la décision 12 : décision 13 bis à écrire | décision | [[FLOW - Lots et trio]] | P1 | |
 
 ## Marché
 
