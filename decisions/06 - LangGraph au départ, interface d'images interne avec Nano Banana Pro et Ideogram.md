@@ -56,7 +56,7 @@ revue mensuelle. Tout fournisseur est remplaçable sans toucher aux agents.
 - **GPT Image par défaut** : qualité sur le texte reconnue, mais retraits de modèles annoncés chez OpenAI.
 - **Midjourney** : pas d'API officielle. **Recraft** : utile en SVG, pas prioritaire pour le mug.
 - **Mem0, Letta, Zep** pour la mémoire : mémoire conversationnelle, inutile ici ; le modèle Markdown
-  plus Postgres de [[_conventions]] est conservé.
+  plus Postgres de [[10 - School/20 - TAP/_conventions]] est conservé.
 
 ## Conséquences
 - Stack du système : Python, LangGraph, Postgres, passerelles Shopify et Printify, interface d'images.

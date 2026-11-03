@@ -2,10 +2,21 @@
 type: synthese
 title: SYN - Choix de la niche
 status: validé
-related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Système]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"
+  - "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"
+  - "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"
 last-verified: 2026-11-02
-tags: [dropshipping, niches, synthese]
+tags:
+  - dropshipping
+  - niches
+  - synthese
 ---
 # SYN - Choix de la niche
 

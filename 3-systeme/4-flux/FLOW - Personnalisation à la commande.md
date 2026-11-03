@@ -172,7 +172,7 @@ Le produit Shopify n'est pas relié à Printify en synchronisation automatique ;
   version du gabarit ; hachage du PNG ; résultat de l'OCR, prénom par prénom ; validateur et décision ;
   dates de réception, de rendu, de validation et d'envoi ; identifiant de commande Printify ; état final.
 - Les chiffres de vente restent en Postgres ; le journal cite des identifiants, il ne recopie pas les ventes
-  ([[_conventions]], section 6).
+  ([[10 - School/20 - TAP/_conventions]], section 6).
 
 ## Cas limites
 Pour chaque cas : ce que fait le système, ce que voit la cliente, ce qui est journalisé.

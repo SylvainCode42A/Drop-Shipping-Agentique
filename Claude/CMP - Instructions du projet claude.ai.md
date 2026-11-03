@@ -4,10 +4,15 @@ title: Instructions du projet claude.ai
 language: prompt
 path: réglages du projet claude.ai « drop sheeping agentique » (champ « instructions du projet ») — copie de référence ici
 status: validé
-related: ["[[_conventions]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
 decisions: []
 last-verified: 2026-10-22
-tags: [dropshipping, claude, component, instructions]
+tags:
+  - dropshipping
+  - claude
+  - component
+  - instructions
 ---
 # CMP - Instructions du projet claude.ai
 
@@ -48,11 +53,11 @@ que dans propositions/, sauf demande explicite d'Antoine.
 ## Ce qu'il ne fait pas
 - Il ne garantit rien : un chat peut sauter une lecture. Les contrôles sont les livrables : la ligne
   « je lis `_conventions.md` », le chemin de la note `RCH`.
-- Il ne porte aucune règle de fond : elles sont dans [[_conventions]].
+- Il ne porte aucune règle de fond : elles sont dans [[10 - School/20 - TAP/_conventions]].
 
 ## Comment il évolue
 On modifie le bloc « Le texte » et sa ligne de version, puis `last-verified`. Rien à recopier dans
 claude.ai, sauf si cette note est déplacée.
 
 ## Notes liées
-Modèle : [[20 Projets/Exogen/Claude/3-artefacts/CMP - Instructions du projet claude.ai]] · Règles : [[_conventions]]
+Modèle : [[20 Projets/Exogen/Claude/3-artefacts/CMP - Instructions du projet claude.ai]] · Règles : [[10 - School/20 - TAP/_conventions]]

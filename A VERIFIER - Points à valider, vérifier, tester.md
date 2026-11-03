@@ -2,10 +2,21 @@
 type: registre
 title: A VERIFIER - Points à valider, vérifier, tester
 status: validé
-related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[SYN - Fournisseurs]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[SYN - Choix de la niche]]", "[[SYN - Modèle économique]]", "[[SYN - Acquisition]]"]
+related:
+  - "[[Drop-Shipping-Agentique/_conventions]]"
+  - "[[OVR - Drop shipping agentique]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Système]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Acquisition]]"
 decisions: []
 last-verified: 2026-11-02
-tags: [dropshipping, registre, a-verifier]
+tags:
+  - dropshipping
+  - registre
+  - a-verifier
 ---
 # A VERIFIER - Points à valider, vérifier, tester
 
@@ -130,6 +141,7 @@ Priorités : **P1** avant le 15/11/2026 (mise en ligne pour Noël) ; **P2** avan
 | Rendu physique : blanc et alpha sur verre UV et sur bois (sous-couche blanche ?) ; forme réelle de la boule (disque biseauté ou sphère) ; recto-verso du bois ; question au support Printify avant la commande ; aucun avis client avec photo sur les trois références | support, échantillon | [[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]] | P1 (avant le 05/11) | |
 | Zone du mug : panneau de 2475 × 1155 px (environ 210 × 98 mm) et non tour complet, environ 40 mm sous l'anse ; à confirmer par `variants.json` | connecté (jeton Printify) | [[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]] | P1 | |
 | Concurrents : réparer le CSV (30 premières lignes à 35-38 colonnes) ; vérifier le design 0065 de Cadeau Plus ; nombre de publicités Cadeau Plus gonflé par la recherche par mot-clé | relevé | [[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]] | P2 | |
+| Intégration des éléments d'Antoine dans le thème : 10 écarts avec rendu.py (taille 400 px, tulipe absente, texte canvas, pas d'eviter_titre ni de rogner_au_cercle, aperçu qui ne refuse jamais, scènes B dessinées par code, un seul ornement boule/bois, cœur à 78 %, symboles des exemples) | lecture (Antoine) | [[FLOW - Des éléments d'Antoine aux visuels de la boutique]] | P1 | |
 
 ## Marché
 

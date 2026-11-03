@@ -2,10 +2,24 @@
 type: synthese
 title: SYN - Système
 status: validé
-related: ["[[_conventions]]", "[[SYN - Fournisseurs]]", "[[SYN - Acquisition]]", "[[SYN - Juridique]]", "[[SYN - Choix de la niche]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]", "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Fournisseurs]]"
+  - "[[SYN - Acquisition]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]"
+  - "[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]"
+  - "[[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]"
+  - "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]"
+  - "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]"
 last-verified: 2026-11-02
-tags: [dropshipping, systeme, synthese]
+tags:
+  - dropshipping
+  - systeme
+  - synthese
 ---
 # SYN - Système
 
@@ -79,7 +93,7 @@ Les études produit donnent les contraintes de composition que le créateur doit
 - Fournisseur : file d'attente par endpoint, créations idempotentes, visuels stockés chez soi ([[SYN - Fournisseurs]]).
 
 ### Mémoire
-- Faits chiffrés en Postgres ; leçons dans Obsidian avec statut, date de revue et lien vers la requête SQL qui les prouve ; agents limités à une boîte de réception ; consolidation périodique qui relance la preuve avant promotion. Un agent ne cite jamais un chiffre lu dans une note sans le recalculer ([[RCH - Architecture multi-agents et mémoire (25-10-2026)]]). C'est le modèle retenu dans [[_conventions]], section 6.
+- Faits chiffrés en Postgres ; leçons dans Obsidian avec statut, date de revue et lien vers la requête SQL qui les prouve ; agents limités à une boîte de réception ; consolidation périodique qui relance la preuve avant promotion. Un agent ne cite jamais un chiffre lu dans une note sans le recalculer ([[RCH - Architecture multi-agents et mémoire (25-10-2026)]]). C'est le modèle retenu dans [[10 - School/20 - TAP/_conventions]], section 6.
 - Le journal des prompts et des retouches validées sert aussi de preuve d'apport humain pour une éventuelle protection par le droit d'auteur ([[RCH - Images IA, modèles et plateformes (29-10-2026)]]).
 - Mem0, Letta et Zep visent la mémoire conversationnelle : inutiles au départ. Markdown source de vérité, index reconstructible, versionnement git ([[RCH - Architecture multi-agents et mémoire (25-10-2026)]]).
 
@@ -106,7 +120,7 @@ Les études produit donnent les contraintes de composition que le créateur doit
 
 ## Ce qui est décidé
 - Approbation unitaire de chaque design et fiche au lancement, analyste en proposition seulement, service client humain et documenté, paliers d'autonomie par type d'action (unitaire, lot, après coup ; 50 décisions, 95 %, zéro incident PI), liste des actions toujours bloquées dont `productDelete` ([[03 - Approbation unitaire au lancement, paliers d'autonomie, actions toujours bloquées]]).
-- Deux choix de structure sont fixés dans [[_conventions]] : faits en base, leçons dans Obsidian, agents limités à `propositions/`, l'humain tranche.
+- Deux choix de structure sont fixés dans [[10 - School/20 - TAP/_conventions]] : faits en base, leçons dans Obsidian, agents limités à `propositions/`, l'humain tranche.
 - Orchestration LangGraph au départ (checkpointer Postgres, `interrupt()`), étapes idempotentes pour garder Temporal possible ; interface d'images interne avec Nano Banana Pro par défaut et Ideogram en second, choix par A/B sur Noël ([[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]). Les conditions relevées le 29/10 sont compatibles ; les tests du 02/11 confirment Nano Banana Pro par défaut ; Ollama écarté pour la production ; points ouverts : propriété des sorties chez Google, clause d'attribution Ideogram, conservation des marqueurs IA.
 - Notre serveur produit le fichier d'impression (illustration fixe en calques plus texte rendu par code) et Printify le reçoit par l'API, sans application tierce ni produit créé chez Printify ([[10 - Notre serveur produit l'image finale, Printify la reçoit par l'API]]).
 - Texte en trois champs facultatifs (titre, prénoms jusqu'à 6, phrase), couleur du texte en palette, police fixée par gabarit, page blanche recadrée par la cliente ([[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]) ; détail dans [[CMP - Personnalisation par produit]].
