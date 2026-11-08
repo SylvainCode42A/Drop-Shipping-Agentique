@@ -2,7 +2,9 @@
 type: research
 title: Canaux d'acquisition
 status: validé
-related: ["[[SYN - Acquisition]]", "[[_conventions]]"]
+related:
+  - "[[SYN - Acquisition]]"
+  - "[[10 - School/20 - TAP/_conventions]]"
 decisions: []
 date: 2026-10-22
 sources:
@@ -39,7 +41,10 @@ sources:
   - https://help.printful.com/hc/en-us/articles/360014067279-How-will-VAT-apply-to-orders-shipped-to-Europe
   - https://legalviz.eu/dsa/article/30/
 last-verified: 2026-10-22
-tags: [dropshipping, acquisition, research]
+tags:
+  - dropshipping
+  - acquisition
+  - research
 ---
 # RCH - Canaux d'acquisition (22-10-2026)
 

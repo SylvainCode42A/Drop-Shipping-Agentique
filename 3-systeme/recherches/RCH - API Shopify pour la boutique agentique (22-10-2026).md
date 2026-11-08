@@ -2,7 +2,8 @@
 type: research
 title: API Shopify pour la boutique agentique
 status: validé
-related: ["[[_conventions]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
 decisions: []
 date: 2026-10-22
 sources:
@@ -24,7 +25,11 @@ sources:
   - https://help.printify.com/hc/en-us/articles/4483630521105
   - https://help.printful.com/hc/en-us/articles/21033550791708
 last-verified: 2026-10-22
-tags: [dropshipping, systeme, shopify, api]
+tags:
+  - dropshipping
+  - systeme
+  - shopify
+  - api
 ---
 # RCH - API Shopify pour la boutique agentique (22-10-2026)
 

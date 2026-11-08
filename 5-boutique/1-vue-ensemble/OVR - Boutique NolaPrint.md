@@ -4,10 +4,26 @@ title: OVR - Boutique NolaPrint
 language: Liquid, JSON, CSS, JavaScript
 path: ~/Documents/nolaprint-theme — thème 209933369689 (publié) de 04qh0j-2k.myshopify.com, dérivé de Horizon 4.3.0
 status: draft
-related: ["[[_conventions]]", "[[OVR - Drop shipping agentique]]", "[[MOD - Thème Shopify]]", "[[CMP - Produit]]", "[[CMP - Illustrations]]", "[[CMP - Catégories des designs]]", "[[SYN - Juridique]]"]
-decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[07 - La maquette est le cahier des charges du thème Shopify]]", "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]", "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]", "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[OVR - Drop shipping agentique]]"
+  - "[[MOD - Thème Shopify]]"
+  - "[[CMP - Produit]]"
+  - "[[CMP - Illustrations]]"
+  - "[[CMP - Catégories des designs]]"
+  - "[[SYN - Juridique]]"
+decisions:
+  - "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"
+  - "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]"
+  - "[[07 - La maquette est le cahier des charges du thème Shopify]]"
+  - "[[09 - Établissement des nouveaux prix, alignés sur Cadeau Plus sans faux prix barrés]]"
+  - "[[11 - Texte facultatif à 1 €, frais de retour à la charge du client, retours chez Sylvain]]"
+  - "[[12 - Lots de 3 à environ moins 10 %, lot un de chaque sans remise]]"
 last-verified: 2026-11-02
-tags: [dropshipping, boutique, overview]
+tags:
+  - dropshipping
+  - boutique
+  - overview
 ---
 # OVR - Boutique NolaPrint
 

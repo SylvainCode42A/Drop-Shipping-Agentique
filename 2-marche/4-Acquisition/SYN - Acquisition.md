@@ -2,10 +2,21 @@
 type: synthese
 title: SYN - Acquisition
 status: validé
-related: ["[[_conventions]]", "[[SYN - Modèle économique]]", "[[SYN - Choix de la niche]]", "[[SYN - Juridique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Système]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]"
+  - "[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]"
 last-verified: 2026-10-31
-tags: [dropshipping, acquisition, synthese]
+tags:
+  - dropshipping
+  - acquisition
+  - synthese
 ---
 # SYN - Acquisition
 

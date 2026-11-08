@@ -2,10 +2,20 @@
 type: synthese
 title: SYN - Fournisseurs
 status: validé
-related: ["[[_conventions]]", "[[SYN - Choix de la niche]]", "[[SYN - Juridique]]", "[[SYN - Modèle économique]]", "[[SYN - Système]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
-decisions: ["[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"]
+related:
+  - "[[10 - School/20 - TAP/_conventions]]"
+  - "[[SYN - Choix de la niche]]"
+  - "[[SYN - Juridique]]"
+  - "[[SYN - Modèle économique]]"
+  - "[[SYN - Système]]"
+  - "[[A VERIFIER - Points à valider, vérifier, tester]]"
+decisions:
+  - "[[05 - Printify seul fournisseur avec partenaire UE figé, franchise de TVA au départ]]"
 last-verified: 2026-10-29
-tags: [dropshipping, fournisseurs, synthese]
+tags:
+  - dropshipping
+  - fournisseurs
+  - synthese
 ---
 # SYN - Fournisseurs
 
