@@ -94,7 +94,8 @@ if __name__ == "__main__":
     for nom in noms:
         for g in graines:
             if mode in ("element", "ornement", "support"):
-                if nom not in brief.FLEURS and nom not in brief.ORNEMENTS and nom not in brief.SUPPORTS:
+                connus = set().union(*[set(f) for f in brief.FAMILLES.values()])
+                if nom not in connus:
                     raise SystemExit(f"élément inconnu : {nom}")
                 element(nom, g)
             elif mode == "scene":

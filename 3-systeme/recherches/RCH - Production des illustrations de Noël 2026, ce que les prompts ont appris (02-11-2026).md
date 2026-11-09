@@ -9,7 +9,8 @@ sources:
   - "Journal production.json : 74 appels Nano Banana Pro (gemini-3-pro-image, 2K), verdicts et raisons, 02/11/2026"
   - "Scripts de tests-images/production/ : brief.py (versions commentées), generer.py, analyse.py, recolorer.py, detourage.py"
   - "Planches contact-*.png et controle-detourage.png de tests-images/production/"
-last-verified: 2026-11-02
+  - "Journal production.json : 66 appels du lot Maman, 03 et 04/11/2026"
+last-verified: 2026-11-04
 tags: [dropshipping, systeme, generation-images, brief, research]
 ---
 # RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)
@@ -125,6 +126,54 @@ sans image de référence, 8 appels.
 - Le connecteur ne connaissait pas les supports : `prod.py` (fonction `valider`) a reçu
   `brief.SUPPORTS`, et `list_elements` les affiche. L'aspect 16:9 venait déjà de `generer.py`.
 - Coût : 8 appels, soit 1,07 USD (estimé). Total du jour : 74 appels réussis, soit 9,92 USD (estimé).
+
+### 9. Lot Maman du 03/11
+Vingt-neuf éléments de la section 8 du brief : huit enfants, un bébé, un chat, six papillons, six
+oiseaux, six cœurs et une couronne. Sans image de référence, préfixe v3, même validation. Production
+menée le soir du 03/11 et le matin du 04/11, 66 appels, aucune erreur de l'API.
+- **Le connecteur ne connaissait pas les nouvelles familles** : `prod.py` (fonction `valider`) lit
+  maintenant `brief.FAMILLES`. `list_elements` n'affiche toujours que fleurs, ornements et supports.
+- **Enfants : la série tient par le texte commun et le choix de la graine.** En graine 2, six
+  figurines sur huit ont la même tête ronde, les mêmes proportions et les bras ouverts. Le défaut
+  qui revient est la figurine peinte sur une carte posée sur du papier blanc : 5 images sur 16 avec le
+  texte v1. La fin « painted directly on the background, no card, no paper sheet, no frame, no white
+  border », ajoutée à `ENFANT_COMMUN` puis au bébé et au chat, l'a fait disparaître (0 sur 8 ensuite).
+  Le petit nez dessiné malgré « no nose detail » est accepté.
+- **garcon-frise a demandé cinq essais**, dont un par dérogation. Ses boucles sont sorties en petits
+  « S » qui se lisent comme des lettres (seed 3). La variante « curly hair forming one full rounded
+  cap » a réglé les cheveux, puis la seed 5 a réglé le cadrage.
+- **Papillons et cœurs passent au premier lot.** Les antennes des papillons font 12 à 15 px à
+  1 004 px, juste au-dessus du seuil.
+- **Oiseaux posés : les pattes tombent sous 12 px** sur les quatre espèces posées, avec des plumes
+  rayées très détaillées. La fin « legs hidden under the round body, simple flat color areas, no
+  feather detail, no branch » a donné quatre oiseaux simples du premier coup. L'hirondelle, en vol,
+  et le bouvreuil, rond, n'en avaient pas besoin.
+- **Couleur des cœurs mesurée en Lab** (moyenne des pixels du cœur, reflet compris) : écart de 4,6 à
+  10,7 pour cinq cœurs, et 18,7 pour le rose, plus foncé et plus saturé que #D98BA6. Le corail, à 10,7,
+  est proche du seuil de 12. Le rose est **recoloré par code** et non régénéré : `recolorer.py`, appelé
+  avec le seul fichier source, lit le code dans le brief et décale `valides/coeur-rose.png` en Lab. Écart
+  ramené à 0,0, matière gardée. Un second passage ne décale plus rien.
+- **Couronne** en 1:1 : rapport largeur sur hauteur de 1,015, centre vide. La seed 2, à tiges fines,
+  est refusée pour le détail.
+- **Cartes et feuilles hors enfants** : 3 sur 42 images (hirondelle seed 2, mésange seed 2, corail seed
+  1, ce dernier peint sur une feuille blanche posée sur le fond). La phrase contre la carte n'est pas
+  passée dans le suffixe commun.
+- **Détourage** : les 29 éléments en un passage, environ 6,8 s chacun, sans liseré.
+- Le connecteur a cessé de répondre deux fois sur le premier appel après une pause, sans erreur de
+  l'API. Une relance de Claude Desktop a suffi chaque fois.
+- Coût : 48 appels le 03/11 (6,43 USD) et 18 le 04/11 (2,41 USD), soit 66 appels et 8,84 USD estimés,
+  sous le plafond de 80.
+
+| Famille | Éléments | Appels | Correction du texte |
+|---|---|---|---|
+| Enfants, bébé, chat | 10 | 24 | texte commun v2, variante de garcon-frise, une dérogation |
+| Papillons | 6 | 12 | aucune |
+| Oiseaux | 6 | 16 | silhouette des quatre oiseaux posés |
+| Cœurs | 6 | 12 | aucune, rose recoloré par code |
+| Couronne | 1 | 2 | aucune |
+
+À vérifier sur la commande test : le lange blanc du bébé sur le bois clair et le blanc du mug, le
+papillon bleu et l'hirondelle sur fond foncé, les antennes des papillons à 12-15 px.
 
 ## Chiffres
 

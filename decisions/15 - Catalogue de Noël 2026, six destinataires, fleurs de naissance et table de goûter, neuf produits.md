@@ -6,7 +6,7 @@ date: 2026-11-02
 implemented: non
 related: ["[[OVR - Drop shipping agentique]]", "[[SYN - Choix de la niche]]", "[[SYN - Système]]", "[[CMP - Personnalisation par produit]]", "[[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]]", "[[RCH - Publicités Meta et designs Monsieur TShirt et Etsy (02-11-2026)]]", "[[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]]", "[[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]]", "[[MOD - Catalogue et fiche produit]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[01 - Audience visée et nouvelle offre, parents et grands-parents d'abord, nos designs ou la page blanche]]", "[[02 - Lancement avec le mug, la boule en cristal et la décoration en bois, trois imprimeurs UE]]", "[[04 - Noël 2026 en test manuel réduit, Fête des grands-mères 2027 pour le système]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]"]
-last-verified: 2026-11-02
+last-verified: 2026-11-04
 tags: [dropshipping, boutique, niches, brief, decision]
 ---
 # 15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits
@@ -80,6 +80,17 @@ décision 01, et une catégorie vide nuit plus qu'une absence. À ouvrir quand u
   fond est le crème de la palette, pas le blanc. Le souci et le chrysanthème sont régénérés avec une
   tige courte. Raison : le n°1 du marché s'appelle « Jardin d'amour de Mamie » et montre un lien
   visible entre les éléments ; nos fleurs isolées sur blanc ne le montraient pas.
+- *Lot Maman, 03/11/2026* (brief, section 8) : quatre familles de symboles de plus pour le gabarit A,
+  utilisables par tous les destinataires, chacune avec son titre : papillons (« Les papillons de … »),
+  cœurs à couleur au choix par prénom (« Les cœurs de … »), oiseaux (« Les oiseaux de … »), et huit
+  figurines d'enfants au choix par prénom, sans réglage (« La tribu de … »), plus un bébé et un chat en
+  réserve. Trois compositions de plus dans le code : deux générations (« D'abord Maman, maintenant
+  Mamie », mécanique la mieux notée du marché), couronne (titre au centre, prénoms autour, N ≤ 4),
+  depuis (« Maman depuis 1992 », N = 0). Raison : le marché ne vend à Maman que des designs Mamie
+  retitrés, plus ces trois mécaniques ; élargir les ventes passe par des familles et des compositions,
+  pas par de nouveaux gabarits (décision 02). Les figurines d'enfants sont le compromis entre « La bande
+  à » (réglages, hors de notre chaîne) et « Mamie poule » (symbole identique) ; titre « La tribu de … »
+  pour ne pas reprendre le nom de produit de Cadeau Plus.
 - Police pressentie : Caveat Brush ⚠️ à confirmer à l'œil sur le gabarit.
 
 ### 3. Gabarit B : scène fixe, la table de goûter
@@ -90,6 +101,15 @@ le bois : fenêtre enneigée, sapin dans l'angle. Police pressentie : Nunito ⚠
 la scène ne dit pas pourquoi elle est là (le plus proche sur le marché est « le garage de Papa »). Le
 sol est prolongé par code sous la zone de texte. Gabarit non prouvé par le marché : si Noël ne le vend
 pas, le jardin devient la seule base.
+
+*Lot Papa et Papy, 04/11/2026* (brief, section 9) : Papa et Papy ont **en plus** leur propre scène B,
+**l'atelier**, titrée « L'atelier de … » pour Papy et « Le garage de … » pour Papa. Elle s'ajoute au
+goûter, qui reste proposé à tous les destinataires. Trois familles de symboles de plus pour le gabarit A :
+potager (« Le potager de … », planté dans le sol), outils (« Les outils de … », accrochés à un panneau
+perforé) et poissons (« Les poissons de … », au-dessus d'une bande d'eau). Raison :
+[[RCH - Designs des meilleures ventes de Cadeau Plus (01-11-2026)]] place « le garage de Papa » dans le
+top 30, un titre qui nomme le lieu de la personne ; fleurs, papillons et cœurs ne parlent pas à Papa
+et Papy.
 
 ### 4. Six palettes
 Le fond, les accents et les 4 couleurs de texte (décision 13) changent par destinataire ; couleurs

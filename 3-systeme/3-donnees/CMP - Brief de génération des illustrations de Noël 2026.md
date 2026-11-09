@@ -4,7 +4,7 @@ title: CMP - Brief de génération des illustrations de Noël 2026
 status: validé
 related: ["[[CMP - Personnalisation par produit]]", "[[MOD - Connecteur nolaprint-image]]", "[[RCH - Production des illustrations de Noël 2026, ce que les prompts ont appris (02-11-2026)]]", "[[SYN - Système]]", "[[RCH - Capacités des modèles d'images pour les calques (02-11-2026)]]", "[[RCH - Détourage, nettoyage des bords et agrandissement pour l'impression (02-11-2026)]]", "[[RCH - Rendu des trois procédés d'impression et planche de test (02-11-2026)]]", "[[RCH - Rendu du texte, polices et OCR des accents (02-11-2026)]]", "[[A VERIFIER - Points à valider, vérifier, tester]]"]
 decisions: ["[[06 - LangGraph au départ, interface d'images interne avec Nano Banana Pro et Ideogram]]", "[[13 - Texte en trois champs facultatifs, couleur du texte en palette, police fixée, page blanche recadrée par la cliente]]", "[[14 - Brief visuel, deux gabarits de design déclinés par titre et par occasion, rendu peint aux formes franches]]", "[[15 - Catalogue de Noël 2026, six destinataires, fleurs de naissance et table de goûter, neuf produits]]"]
-last-verified: 2026-11-02
+last-verified: 2026-11-04
 tags: [dropshipping, systeme, generation-images, brief, component]
 ---
 # CMP - Brief de génération des illustrations de Noël 2026
@@ -127,6 +127,160 @@ morceaux (15 % à gauche, milieu répété, 15 % à droite) pour tenir toute lar
 Prompt : « a horizontal strip of {élément}, {silhouette}, {couleurs} » entre le préfixe et le suffixe des
 éléments, `aspect_ratio` `16:9`. Critère supplémentaire de validation : le tiers central est répétable
 sans rupture visible (on colle deux copies du tiers central et on regarde).
+
+## 8. Lot Maman (ajouté le 03/11/2026)
+Décision 15, précision du 03/11 : quatre familles de symboles de plus pour le gabarit A, utilisables par
+tous les destinataires, et une couronne. Même préfixe, même suffixe, même fond (magenta si l'élément
+contient du vert, vert sinon), même validation. Données dans `brief.py` (`PAPILLONS`, `COEURS`,
+`OISEAUX`, `ENFANTS`, `COURONNE`).
+
+### Papillons (6) — « Les papillons de … »
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| papillon-rouge | ailes ouvertes vues de dessus, deux grandes ailes hautes et deux petites basses, corps fin, deux antennes épaisses | rouge et orange |
+| papillon-bleu | idem | bleu et bleu nuit |
+| papillon-jaune | idem | jaune et ocre |
+| papillon-rose | idem | rose et prune |
+| papillon-vert | idem | vert et vert bouteille |
+| papillon-violet | idem | violet et lavande |
+
+### Cœurs (6) — « Les cœurs de … », couleur au choix par prénom
+| Nom | Silhouette | Couleur |
+|---|---|---|
+| coeur-rouge | cœur plein, bords ronds, un reflet simple en aplat | #C8453C |
+| coeur-corail | idem | #E07A5F |
+| coeur-rose | idem | #D98BA6 |
+| coeur-prune | idem | #7B3F61 |
+| coeur-bleu | idem | #4A7FC1 |
+| coeur-vert | idem | #5E8A6E |
+
+### Oiseaux (6) — « Les oiseaux de … »
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| mesange | petit oiseau rond de profil, posé, tête bleue, joues blanches, ventre jaune | bleu, jaune, blanc |
+| rouge-gorge | petit oiseau rond de profil, posé, poitrine orange | brun, orange |
+| hirondelle | oiseau fin en vol, ailes pointues, queue fourchue | bleu nuit, blanc |
+| chardonneret | petit oiseau de profil, face rouge, barre jaune sur l'aile | rouge, jaune, brun |
+| moineau | petit oiseau rond de profil, posé, brun rayé | brun, beige |
+| bouvreuil | petit oiseau rond de profil, posé, poitrine rose, calotte noire | rose, noir, gris |
+
+### Enfants (8, plus 2 en réserve) — « La tribu de … »
+Figurines debout, de face, grosse tête et corps court, deux points pour les yeux et un petit sourire,
+aucun visage réaliste, tenue unie simple, pas de marque ni d'objet. Le **même texte de description
+commune** est répété mot pour mot dans les huit prompts ; seule la ligne de variante change. Les huit
+doivent avoir la même hauteur, les mêmes proportions et le même contour : la planche contact des huit
+est le critère, pas chaque image seule. Contrôle PI figurine par figurine (tenue, coupe).
+
+Description commune : « a single small child character, standing, front view, big round head and short
+body, two dot eyes and a small smile, no realistic face, no nose detail, plain one-color clothes, no
+logo, no pattern, arms slightly open, same character design for the whole set ».
+
+| Nom | Variante |
+|---|---|
+| fille-blonde | girl, light blonde hair in two short pigtails, light skin, yellow dress |
+| garcon-blond | boy, short light blonde hair, light skin, blue t-shirt and shorts |
+| fille-brune | girl, brown hair in a ponytail, light skin, red dress |
+| garcon-brun | boy, short brown hair, light skin, green t-shirt and shorts |
+| fille-chatain-mate | girl, dark brown hair in a braid, medium tan skin, coral dress |
+| garcon-chatain-mat | boy, short dark brown hair, medium tan skin, ochre t-shirt and shorts |
+| fille-frisee | girl, black curly hair, dark brown skin, violet dress |
+| garcon-frise | boy, short black curly hair, dark brown skin, teal t-shirt and shorts |
+| bebe (réserve) | a swaddled baby in a white blanket, face as above |
+| chat (réserve) | a small sitting cat, same style, ginger |
+
+La fiche produit nomme les figurines par leurs traits (« fille, cheveux frisés noirs »), jamais par une
+origine.
+
+### Couronne (1) — composition « couronne »
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| couronne | couronne ronde de petites fleurs et de feuilles, centre vide, épaisseur d'un cinquième du diamètre, aspect 1:1 | vert, rose, corail, jaune |
+
+### Compositions du lot (code, pas de génération)
+- **Deux générations** : deux rangées avec leur sol, titre « Maman de … » puis « Mamie de … » (ou toute
+  paire de titres), N ≤ 4 par rangée sur le mug, N ≤ 3 sur la boule et le bois.
+- **Couronne** : titre au centre de la couronne, prénoms autour sur un arc, N ≤ 4.
+- **Depuis** : titre, une année en grand, un symbole, une phrase ; N = 0.
+
+Phrases proposées pour Maman (fiche) : Maman d'amour ; La meilleure des mamans ; D'abord Maman,
+maintenant Mamie ; Merci pour tout ; Le jardin de Maman ; Depuis toujours.
+
+## 9. Lot Papa et Papy (ajouté le 04/11/2026)
+Décision 15, précision du 04/11 : Papa et Papy ont en plus leur propre scène B, l'atelier, qui s'ajoute
+au goûter, et trois familles de symboles pour le gabarit A, chacune avec son support. Même préfixe v3,
+même suffixe, même fond (magenta si l'élément contient du vert, vert sinon), sans image de référence,
+même validation (section 7). Données dans `brief.py` (`POTAGER`, `OUTILS`, `POISSONS`, `SUPPORTS`,
+`ATELIER`, `HIVER_ATELIER`).
+
+### Supports (3), 16:9, découpés en trois morceaux comme le sol et la branche de sapin
+| Nom | Porte | Silhouette | Couleurs |
+|---|---|---|---|
+| branche-nue | les oiseaux, toutes destinataires | branche horizontale de bois nu, quelques petites feuilles, deux bouts naturels, sans motif marqué | brun, un peu de vert |
+| panneau | les outils | bande horizontale de panneau perforé en bois, trous réguliers, bouts arrondis, sans motif marqué | bois clair |
+| eau | les poissons | bande horizontale d'eau aux vagues simples et arrondies, bouts arrondis, sans motif marqué | bleu, bleu clair |
+
+Hauteur environ un cinquième de la largeur, comme le sol. Critère supplémentaire, vérifié par code :
+le tiers central se répète sans rupture visible.
+
+### Potager (6) — « Le potager de … », planté dans la bande de sol existante
+Chaque légume garde ses fanes ou une tige courte, pour s'enfoncer dans le sol.
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| tomate | une tomate sur une courte tige de vigne avec deux feuilles | rouge, vert |
+| carotte | une carotte debout avec ses fanes vertes | orange, vert |
+| potiron | un potiron rond avec une tige courte | orange, tige verte |
+| radis | un radis avec ses feuilles vertes | rouge rosé, pointe blanche, vert |
+| poireau | un poireau debout | base blanche, feuilles vertes |
+| chou | un chou rond | vert pâle et vert foncé |
+
+### Outils (6) — « Les outils de … », accrochés au panneau perforé
+Chaque outil est montré à plat, un peu incliné, comme accroché au mur. Aucun chiffre, aucune marque,
+aucune inscription.
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| marteau | marteau à panne fendue | manche en bois, tête grise |
+| cle | clé plate | acier gris |
+| tournevis | tournevis | manche rouge ou jaune, tige grise |
+| scie | scie égoïne, dents en un seul zigzag franc, pas de dents fines | manche en bois, lame grise |
+| pince | pince | poignées rouges, mâchoires grises |
+| metre | mètre pliant en partie déplié, sans chiffre ni texte | jaune |
+
+### Poissons (6) — « Les poissons de … », au-dessus de la bande d'eau
+De profil, formes et couleurs différentes, sans écailles réalistes.
+| Nom | Silhouette | Couleurs |
+|---|---|---|
+| truite | corps long et fin, quelques taches sombres franches | gris argent, taches sombres, bande rose |
+| poisson-rouge | corps rond, queue en éventail | rouge orangé |
+| maquereau | corps fin et pointu, queue fourchue, quelques rayures sombres ondulées sur le dos | dos bleu et vert, ventre argent |
+| perche | corps haut, nageoire dorsale épineuse, quelques rayures verticales sombres | jaune ocre, rayures sombres, nageoires orange |
+| poisson-lune | corps rond et plat comme un disque, petites nageoires | jaune |
+| poisson-orange | petit corps, longues nageoires et longue queue souples | orange |
+
+### Scène B : l'atelier — « L'atelier de … » (Papy), « Le garage de … » (Papa)
+Prompt de base, entre le préfixe et le suffixe de scène (tiers droit en mur uni, pas de personne, pas
+d'animal) :
+
+> a cozy home workshop seen from the front: a wooden workbench, a few tools hanging on the wall on the
+> left, a small wooden toy car on the bench, a stool, warm interior, wall color {FOND}, floor in
+> {ACCENT3}, accents in {ACCENT1} and {ACCENT2}
+
+Même méthode que le goûter (section 5) :
+1. générer et valider la scène dans la palette Papy, deux graines ;
+2. obtenir la palette Papa par `recolorer.py`, sans appel ;
+3. calque d'hiver par édition en second tour sur la scène Papy validée, recollage par code, puis report
+   sur Papa par `recolorer.py`.
+
+> add a window on the left wall showing falling snow outside, and a small decorated Christmas tree
+> on the workbench; keep everything else exactly the same
+
+Aucune inscription sur les outils ni sur les murs.
+
+### Ordre, essais et coût
+Supports d'abord (branche-nue, panneau, eau), puis potager, outils, poissons, puis la scène. Graines 1
+et 2, au plus quatre essais par élément. Au minimum 45 appels (21 éléments et la scène à deux graines,
+plus l'hiver), plafond 70 appels, soit environ 9,40 USD (estimé, 0,134 USD l'appel). Les éléments
+validés sont détourés dans `production/valides/` ; la RCH de production est complétée par une section
+« Lot Papa et Papy ».
 
 ## 5. La scène : table de goûter
 Prompt de base, entre le préfixe et le suffixe de scène :
