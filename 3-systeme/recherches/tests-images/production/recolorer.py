@@ -17,6 +17,7 @@ Méthode (décision du 02/11/2026 : même graine, compositions différentes) :
    La palette source passe aussi par là, ce qui ramène la scène d'origine sur ses propres codes.
 Dépendances : numpy, pillow, scipy.
 """
+import re
 import sys
 from pathlib import Path
 
@@ -160,9 +161,39 @@ def recoller(edite, origine, largeur, hauteur, flou=12):
     print("  ->", chemin.name)
 
 
+def element_vers_code(fichier):
+    """Ramène la couleur moyenne d'un élément détouré sur le code de sa ligne du brief, par un
+    décalage Lab uniforme : les traces de pinceau et le reflet gardent leurs écarts. Le fichier
+    donné est la source validée (coeur-rose-seed1.png) ; c'est valides/<nom>.png qui est modifié.
+    Ajouté le 04/11/2026 pour les cœurs du lot Maman (écart Lab > 12 : on recolore, on ne régénère pas)."""
+    nom = Path(fichier).stem.split("-seed")[0]
+    for famille in brief.FAMILLES.values():
+        if nom in famille:
+            couleurs = famille[nom][2]
+            break
+    else:
+        raise SystemExit(f"{nom} : élément inconnu du brief")
+    code = re.search(r"#[0-9A-Fa-f]{6}", couleurs)
+    if not code:
+        raise SystemExit(f"{nom} : aucun code couleur dans le brief ({couleurs})")
+    chemin = ICI / "valides" / f"{nom}.png"
+    a = np.asarray(Image.open(chemin).convert("RGBA"), dtype=float)
+    lab = rgb_lab(a[..., :3])
+    coeur = ndimage.binary_erosion(a[..., 3] > 250, iterations=6)
+    cible = rgb_lab(hex_rgb(code.group()))
+    avant = np.linalg.norm(lab[coeur].mean(0) - cible)
+    rgb = lab_rgb(lab + (cible - lab[coeur].mean(0)))
+    Image.fromarray(np.dstack([rgb, a[..., 3]]).astype(np.uint8), "RGBA").save(chemin, dpi=(300, 300))
+    apres = np.linalg.norm(rgb_lab(rgb)[coeur].mean(0) - cible)
+    print(f"  {chemin.name} -> {code.group()} : écart Lab {avant:.1f} avant, {apres:.1f} après")
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--recoller":
         recoller(sys.argv[2], sys.argv[3], float(sys.argv[4]), float(sys.argv[5]))
+        raise SystemExit
+    if len(sys.argv) == 2:
+        element_vers_code(sys.argv[1])
         raise SystemExit
     if len(sys.argv) < 4:
         raise SystemExit(__doc__)

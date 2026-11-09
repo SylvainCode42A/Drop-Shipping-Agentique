@@ -90,8 +90,117 @@ ORNEMENTS = {
 SUPPORTS = {
     "sol":     ("a horizontal strip of short green grass with a thin band of brown earth below it", "soft rounded ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "bright green grass, brown earth", True),
     "branche": ("a horizontal fir tree branch", "bold needles, two natural ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "dark green needles, brown twig", True),
+    # Lot Papa et Papy (04/11/2026, brief section 9).
+    "branche-nue": ("a horizontal bare wooden branch with a few small leaves", "two natural ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "brown, a little green", True),
+    "panneau":     ("a horizontal wooden pegboard strip with evenly spaced holes", "rounded ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "light wood", False),
+    "eau":         ("a horizontal strip of water with simple rounded waves", "rounded ends, no marked pattern so that the middle can be repeated, height about one fifth of the width", "blue, light blue", False),
 }
 ASPECT_SUPPORTS = "16:9"
+
+# Lot Maman (03/11/2026, brief section 8) : quatre familles de symboles de plus et une couronne.
+PAPILLONS = {
+    "papillon-rouge":  ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "red and orange", False),
+    "papillon-bleu":   ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "blue and navy", False),
+    "papillon-jaune":  ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "yellow and ochre", False),
+    "papillon-rose":   ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "pink and plum", False),
+    "papillon-vert":   ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "green and bottle green", True),
+    "papillon-violet": ("a single butterfly", "open wings seen from above, two large upper wings and two small lower wings, thin body, two thick antennae", "violet and lavender", False),
+}
+
+COEURS = {
+    "coeur-rouge":  ("a single heart", "full heart with rounded lobes, one simple flat highlight", "red #C8453C", False),
+    "coeur-corail": ("a single heart", "full heart with rounded lobes, one simple flat highlight", "coral #E07A5F", False),
+    "coeur-rose":   ("a single heart", "full heart with rounded lobes, one simple flat highlight", "pink #D98BA6", False),
+    "coeur-prune":  ("a single heart", "full heart with rounded lobes, one simple flat highlight", "plum #7B3F61", False),
+    "coeur-bleu":   ("a single heart", "full heart with rounded lobes, one simple flat highlight", "blue #4A7FC1", False),
+    "coeur-vert":   ("a single heart", "full heart with rounded lobes, one simple flat highlight", "sage green #5E8A6E", True),
+}
+
+# Oiseaux posés v1 (03/11/2026), complétés avant la graine 3 : seeds 1 et 2 avec des pattes sous 12 px, des plumes
+# rayées détaillées (rouge-gorge, chardonneret, moineau) et une branche ajoutée (mésange 1, moineau 2).
+# "mesange":      ("a single blue tit bird", "small round bird in profile, perched, blue head, white cheeks, yellow belly", "blue, yellow, white", False),
+# "rouge-gorge":  ("a single robin bird", "small round bird in profile, perched, orange breast", "brown and orange", False),
+# "chardonneret": ("a single goldfinch bird", "small bird in profile, red face, yellow bar on the wing", "red, yellow, brown", False),
+# "moineau":      ("a single sparrow bird", "small round bird in profile, perched, streaked brown", "brown and beige", False),
+OISEAUX_SANS_PATTES = ", legs hidden under the round body, simple flat color areas, no feather detail, no branch"
+OISEAUX = {
+    "mesange":      ("a single blue tit bird", "small round bird in profile, perched, blue head, white cheeks, yellow belly" + OISEAUX_SANS_PATTES, "blue, yellow, white", False),
+    "rouge-gorge":  ("a single robin bird", "small round bird in profile, perched, orange breast" + OISEAUX_SANS_PATTES, "brown and orange", False),
+    "hirondelle":   ("a single swallow bird", "slim bird in flight, pointed wings, forked tail", "navy blue and white", False),
+    "chardonneret": ("a single goldfinch bird", "small bird in profile, red face, yellow bar on the wing" + OISEAUX_SANS_PATTES, "red, yellow, brown", False),
+    "moineau":      ("a single sparrow bird", "small round bird in profile, perched, streaked brown" + OISEAUX_SANS_PATTES, "brown and beige", False),
+    "bouvreuil":    ("a single bullfinch bird", "small round bird in profile, perched, pink breast, black cap", "pink, black, grey", False),
+}
+
+# Texte commun v1 (03/11/2026), remplacé le même jour avant la graine 3 : cinq images sur seize peintes sur une
+# carte à bordure blanche (garcon-blond 1, fille-brune 1, fille-chatain-mate 2, garcon-frise 1 et 2). Les six
+# figurines validées en graine 2 (et fille-blonde 1 et 2) sont gardées.
+# ENFANT_COMMUN_V1 = ("a single small child character, standing, front view, big round head and short body, two dot "
+#                     "eyes and a small smile, no realistic face, no nose detail, plain one-color clothes, no logo, "
+#                     "no pattern, arms slightly open, same character design for the whole set")
+ENFANT_COMMUN = ("a single small child character, standing, front view, big round head and short body, two dot "
+                 "eyes and a small smile, no realistic face, no nose detail, plain one-color clothes, no logo, "
+                 "no pattern, arms slightly open, same character design for the whole set, painted directly "
+                 "on the background, no card, no paper sheet, no frame, no white border")
+ENFANTS = {
+    "fille-blonde":       (ENFANT_COMMUN, "girl, light blonde hair in two short pigtails, light skin, yellow dress", "", False),
+    "garcon-blond":       (ENFANT_COMMUN, "boy, short light blonde hair, light skin, blue t-shirt and shorts", "", False),
+    "fille-brune":        (ENFANT_COMMUN, "girl, brown hair in a ponytail, light skin, red dress", "", False),
+    "garcon-brun":        (ENFANT_COMMUN, "boy, short brown hair, light skin, green t-shirt and shorts", "", True),
+    "fille-chatain-mate": (ENFANT_COMMUN, "girl, dark brown hair in a braid, medium tan skin, coral dress", "", False),
+    "garcon-chatain-mat": (ENFANT_COMMUN, "boy, short dark brown hair, medium tan skin, ochre t-shirt and shorts", "", False),
+    "fille-frisee":       (ENFANT_COMMUN, "girl, black curly hair, dark brown skin, violet dress", "", False),
+    # Variante v1 (03/11/2026), remplacée avant la graine 4 : seeds 1 et 2 sur carte, seed 3 avec les boucles
+    # peintes en S qui se lisent comme des lettres.
+    # "garcon-frise":     (ENFANT_COMMUN, "boy, short black curly hair, dark brown skin, teal t-shirt and shorts", "", True),
+    "garcon-frise":       (ENFANT_COMMUN, "boy, short black curly hair forming one full rounded cap that covers the top of the head, dark brown skin, teal t-shirt and shorts", "", True),
+    # Bébé et chat v1 (03/11/2026), complétés avant la graine 1 par la phrase contre la carte à bordure blanche
+    # du texte commun v2.
+    # "bebe":             ("a single swaddled baby in a white blanket", "big round head, two dot eyes and a small smile, no realistic face, same character design as the child set", "white, light skin", False),
+    # "chat":             ("a single small sitting cat", "simple rounded shape, two dot eyes, same painting style as the child set", "ginger and white", False),
+    "bebe":               ("a single swaddled baby in a white blanket", "big round head, two dot eyes and a small smile, no realistic face, same character design as the child set, painted directly on the background, no card, no paper sheet, no frame, no white border", "white, light skin", False),
+    "chat":               ("a single small sitting cat", "simple rounded shape, two dot eyes, same painting style as the child set, painted directly on the background, no card, no paper sheet, no frame, no white border", "ginger and white", False),
+}
+
+COURONNE = {
+    "couronne": ("a single round floral wreath", "ring of small flowers and leaves, empty center, ring thickness about one fifth of the diameter, perfectly round", "green leaves, pink, coral and yellow flowers", True),
+}
+
+# Lot Papa et Papy (04/11/2026, brief section 9) : trois familles de symboles de plus.
+# « every part fully opaque » repris de la jonquille : les fanes et les feuilles partaient en lavis.
+POTAGER_COMMUN = ", every part fully opaque"
+POTAGER = {
+    "tomate":  ("a single tomato", "on a short vine stem with two leaves" + POTAGER_COMMUN, "red, green", True),
+    "carotte": ("a single carrot", "standing upright with its green tops" + POTAGER_COMMUN, "orange, green", True),
+    "potiron": ("a single round pumpkin", "with a short stem" + POTAGER_COMMUN, "orange, green stem", True),
+    "radis":   ("a single radish", "with green leaves" + POTAGER_COMMUN, "pink-red, white tip, green", True),
+    "poireau": ("a single leek", "standing upright" + POTAGER_COMMUN, "white base, green leaves", True),
+    "chou":    ("a single round cabbage", "compact round head" + POTAGER_COMMUN, "pale and dark green", True),
+}
+
+OUTILS_ACCROCHE = "shown flat, slightly tilted, as if hanging on a wall, no numbers, no brand, no inscription"
+OUTILS = {
+    "marteau":   ("a single claw hammer", OUTILS_ACCROCHE, "wooden handle, grey head", False),
+    "cle":       ("a single open-end wrench", OUTILS_ACCROCHE, "grey steel", False),
+    "tournevis": ("a single screwdriver", OUTILS_ACCROCHE, "red or yellow handle, grey shaft", False),
+    "scie":      ("a single hand saw", "teeth as one bold zigzag edge, no fine teeth, " + OUTILS_ACCROCHE, "wooden handle, grey blade", False),
+    "pince":     ("a single pair of pliers", OUTILS_ACCROCHE, "red handles, grey jaws", False),
+    "metre":     ("a single folding carpenter's ruler", "partly unfolded, no text, " + OUTILS_ACCROCHE, "yellow", False),
+}
+
+POISSONS_COMMUN = "simple fish in side view, one dot eye, no realistic scale detail, "
+POISSONS = {
+    "truite":         ("a single trout", POISSONS_COMMUN + "long slim body with a few bold dark spots", "silver grey, dark spots, pink side stripe", False),
+    "poisson-rouge":  ("a single goldfish", POISSONS_COMMUN + "round body, fan-shaped tail", "orange-red", False),
+    "maquereau":      ("a single mackerel", POISSONS_COMMUN + "slim pointed body, forked tail, a few bold dark wavy stripes on the back", "blue and green back, silver belly", True),
+    "perche":         ("a single perch", POISSONS_COMMUN + "deep body, spiky back fin, a few bold dark vertical stripes", "yellow-ochre, dark stripes, orange fins", False),
+    "poisson-lune":   ("a single sunfish", POISSONS_COMMUN + "round flat body like a disc, small fins", "yellow", False),
+    "poisson-orange": ("a single small fish", POISSONS_COMMUN + "small body with long flowing fins and a long tail", "orange", False),
+}
+
+FAMILLES = {"fleurs": FLEURS, "ornements": ORNEMENTS, "supports": SUPPORTS, "papillons": PAPILLONS,
+            "coeurs": COEURS, "oiseaux": OISEAUX, "enfants": ENFANTS, "couronne": COURONNE,
+            "potager": POTAGER, "outils": OUTILS, "poissons": POISSONS}
 
 SCENE = ("a cozy afternoon tea table seen from the front, slightly from above: a round table with a "
          "tablecloth in {ACCENT1}, a teapot and three cups in {ACCENT2}, a cake on a stand, a small "
@@ -100,6 +209,14 @@ SCENE = ("a cozy afternoon tea table seen from the front, slightly from above: a
 
 HIVER = ("add a window on the left wall showing falling snow outside, and a small decorated Christmas "
          "tree in the left corner; keep everything else exactly the same")
+
+# Scène B de Papa et Papy (04/11/2026, brief section 9), qui s'ajoute au goûter.
+ATELIER = ("a cozy home workshop seen from the front: a wooden workbench, a few tools hanging on the wall "
+           "on the left, a small wooden toy car on the bench, a stool, warm interior, wall color {FOND}, "
+           "floor in {ACCENT3}, accents in {ACCENT1} and {ACCENT2}")
+
+HIVER_ATELIER = ("add a window on the left wall showing falling snow outside, and a small decorated "
+                 "Christmas tree on the workbench; keep everything else exactly the same")
 
 # Phrase de référence v1 (02/11/2026), remplacée avant l'essai 5 de la jonquille et du glaïeul : la rose de
 # référence déteignait sur les sorties (sa paire de feuilles en lavis sur jonquille, glaïeul, pied-d'alouette,
@@ -112,15 +229,19 @@ REFERENCE_STYLE = ("Use the reference image only for its painting style and its 
 
 
 def prompt_element(nom):
-    """Prompt complet d'une fleur, d'un ornement ou d'un support, et le fond à utiliser."""
-    sujet, silhouette, couleurs, vert = (FLEURS | ORNEMENTS | SUPPORTS)[nom]
+    """Prompt complet d'un élément de n'importe quelle famille, et le fond à utiliser."""
+    tous = {}
+    for fam in FAMILLES.values():
+        tous.update(fam)
+    sujet, silhouette, couleurs, vert = tous[nom]
     fond = FOND_MAGENTA if vert else FOND_VERT
-    return (f"{PREFIXE}. {sujet}, {silhouette}, {couleurs}. "
+    corps = f"{sujet}, {silhouette}" + (f", {couleurs}" if couleurs else "")
+    return (f"{PREFIXE}. {corps}. "
             f"{SUFFIXE_ELEMENT.format(FOND=fond)}"), fond
 
 
-def prompt_scene(destinataire):
+def prompt_scene(destinataire, modele=SCENE):
     p = PALETTES[destinataire]
     a1, a2, a3 = p["accents"]
-    corps = SCENE.format(FOND=p["fond"], ACCENT1=a1, ACCENT2=a2, ACCENT3=a3)
+    corps = modele.format(FOND=p["fond"], ACCENT1=a1, ACCENT2=a2, ACCENT3=a3)
     return f"{PREFIXE}. {corps}. {SUFFIXE_SCENE.format(FOND=p['fond'])}", p["fond"]
